@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BrightSmile Dental services — general, cosmetic, implants, orthodontics, pediatric, periodontal, and emergency dental care in San Francisco.">
+  <title>Dental Services — BrightSmile Dental</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/modal.css">
+  <link rel="stylesheet" href="css/pages/services.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-page="services">
+  <div id="nav-container"></div>
+
+  <main id="main-content">
+
+    <!-- Page Hero -->
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container page-hero__content">
+        <nav class="page-hero__breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span aria-hidden="true">›</span>
+          <span aria-current="page">Services</span>
+        </nav>
+        <h1 id="page-title">Comprehensive Dental Care</h1>
+        <p>From preventive checkups to complex smile transformations — expert care for every stage of life, all under one roof.</p>
+      </div>
+    </section>
+
+    <!-- ═══ SERVICE TABS ═══ -->
+    <div class="services-tabs" role="navigation" aria-label="Service categories">
+      <div class="container" style="padding:0;">
+        <div class="services-tabs__list" role="tablist" aria-label="Select a service category">
+          <button class="services-tabs__btn is-active" role="tab" aria-selected="true" aria-controls="panel-general" data-tab="panel-general" id="tab-general">
+            <span class="services-tabs__icon" aria-hidden="true">🦷</span> General
+          </button>
+          <button class="services-tabs__btn" role="tab" aria-selected="false" aria-controls="panel-cosmetic" data-tab="panel-cosmetic" id="tab-cosmetic">
+            <span class="services-tabs__icon" aria-hidden="true">✨</span> Cosmetic
+          </button>
+          <button class="services-tabs__btn" role="tab" aria-selected="false" aria-controls="panel-orthodontics" data-tab="panel-orthodontics" id="tab-orthodontics">
+            <span class="services-tabs__icon" aria-hidden="true">📐</span> Orthodontics
+          </button>
+          <button class="services-tabs__btn" role="tab" aria-selected="false" aria-controls="panel-implants" data-tab="panel-implants" id="tab-implants">
+            <span class="services-tabs__icon" aria-hidden="true">🔩</span> Implants
+          </button>
+          <button class="services-tabs__btn" role="tab" aria-selected="false" aria-controls="panel-pediatric" data-tab="panel-pediatric" id="tab-pediatric">
+            <span class="services-tabs__icon" aria-hidden="true">👶</span> Pediatric
+          </button>
+          <button class="services-tabs__btn" role="tab" aria-selected="false" aria-controls="panel-periodontal" data-tab="panel-periodontal" id="tab-periodontal">
+            <span class="services-tabs__icon" aria-hidden="true">🌿</span> Gum Care
+          </button>
+          <button class="services-tabs__btn" role="tab" aria-selected="false" aria-controls="panel-emergency" data-tab="panel-emergency" id="tab-emergency">
+            <span class="services-tabs__icon" aria-hidden="true">🚨</span> Emergency
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══ SERVICE PANELS ═══ -->
+    <div class="container">
+
+      <!-- General -->
+      <div class="service-panel is-active" id="panel-general" role="tabpanel" aria-labelledby="tab-general">
+        <div class="service-panel__layout">
+          <div>
+            <div class="service-detail reveal">
+              <div class="service-detail__header">
+                <div class="service-detail__icon" aria-hidden="true">🦷</div>
+                <div>
+                  <h2 class="service-detail__title">General Dentistry</h2>
+                  <p class="service-detail__tagline">Comprehensive care for the whole family</p>
+                </div>
+              </div>
+              <div class="service-detail__body">
+                <p>Our general dentistry services form the foundation of lifelong oral health. From routine cleanings to complex restorations, we provide thorough, comfortable care for patients of all ages. We emphasize prevention and early detection to keep your smile healthy for decades.</p>
+                <h3 class="service-detail__section-title">What's Included</h3>
+                <ul class="service-detail__benefits">
+                  <li class="service-detail__benefit">Comprehensive oral exams &amp; X-rays</li>
+                  <li class="service-detail__benefit">Professional cleanings &amp; polishing</li>
+                  <li class="service-detail__benefit">Early cavity detection</li>
+                  <li class="service-detail__benefit">Personalized prevention plans</li>
+                  <li class="service-detail__benefit">Emergency same-day appointments</li>
+                  <li class="service-detail__benefit">Dental anxiety support</li>
+                </ul>
+              </div>
+            </div>
+            <div class="sub-services-grid reveal">
+              <div class="sub-service-card"><div class="sub-service-card__emoji">🪥</div><div class="sub-service-card__title">Exam &amp; Cleaning</div><div class="sub-service-card__desc">Thorough exam plus professional cleaning. Recommended every 6 months.</div></div>
+              <div class="sub-service-card"><div class="sub-service-card__emoji">🦷</div><div class="sub-service-card__title">Tooth-Colored Fillings</div><div class="sub-service-card__desc">Composite resin fillings that blend naturally. Metal-free options available.</div></div>
+              <div class="sub-service-card"><div class="sub-service-card__emoji">💊</div><div class="sub-service-card__title">Root Canal Therapy</div><div class="sub-service-card__desc">Comfortable treatment to save an infected tooth. Same-day relief possible.</div></div>
+              <div class="sub-service-card"><div class="sub-service-card__emoji">👑</div><div class="sub-service-card__title">Crowns &amp; Bridges</div><div class="sub-service-card__desc">Custom-crafted restorations. CEREC same-day crowns available.</div></div>
+              <div class="sub-service-card"><div class="sub-service-card__emoji">⚕️</div><div class="sub-service-card__title">Extractions</div><div class="sub-service-card__desc">Gentle tooth removal including wisdom teeth. Sedation options available.</div></div>
+            </div>
+          </div>
+          <aside class="service-sidebar" aria-label="General dentistry quick info">
+            <div class="service-sidebar__cta">
+              <h4>Book a Cleaning</h4>
+              <p>Routine cleanings take just 60 minutes and are covered by most insurance plans.</p>
+              <a href="booking.html" class="btn btn--gold">Schedule Now</a>
+            </div>
+            <div class="service-sidebar__card">
+              <h4 class="service-sidebar__title">Insurance Coverage</h4>
+              <p style="font-size:var(--text-sm);color:var(--color-text-secondary);">Most preventive services are covered at 100% by major insurance plans. We'll verify your benefits before your visit.</p>
+              <a href="pricing.html" class="btn btn--outline btn--sm" style="margin-top:1rem;">View Pricing</a>
+            </div>
+            <div class="service-sidebar__card">
+              <h4 class="service-sidebar__title">What to Expect</h4>
+              <ul class="check-list" style="font-size:var(--text-sm);">
+                <li>60–90 min first visit</li>
+                <li>Full X-ray series</li>
+                <li>Personalized care plan</li>
+                <li>No-pressure consultation</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+
+      <!-- Cosmetic -->
+      <div class="service-panel" id="panel-cosmetic" role="tabpanel" aria-labelledby="tab-cosmetic">
+        <div class="service-panel__layout">
+          <div>
+            <div class="service-detail reveal">
+              <div class="service-detail__header">
+                <div class="service-detail__icon" aria-hidden="true">✨</div>
+                <div>
+                  <h2 class="service-detail__title">Cosmetic Dentistry</h2>
+                  <p class="service-detail__tagline">Transform your smile, transform your confidence</p>
+                </div>
+              </div>
+              <div class="service-detail__body">
+                <p>Our cosmetic dentistry services are tailored to your unique smile goals. Whether you want subtle improvements or a complete transformation, Dr. Okafor brings artistry and precision to every case. Each treatment plan begins with a thorough consultation and digital smile preview.</p>
+                <h3 class="service-detail__section-title">Why Patients Choose Us for Cosmetics</h3>
+                <ul class="service-detail__benefits">
+                  <li class="service-detail__benefit">Digital smile preview before treatment</li>
+                  <li class="service-detail__benefit">Natural-looking, long-lasting results</li>
+                  <li class="service-detail__benefit">Minimally invasive techniques</li>
+                  <li class="service-detail__benefit">AACD-member cosmetic specialist</li>
+                  <li class="service-detail__benefit">Combined treatment planning</li>
+                  <li class="service-detail__benefit">Financing from $89/month</li>
+                </ul>
+              </div>
+            </div>
+            <div class="sub-services-grid reveal">
+              <div class="sub-service-card"><div class="sub-service-card__emoji">⚡</div><div class="sub-service-card__title">Teeth Whitening</div><div class="sub-service-card__desc">Up to 8 shades brighter in one in-office appointment.</div></div>
+              <div class="sub-service-card"><div class="sub-service-card__emoji">✨</div><div class="sub-service-card__title">Porcelain Veneers</div><div class="sub-service-card__desc">Ultra-thin shells that reshape, recolor, and restore your smile permanently.</div></div>
+              <div class="sub-service-card"><div class="sub-service-card__emoji">🎨</div><div class="sub-service-card__title">Dental Bonding</div><div class="sub-service-card__desc">Repair chips, gaps, or discoloration — no prep required in most cases.</div></div>
+              <div class="sub-service-card"><div class="sub-service-card__emoji">😁</div><div class="sub-service-card__title">Smile Makeover</div><div class="sub-service-card__desc">Full transformation combining multiple cosmetic treatments.</div></div>
+              <div class="sub-service-card"><div class="sub-service-card__emoji">🔬</div><div class="sub-service-card__title">Gum Contouring</div><div class="sub-service-card__desc">Laser gum reshaping to balance your gum line.</div></div>
+            </div>
+          </div>
+          <aside class="service-sidebar" aria-label="Cosmetic dentistry quick info">
+            <div class="service-sidebar__cta">
+              <h4>Free Smile Consultation</h4>
+              <p>Not sure which treatment is right for you? Start with a free consultation and digital preview.</p>
+              <a href="booking.html" class="btn btn--gold">Book Consultation</a>
+            </div>
+            <div class="service-sidebar__card">
+              <h4 class="service-sidebar__title">Gallery</h4>
+              <p style="font-size:var(--text-sm);color:var(--color-text-secondary);">See real before &amp; after results from our cosmetic patients.</p>
+              <a href="gallery.html" class="btn btn--outline btn--sm" style="margin-top:1rem;">View Gallery</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+
+      <!-- Orthodontics -->
+      <div class="service-panel" id="panel-orthodontics" role="tabpanel" aria-labelledby="tab-orthodontics">
+        <div class="service-panel__layout">
+          <div>
+            <div class="service-detail reveal">
+              <div class="service-detail__header">
+                <div class="service-detail__icon" aria-hidden="true">📐</div>
+                <div>
+                  <h2 class="service-detail__title">Orthodontics &amp; Aligners</h2>
+                  <p class="service-detail__tagline">Straight, confident smiles for teens and adults</p>
+                </div>
+              </div>
+              <div class="service-detail__body">
+                <p>Straightening your teeth does more than improve appearance — it also improves bite function, makes teeth easier to clean, and reduces wear. We offer Invisalign clear aligners and traditional braces with flexible payment plans for teens and adults.</p>
+                <h3 class="service-detail__section-title">Benefits of Orthodontic Treatment</h3>
+                <ul class="service-detail__benefits">
+                  <li class="service-detail__benefit">Free Invisalign consultation</li>
+                  <li class="service-detail__benefit">Clear aligners virtually invisible</li>
+                  <li class="service-detail__benefit">Accelerated treatment options</li>
+                  <li class="service-detail__benefit">Flexible payment plans</li>
+                  <li class="service-detail__benefit">In-house certified provider</li>
+                  <li class="service-detail__benefit">Digital treatment preview</li>
+                </ul>
+              </div>
+            </div>
+            <div class="sub-services-grid reveal">
+              <div class="sub-service-card"><div class="sub-service-card__emoji">📐</div><div class="sub-service-card__title">Invisalign</div><div class="sub-service-card__desc">Clear, removable aligners. Virtually invisible and comfortable.</div></div>
+              <div class="sub-service-card"><div class="sub-service-card__emoji">⚙️</div><div class="sub-service-card__title">Traditional Braces</div><div class="sub-service-card__desc">Metal or ceramic braces for complex alignment cases.</div></div>
+              <div class="sub-service-card"><div class="sub-service-card__emoji">🏥</div><div class="sub-service-card__title">Retainers</div><div class="sub-service-card__desc">Custom retainers to maintain your perfect smile after treatment.</div></div>
+            </div>
+          </div>
+          <aside class="service-sidebar" aria-label="Orthodontics quick info">
+            <div class="service-sidebar__cta">
+              <h4>Free Invisalign Consult</h4>
+              <p>Find out if Invisalign is right for you — completely free, no obligation.</p>
+              <a href="booking.html" class="btn btn--gold">Book Free Consult</a>
+            </div>
+            <div class="service-sidebar__card">
+              <h4 class="service-sidebar__title">Treatment Timeline</h4>
+              <ul class="check-list" style="font-size:var(--text-sm);">
+                <li>Mild cases: 6–9 months</li>
+                <li>Moderate cases: 12–18 months</li>
+                <li>Complex cases: 18–24 months</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+
+      <!-- Implants -->
+      <div class="service-panel" id="panel-implants" role="tabpanel" aria-labelledby="tab-implants">
+        <div class="service-panel__layout">
+          <div>
+            <div class="service-detail reveal">
+              <div class="service-detail__header">
+                <div class="service-detail__icon" aria-hidden="true">🔩</div>
+                <div>
+                  <h2 class="service-detail__title">Dental Implants</h2>
+                  <p class="service-detail__tagline">Permanent solutions for missing teeth</p>
+                </div>
+              </div>
+              <div class="service-detail__body">
+                <p>Dental implants are the gold standard for replacing missing teeth — they look, feel, and function exactly like natural teeth. Our implant patients consistently report high satisfaction and restored confidence. We offer single implants through full-arch All-on-4 solutions.</p>
+                <h3 class="service-detail__section-title">Why Choose Implants</h3>
+                <ul class="service-detail__benefits">
+                  <li class="service-detail__benefit">Lifetime solution with proper care</li>
+                  <li class="service-detail__benefit">100% natural look and feel</li>
+                  <li class="service-detail__benefit">Preserves jawbone density</li>
+                  <li class="service-detail__benefit">No need to modify adjacent teeth</li>
+                  <li class="service-detail__benefit">All-on-4 full-arch available</li>
+                  <li class="service-detail__benefit">Financing from $89/month</li>
+                </ul>
+              </div>
+            </div>
+            <div class="sub-services-grid reveal">
+              <div class="sub-service-card"><div class="sub-service-card__emoji">🔩</div><div class="sub-service-card__title">Single Tooth Implant</div><div class="sub-service-card__desc">Replace one missing tooth permanently with titanium implant + crown.</div></div>
+              <div class="sub-service-card"><div class="sub-service-card__emoji">🌉</div><div class="sub-service-card__title">Implant Bridge</div><div class="sub-service-card__desc">Replace multiple adjacent teeth with implant-supported bridge.</div></div>
+              <div class="sub-service-card"><div class="sub-service-card__emoji">🦷</div><div class="sub-service-card__title">All-on-4</div><div class="sub-service-card__desc">Full upper or lower arch replacement on just four implants.</div></div>
+              <div class="sub-service-card"><div class="sub-service-card__emoji">⚕️</div><div class="sub-service-card__title">Bone Grafting</div><div class="sub-service-card__desc">Rebuild bone density in preparation for implant placement.</div></div>
+            </div>
+          </div>
+          <aside class="service-sidebar" aria-label="Implants quick info">
+            <div class="service-sidebar__cta">
+              <h4>Implant Consultation</h4>
+              <p>Find out if you're a candidate. Includes imaging assessment and treatment estimate.</p>
+              <a href="booking.html" class="btn btn--gold">Book Consultation</a>
+            </div>
+            <div class="service-sidebar__card">
+              <h4 class="service-sidebar__title">Financing Available</h4>
+              <p style="font-size:var(--text-sm);color:var(--color-text-secondary);">Implants from $89/month with approved credit. CareCredit &amp; in-house plans available.</p>
+              <a href="pricing.html" class="btn btn--outline btn--sm" style="margin-top:1rem;">See Financing</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+
+      <!-- Pediatric -->
+      <div class="service-panel" id="panel-pediatric" role="tabpanel" aria-labelledby="tab-pediatric">
+        <div class="service-panel__layout">
+          <div>
+            <div class="service-detail reveal">
+              <div class="service-detail__header">
+                <div class="service-detail__icon" aria-hidden="true">👶</div>
+                <div>
+                  <h2 class="service-detail__title">Pediatric Dentistry</h2>
+                  <p class="service-detail__tagline">Gentle, fun dental care for your little ones</p>
+                </div>
+              </div>
+              <div class="service-detail__body">
+                <p>Dr. Patel and our pediatric team create positive dental experiences that set kids up for a lifetime of healthy smiles. Our office has a dedicated children's area with a friendly team trained in managing dental anxiety in young patients.</p>
+                <h3 class="service-detail__section-title">What Parents Love About Us</h3>
+                <ul class="service-detail__benefits">
+                  <li class="service-detail__benefit">Board-certified pediatric specialist</li>
+                  <li class="service-detail__benefit">Child-friendly office environment</li>
+                  <li class="service-detail__benefit">Gentle techniques for anxious kids</li>
+                  <li class="service-detail__benefit">First visit from age 1 recommended</li>
+                  <li class="service-detail__benefit">Preventive sealants &amp; fluoride</li>
+                  <li class="service-detail__benefit">Fun rewards program</li>
+                </ul>
+              </div>
+            </div>
+            <div class="sub-services-grid reveal">
+              <div class="sub-service-card"><div class="sub-service-card__emoji">🌟</div><div class="sub-service-card__title">Children's Exam &amp; Cleaning</div><div class="sub-service-card__desc">Gentle exam and polishing tailored for kids — fun and positive from visit one.</div></div>
+              <div class="sub-service-card"><div class="sub-service-card__emoji">🛡️</div><div class="sub-service-card__title">Dental Sealants</div><div class="sub-service-card__desc">Protective coating on back teeth — quick, painless, highly effective.</div></div>
+              <div class="sub-service-card"><div class="sub-service-card__emoji">💧</div><div class="sub-service-card__title">Fluoride Treatment</div><div class="sub-service-card__desc">Strengthen enamel and prevent decay in growing teeth.</div></div>
+              <div class="sub-service-card"><div class="sub-service-card__emoji">👋</div><div class="sub-service-card__title">First Visit Guide</div><div class="sub-service-card__desc">Special welcome visit for toddlers — relaxed and educational.</div></div>
+            </div>
+          </div>
+          <aside class="service-sidebar" aria-label="Pediatric dentistry quick info">
+            <div class="service-sidebar__cta">
+              <h4>Book for Your Child</h4>
+              <p>We recommend the first dental visit by age 1, or when the first tooth appears.</p>
+              <a href="booking.html" class="btn btn--gold">Book Child's Visit</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+
+      <!-- Periodontal -->
+      <div class="service-panel" id="panel-periodontal" role="tabpanel" aria-labelledby="tab-periodontal">
+        <div class="service-panel__layout">
+          <div>
+            <div class="service-detail reveal">
+              <div class="service-detail__header">
+                <div class="service-detail__icon" aria-hidden="true">🌿</div>
+                <div>
+                  <h2 class="service-detail__title">Gum &amp; Periodontal Care</h2>
+                  <p class="service-detail__tagline">Healthy gums are the foundation of a healthy smile</p>
+                </div>
+              </div>
+              <div class="service-detail__body">
+                <p>Gum disease affects nearly half of adults over 30 and is a leading cause of tooth loss. Our periodontal team offers comprehensive gum disease treatment — from gentle deep cleanings to advanced gum therapy — to protect both your oral and overall health.</p>
+                <h3 class="service-detail__section-title">Signs You May Need Gum Care</h3>
+                <ul class="service-detail__benefits">
+                  <li class="service-detail__benefit">Bleeding when brushing or flossing</li>
+                  <li class="service-detail__benefit">Swollen, red, or tender gums</li>
+                  <li class="service-detail__benefit">Receding gum line</li>
+                  <li class="service-detail__benefit">Persistent bad breath</li>
+                  <li class="service-detail__benefit">Loose or shifting teeth</li>
+                  <li class="service-detail__benefit">Pain when chewing</li>
+                </ul>
+              </div>
+            </div>
+            <div class="sub-services-grid reveal">
+              <div class="sub-service-card"><div class="sub-service-card__emoji">🌿</div><div class="sub-service-card__title">Deep Cleaning (SRP)</div><div class="sub-service-card__desc">Scaling and root planing removes tartar buildup below the gum line.</div></div>
+              <div class="sub-service-card"><div class="sub-service-card__emoji">💊</div><div class="sub-service-card__title">Gum Disease Therapy</div><div class="sub-service-card__desc">Comprehensive protocol to halt gum disease progression.</div></div>
+              <div class="sub-service-card"><div class="sub-service-card__emoji">⚕️</div><div class="sub-service-card__title">Gum Grafting Consultation</div><div class="sub-service-card__desc">Restore gum tissue and protect tooth roots from recession.</div></div>
+            </div>
+          </div>
+          <aside class="service-sidebar" aria-label="Gum care quick info">
+            <div class="service-sidebar__cta">
+              <h4>Gum Health Screening</h4>
+              <p>Early detection is key. Schedule a comprehensive periodontal screening today.</p>
+              <a href="booking.html" class="btn btn--gold">Book Screening</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+
+      <!-- Emergency -->
+      <div class="service-panel" id="panel-emergency" role="tabpanel" aria-labelledby="tab-emergency">
+        <div class="service-panel__layout">
+          <div>
+            <div class="service-detail reveal">
+              <div class="service-detail__header" style="background:linear-gradient(135deg, #DC2626, #B91C1C);">
+                <div class="service-detail__icon" aria-hidden="true">🚨</div>
+                <div>
+                  <h2 class="service-detail__title">Emergency Dental Care</h2>
+                  <p class="service-detail__tagline">Same-day appointments — call us first</p>
+                </div>
+              </div>
+              <div class="service-detail__body">
+                <p>Dental emergencies don't wait — and neither do we. BrightSmile offers same-day emergency appointments for patients in pain. Call us first thing in the morning and we will see you the same day. Our emergency line is available 24/7 for guidance.</p>
+                <h3 class="service-detail__section-title">We Treat All Emergencies</h3>
+                <ul class="service-detail__benefits">
+                  <li class="service-detail__benefit">Severe toothache &amp; pain</li>
+                  <li class="service-detail__benefit">Broken or chipped tooth</li>
+                  <li class="service-detail__benefit">Lost crown or filling</li>
+                  <li class="service-detail__benefit">Dental abscess or swelling</li>
+                  <li class="service-detail__benefit">Knocked-out tooth</li>
+                  <li class="service-detail__benefit">Sports injuries</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <aside class="service-sidebar" aria-label="Emergency care quick info">
+            <div class="service-sidebar__cta" style="background:linear-gradient(135deg,#DC2626,#B91C1C);">
+              <h4>Dental Emergency?</h4>
+              <p>Call us now — we'll see you today.</p>
+              <a href="tel:+15551234567" class="btn btn--gold btn--lg" style="font-size:1.25rem;font-weight:700;">(555) 123-4567</a>
+            </div>
+            <div class="service-sidebar__card" style="border-left:3px solid var(--color-accent-gold);">
+              <h4 class="service-sidebar__title">24/7 Emergency Line</h4>
+              <p style="font-size:var(--text-sm);color:var(--color-text-secondary);">Our emergency line is available after hours. Call and follow prompts for urgent dental guidance.</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+
+    </div><!-- /container -->
+
+    <!-- ═══ TECHNOLOGY ═══ -->
+    <section class="section section--alt" aria-labelledby="tech-heading">
+      <div class="container">
+        <div class="section-header--center reveal">
+          <span class="section-label">Advanced Equipment</span>
+          <h2 class="section-title" id="tech-heading">State-of-the-Art Technology</h2>
+          <p class="section-subtitle">We invest in the latest dental technology so your care is faster, more accurate, and more comfortable.</p>
+        </div>
+        <div class="technology-grid stagger-group" style="margin-top:2.5rem;">
+          <div class="tech-item reveal">
+            <div class="tech-item__icon" aria-hidden="true">🔬</div>
+            <div class="tech-item__title">Digital X-Rays</div>
+            <div class="tech-item__desc">90% less radiation than traditional film. Instant, high-resolution images for more accurate diagnosis.</div>
+          </div>
+          <div class="tech-item reveal">
+            <div class="tech-item__icon" aria-hidden="true">🌐</div>
+            <div class="tech-item__title">3D Cone Beam Imaging</div>
+            <div class="tech-item__desc">Full 3D scans for implant planning, orthodontics, and complex treatment cases.</div>
+          </div>
+          <div class="tech-item reveal">
+            <div class="tech-item__icon" aria-hidden="true">⚡</div>
+            <div class="tech-item__title">CEREC Same-Day Crowns</div>
+            <div class="tech-item__desc">Custom ceramic crowns designed and milled in-office in a single appointment. No temporaries needed.</div>
+          </div>
+          <div class="tech-item reveal">
+            <div class="tech-item__icon" aria-hidden="true">🔦</div>
+            <div class="tech-item__title">Laser Dentistry</div>
+            <div class="tech-item__desc">Minimally invasive laser treatment for gum reshaping, cavity detection, and soft tissue procedures.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section section--teal" aria-labelledby="services-cta-heading">
+      <div class="container">
+        <div class="cta-strip">
+          <div class="reveal">
+            <h2 class="cta-strip__title" id="services-cta-heading">Ready to Get Started?</h2>
+            <p class="cta-strip__subtitle">Book an appointment for any of our services — new patients are always welcome.</p>
+            <div class="cta-strip__actions">
+              <a href="booking.html" class="btn btn--gold btn--lg">Book Appointment</a>
+              <a href="pricing.html" class="btn btn--outline-white btn--lg">View Pricing</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <div id="footer-container"></div>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

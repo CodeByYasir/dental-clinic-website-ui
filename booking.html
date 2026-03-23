@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Book an Appointment — BrightSmile Dental</title>
+  <meta name="description" content="Book your dental appointment online at BrightSmile Dental. Choose your service, preferred doctor, and appointment time. Same-day emergency slots available." />
+  <meta property="og:title" content="Book an Appointment — BrightSmile Dental" />
+  <meta property="og:description" content="Easily schedule your next dental visit online. General, cosmetic, and emergency appointments available." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/forms.css" />
+  <link rel="stylesheet" href="css/modal.css" />
+  <link rel="stylesheet" href="css/pages/booking.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body data-page="booking">
+
+  <!-- Skip to content -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Emergency Banner -->
+  <div id="emergency-banner-container"></div>
+
+  <!-- Navigation -->
+  <div id="nav-container"></div>
+
+  <main id="main-content">
+
+    <!-- ── Page Hero ── -->
+    <section class="page-hero page-hero--compact">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li aria-current="page">Book Appointment</li>
+          </ol>
+        </nav>
+        <h1 class="page-hero__title reveal">Book Your Appointment</h1>
+        <p class="page-hero__subtitle reveal">Schedule online in minutes — or call us at <a href="tel:+15551234567" class="hero-phone-link">(555) 123-4567</a></p>
+      </div>
+    </section>
+
+    <!-- ── Booking Section ── -->
+    <section class="section booking-section">
+      <div class="container container--wide">
+        <div class="booking-layout">
+
+          <!-- ── Form Column ── -->
+          <div class="booking-form-col">
+
+            <!-- Multi-step form -->
+            <form id="booking-form" class="booking-form" novalidate aria-label="Appointment booking form">
+
+              <!-- Progress Bar -->
+              <div class="form-progress" role="navigation" aria-label="Form progress">
+                <div class="form-progress__bar">
+                  <div class="form-progress__fill" id="progress-fill" style="width: 25%"></div>
+                </div>
+                <div class="form-progress__steps">
+                  <div class="form-progress__step is-active" data-step="1">
+                    <span class="form-progress__num">1</span>
+                    <span class="form-progress__label">Service</span>
+                  </div>
+                  <div class="form-progress__step" data-step="2">
+                    <span class="form-progress__num">2</span>
+                    <span class="form-progress__label">Date &amp; Time</span>
+                  </div>
+                  <div class="form-progress__step" data-step="3">
+                    <span class="form-progress__num">3</span>
+                    <span class="form-progress__label">Your Info</span>
+                  </div>
+                  <div class="form-progress__step" data-step="4">
+                    <span class="form-progress__num">4</span>
+                    <span class="form-progress__label">Confirm</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ────────── Step 1: Service ────────── -->
+              <fieldset class="form-step is-active" id="step-1" data-step="1">
+                <legend class="form-step__title">
+                  <span class="form-step__icon" aria-hidden="true">
+                    <svg width="20" height="20"><use href="assets/icons/sprite.svg#tooth"/></svg>
+                  </span>
+                  Select Your Service
+                </legend>
+
+                <div class="form-group">
+                  <label class="form-label" for="doctor-pref">Preferred Doctor <span class="form-label__opt">(optional)</span></label>
+                  <select id="doctor-pref" name="doctor" class="form-select">
+                    <option value="">No preference — any available</option>
+                    <option value="dr-chen">Dr. Eleanor Chen, DDS — General &amp; Cosmetic</option>
+                    <option value="dr-patel">Dr. Ravi Patel, DMD — Orthodontics &amp; Implants</option>
+                    <option value="dr-okonkwo">Dr. Amara Okonkwo, DDS — Pediatric &amp; Family</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" id="service-cat-legend">
+                    Service Category <abbr title="required">*</abbr>
+                  </label>
+                  <div class="service-tiles" role="radiogroup" aria-labelledby="service-cat-legend" aria-required="true" id="service-category-group">
+                    <label class="service-tile">
+                      <input type="radio" name="service_category" value="general" required />
+                      <span class="service-tile__icon" aria-hidden="true">
+                        <svg width="24" height="24"><use href="assets/icons/sprite.svg#tooth"/></svg>
+                      </span>
+                      <span class="service-tile__name">General</span>
+                    </label>
+                    <label class="service-tile">
+                      <input type="radio" name="service_category" value="cosmetic" />
+                      <span class="service-tile__icon" aria-hidden="true">
+                        <svg width="24" height="24"><use href="assets/icons/sprite.svg#sparkle"/></svg>
+                      </span>
+                      <span class="service-tile__name">Cosmetic</span>
+                    </label>
+                    <label class="service-tile">
+                      <input type="radio" name="service_category" value="orthodontics" />
+                      <span class="service-tile__icon" aria-hidden="true">
+                        <svg width="24" height="24"><use href="assets/icons/sprite.svg#align"/></svg>
+                      </span>
+                      <span class="service-tile__name">Orthodontics</span>
+                    </label>
+                    <label class="service-tile">
+                      <input type="radio" name="service_category" value="implants" />
+                      <span class="service-tile__icon" aria-hidden="true">
+                        <svg width="24" height="24"><use href="assets/icons/sprite.svg#implant"/></svg>
+                      </span>
+                      <span class="service-tile__name">Implants</span>
+                    </label>
+                    <label class="service-tile">
+                      <input type="radio" name="service_category" value="pediatric" />
+                      <span class="service-tile__icon" aria-hidden="true">
+                        <svg width="24" height="24"><use href="assets/icons/sprite.svg#child"/></svg>
+                      </span>
+                      <span class="service-tile__name">Pediatric</span>
+                    </label>
+                    <label class="service-tile">
+                      <input type="radio" name="service_category" value="emergency" />
+                      <span class="service-tile__icon" aria-hidden="true">
+                        <svg width="24" height="24"><use href="assets/icons/sprite.svg#alert"/></svg>
+                      </span>
+                      <span class="service-tile__name">Emergency</span>
+                    </label>
+                  </div>
+                  <div id="service-category-error" class="form-error" role="alert" aria-live="polite"></div>
+                </div>
+
+                <div class="form-group" id="specific-service-group">
+                  <label class="form-label" for="specific-service">Specific Service</label>
+                  <select id="specific-service" name="specific_service" class="form-select" aria-describedby="specific-service-error">
+                    <option value="">Select a category first…</option>
+                  </select>
+                  <div id="specific-service-error" class="form-error" role="alert" aria-live="polite"></div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" id="patient-type-legend">
+                    Patient Type <abbr title="required">*</abbr>
+                  </label>
+                  <div class="patient-type-toggle" role="radiogroup" aria-labelledby="patient-type-legend" aria-required="true" id="patient-type-group">
+                    <label class="patient-type-option">
+                      <input type="radio" name="patient_type" value="new" required />
+                      <span class="patient-type-option__label">
+                        <strong>New Patient</strong>
+                        <small>First visit to BrightSmile</small>
+                      </span>
+                    </label>
+                    <label class="patient-type-option">
+                      <input type="radio" name="patient_type" value="returning" />
+                      <span class="patient-type-option__label">
+                        <strong>Returning Patient</strong>
+                        <small>I've been here before</small>
+                      </span>
+                    </label>
+                  </div>
+                  <div id="patient-type-error" class="form-error" role="alert" aria-live="polite"></div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="appointment-notes">Additional Notes <span class="form-label__opt">(optional)</span></label>
+                  <textarea id="appointment-notes" name="notes" class="form-textarea" rows="3" placeholder="Any concerns, dental anxieties, or special requests…" aria-describedby="notes-hint"></textarea>
+                  <p id="notes-hint" class="form-hint">This helps us prepare for your visit and accommodate any special needs.</p>
+                </div>
+
+                <div class="form-step__actions">
+                  <button type="button" class="btn btn--primary btn--lg" data-next-step="2">
+                    Continue to Date &amp; Time
+                    <svg width="16" height="16" aria-hidden="true"><use href="assets/icons/sprite.svg#chevron-right"/></svg>
+                  </button>
+                </div>
+              </fieldset>
+
+              <!-- ────────── Step 2: Date & Time ────────── -->
+              <fieldset class="form-step" id="step-2" data-step="2" hidden>
+                <legend class="form-step__title">
+                  <span class="form-step__icon" aria-hidden="true">
+                    <svg width="20" height="20"><use href="assets/icons/sprite.svg#calendar"/></svg>
+                  </span>
+                  Choose Date &amp; Time
+                </legend>
+
+                <div class="form-group">
+                  <label class="form-label" id="location-legend">
+                    Preferred Location <abbr title="required">*</abbr>
+                  </label>
+                  <div class="location-options" role="radiogroup" aria-labelledby="location-legend" aria-required="true" id="location-group">
+                    <label class="location-option">
+                      <input type="radio" name="location" value="downtown" required />
+                      <span class="location-option__content">
+                        <span class="location-option__name">
+                          <svg width="16" height="16" aria-hidden="true"><use href="assets/icons/sprite.svg#location"/></svg>
+                          Downtown Clinic
+                        </span>
+                        <span class="location-option__address">123 Smile Avenue, Suite 200</span>
+                        <span class="location-option__hours">Mon–Fri 8am–6pm · Sat 9am–3pm</span>
+                      </span>
+                    </label>
+                    <label class="location-option">
+                      <input type="radio" name="location" value="westside" />
+                      <span class="location-option__content">
+                        <span class="location-option__name">
+                          <svg width="16" height="16" aria-hidden="true"><use href="assets/icons/sprite.svg#location"/></svg>
+                          Westside Clinic
+                        </span>
+                        <span class="location-option__address">456 Bright Street, Unit B</span>
+                        <span class="location-option__hours">Mon–Thu 9am–7pm · Fri 8am–5pm</span>
+                      </span>
+                    </label>
+                  </div>
+                  <div id="location-error" class="form-error" role="alert" aria-live="polite"></div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="appointment-date">Preferred Date <abbr title="required">*</abbr></label>
+                  <input
+                    type="date"
+                    id="appointment-date"
+                    name="appointment_date"
+                    class="form-input"
+                    required
+                    aria-required="true"
+                    aria-describedby="date-hint date-error"
+                  />
+                  <p id="date-hint" class="form-hint">We're open Monday–Saturday. Sunday appointments are not available.</p>
+                  <div id="date-error" class="form-error" role="alert" aria-live="polite"></div>
+                </div>
+
+                <div class="form-group" id="time-slots-group">
+                  <label class="form-label" id="time-slots-legend">
+                    Preferred Time <abbr title="required">*</abbr>
+                  </label>
+                  <div class="time-slots" role="radiogroup" aria-labelledby="time-slots-legend" aria-required="true" id="time-slots-container">
+                    <p class="time-slots__placeholder">Select a date above to see available times</p>
+                  </div>
+                  <div id="time-slots-error" class="form-error" role="alert" aria-live="polite"></div>
+                </div>
+
+                <div class="form-step__actions form-step__actions--split">
+                  <button type="button" class="btn btn--outline" data-prev-step="1">
+                    <svg width="16" height="16" aria-hidden="true"><use href="assets/icons/sprite.svg#chevron-left"/></svg>
+                    Back
+                  </button>
+                  <button type="button" class="btn btn--primary btn--lg" data-next-step="3">
+                    Continue to Your Info
+                    <svg width="16" height="16" aria-hidden="true"><use href="assets/icons/sprite.svg#chevron-right"/></svg>
+                  </button>
+                </div>
+              </fieldset>
+
+              <!-- ────────── Step 3: Patient Info ────────── -->
+              <fieldset class="form-step" id="step-3" data-step="3" hidden>
+                <legend class="form-step__title">
+                  <span class="form-step__icon" aria-hidden="true">
+                    <svg width="20" height="20"><use href="assets/icons/sprite.svg#users"/></svg>
+                  </span>
+                  Your Information
+                </legend>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label" for="first-name">First Name <abbr title="required">*</abbr></label>
+                    <input
+                      type="text"
+                      id="first-name"
+                      name="first_name"
+                      class="form-input"
+                      autocomplete="given-name"
+                      required
+                      aria-required="true"
+                      aria-describedby="first-name-error"
+                      placeholder="Jane"
+                    />
+                    <div id="first-name-error" class="form-error" role="alert" aria-live="polite"></div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="last-name">Last Name <abbr title="required">*</abbr></label>
+                    <input
+                      type="text"
+                      id="last-name"
+                      name="last_name"
+                      class="form-input"
+                      autocomplete="family-name"
+                      required
+                      aria-required="true"
+                      aria-describedby="last-name-error"
+                      placeholder="Smith"
+                    />
+                    <div id="last-name-error" class="form-error" role="alert" aria-live="polite"></div>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label" for="patient-email">Email Address <abbr title="required">*</abbr></label>
+                    <input
+                      type="email"
+                      id="patient-email"
+                      name="email"
+                      class="form-input"
+                      autocomplete="email"
+                      required
+                      aria-required="true"
+                      aria-describedby="email-error"
+                      placeholder="jane@example.com"
+                    />
+                    <div id="email-error" class="form-error" role="alert" aria-live="polite"></div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="patient-phone">Phone Number <abbr title="required">*</abbr></label>
+                    <input
+                      type="tel"
+                      id="patient-phone"
+                      name="phone"
+                      class="form-input"
+                      autocomplete="tel"
+                      required
+                      aria-required="true"
+                      aria-describedby="phone-hint phone-error"
+                      placeholder="(555) 000-0000"
+                    />
+                    <p id="phone-hint" class="form-hint">US format: (555) 123-4567</p>
+                    <div id="phone-error" class="form-error" role="alert" aria-live="polite"></div>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label" for="date-of-birth">Date of Birth <abbr title="required">*</abbr></label>
+                    <input
+                      type="date"
+                      id="date-of-birth"
+                      name="dob"
+                      class="form-input"
+                      autocomplete="bday"
+                      required
+                      aria-required="true"
+                      aria-describedby="dob-error"
+                    />
+                    <div id="dob-error" class="form-error" role="alert" aria-live="polite"></div>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="referral-source">How did you hear about us? <span class="form-label__opt">(optional)</span></label>
+                    <select id="referral-source" name="referral" class="form-select">
+                      <option value="">Select one…</option>
+                      <option value="google">Google Search</option>
+                      <option value="friend">Friend or Family</option>
+                      <option value="insurance">Insurance Directory</option>
+                      <option value="social">Social Media</option>
+                      <option value="zocdoc">Zocdoc</option>
+                      <option value="healthgrades">Healthgrades</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group form-group--divider">
+                  <p class="form-group__subtitle">Insurance Information</p>
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label class="form-label" for="insurance-provider">Insurance Provider <span class="form-label__opt">(optional)</span></label>
+                      <select id="insurance-provider" name="insurance_provider" class="form-select">
+                        <option value="">No insurance / Self-pay</option>
+                        <option value="aetna">Aetna</option>
+                        <option value="cigna">Cigna</option>
+                        <option value="delta">Delta Dental</option>
+                        <option value="guardian">Guardian</option>
+                        <option value="humana">Humana</option>
+                        <option value="metlife">MetLife</option>
+                        <option value="united">United Healthcare</option>
+                        <option value="other">Other</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label" for="member-id">Member ID <span class="form-label__opt">(optional)</span></label>
+                      <input
+                        type="text"
+                        id="member-id"
+                        name="member_id"
+                        class="form-input"
+                        aria-describedby="member-id-hint"
+                        placeholder="e.g. AET12345678"
+                      />
+                      <p id="member-id-hint" class="form-hint">Found on your insurance card</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group form-group--divider">
+                  <p class="form-group__subtitle">Dental Anxiety</p>
+                  <label class="form-label" id="anxiety-legend">How do you feel about dental visits? <span class="form-label__opt">(optional)</span></label>
+                  <div class="anxiety-options" role="radiogroup" aria-labelledby="anxiety-legend">
+                    <label class="radio-tile radio-tile--sm">
+                      <input type="radio" name="anxiety_level" value="relaxed" />
+                      <span>😊 Very Relaxed</span>
+                    </label>
+                    <label class="radio-tile radio-tile--sm">
+                      <input type="radio" name="anxiety_level" value="mild" />
+                      <span>😐 Mild Anxiety</span>
+                    </label>
+                    <label class="radio-tile radio-tile--sm">
+                      <input type="radio" name="anxiety_level" value="moderate" />
+                      <span>😬 Moderate Anxiety</span>
+                    </label>
+                    <label class="radio-tile radio-tile--sm">
+                      <input type="radio" name="anxiety_level" value="severe" />
+                      <span>😰 Very Anxious</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="form-group form-group--divider">
+                  <p class="form-group__subtitle">Emergency Contact <span class="form-label__opt">(optional)</span></p>
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label class="form-label" for="emergency-contact-name">Name</label>
+                      <input type="text" id="emergency-contact-name" name="emergency_name" class="form-input" placeholder="Full name" autocomplete="off" />
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label" for="emergency-contact-phone">Phone</label>
+                      <input type="tel" id="emergency-contact-phone" name="emergency_phone" class="form-input" placeholder="(555) 000-0000" autocomplete="off" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-checkbox">
+                    <input
+                      type="checkbox"
+                      id="privacy-consent"
+                      name="privacy_consent"
+                      required
+                      aria-required="true"
+                      aria-describedby="privacy-error"
+                    />
+                    <span class="form-checkbox__label">
+                      I agree to BrightSmile Dental's <a href="#" class="link">Privacy Policy</a> and consent to being contacted regarding my appointment. <abbr title="required">*</abbr>
+                    </span>
+                  </label>
+                  <div id="privacy-error" class="form-error" role="alert" aria-live="polite"></div>
+                </div>
+
+                <div class="form-step__actions form-step__actions--split">
+                  <button type="button" class="btn btn--outline" data-prev-step="2">
+                    <svg width="16" height="16" aria-hidden="true"><use href="assets/icons/sprite.svg#chevron-left"/></svg>
+                    Back
+                  </button>
+                  <button type="button" class="btn btn--primary btn--lg" data-next-step="4">
+                    Review &amp; Confirm
+                    <svg width="16" height="16" aria-hidden="true"><use href="assets/icons/sprite.svg#chevron-right"/></svg>
+                  </button>
+                </div>
+              </fieldset>
+
+              <!-- ────────── Step 4: Confirmation ────────── -->
+              <fieldset class="form-step" id="step-4" data-step="4" hidden>
+                <legend class="form-step__title">
+                  <span class="form-step__icon" aria-hidden="true">
+                    <svg width="20" height="20"><use href="assets/icons/sprite.svg#check"/></svg>
+                  </span>
+                  Review &amp; Confirm
+                </legend>
+
+                <p class="form-step__desc">Please review your appointment details before confirming.</p>
+
+                <!-- Booking summary populated by JS -->
+                <div class="booking-summary" id="booking-summary" aria-label="Appointment summary">
+                  <div class="booking-summary__section">
+                    <h3 class="booking-summary__heading">
+                      <svg width="16" height="16" aria-hidden="true"><use href="assets/icons/sprite.svg#tooth"/></svg>
+                      Service
+                    </h3>
+                    <dl class="booking-summary__list" id="summary-service"></dl>
+                  </div>
+                  <div class="booking-summary__section">
+                    <h3 class="booking-summary__heading">
+                      <svg width="16" height="16" aria-hidden="true"><use href="assets/icons/sprite.svg#calendar"/></svg>
+                      Appointment
+                    </h3>
+                    <dl class="booking-summary__list" id="summary-appointment"></dl>
+                  </div>
+                  <div class="booking-summary__section">
+                    <h3 class="booking-summary__heading">
+                      <svg width="16" height="16" aria-hidden="true"><use href="assets/icons/sprite.svg#users"/></svg>
+                      Patient
+                    </h3>
+                    <dl class="booking-summary__list" id="summary-patient"></dl>
+                  </div>
+                  <button type="button" class="booking-summary__edit-link" data-go-to-step="1">
+                    <svg width="14" height="14" aria-hidden="true"><use href="assets/icons/sprite.svg#arrow-right"/></svg>
+                    Edit details
+                  </button>
+                </div>
+
+                <div class="booking-legal">
+                  <p>By confirming, you acknowledge our <a href="#" class="link">cancellation policy</a>: appointments cancelled less than 24 hours before the scheduled time may incur a $35 fee.</p>
+                </div>
+
+                <div class="form-step__actions form-step__actions--split">
+                  <button type="button" class="btn btn--outline" data-prev-step="3">
+                    <svg width="16" height="16" aria-hidden="true"><use href="assets/icons/sprite.svg#chevron-left"/></svg>
+                    Back
+                  </button>
+                  <button type="submit" class="btn btn--primary btn--lg" id="confirm-btn">
+                    <svg width="18" height="18" aria-hidden="true"><use href="assets/icons/sprite.svg#calendar"/></svg>
+                    Confirm Appointment
+                  </button>
+                </div>
+              </fieldset>
+
+            </form>
+
+            <!-- ── Success Screen (hidden until submit) ── -->
+            <div class="booking-success" id="booking-success" hidden aria-live="polite">
+              <div class="booking-success__icon" aria-hidden="true">
+                <svg width="48" height="48"><use href="assets/icons/sprite.svg#check"/></svg>
+              </div>
+              <h2 class="booking-success__title">You're Booked!</h2>
+              <p class="booking-success__sub">Your appointment has been confirmed. A confirmation email has been sent to <strong id="success-email"></strong>.</p>
+
+              <div class="booking-success__card" id="success-details"></div>
+
+              <div class="booking-success__conf">
+                Confirmation #: <strong id="confirmation-number"></strong>
+              </div>
+
+              <div class="booking-success__actions">
+                <a href="#" id="add-to-calendar" class="btn btn--secondary btn--lg" download="brightsmile-appointment.ics">
+                  <svg width="18" height="18" aria-hidden="true"><use href="assets/icons/sprite.svg#calendar"/></svg>
+                  Add to Calendar
+                </a>
+                <a href="index.html" class="btn btn--outline btn--lg">Back to Home</a>
+              </div>
+
+              <div class="booking-success__next">
+                <h3>Before Your Visit</h3>
+                <ul class="check-list">
+                  <li>Bring a valid photo ID</li>
+                  <li>Bring your insurance card (if applicable)</li>
+                  <li>Arrive 10 minutes early for new patient paperwork</li>
+                  <li>Download and complete new patient forms from <a href="resources.html" class="link">Patient Resources</a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div><!-- /booking-form-col -->
+
+          <!-- ── Info Sidebar ── -->
+          <aside class="booking-info-panel" aria-label="Clinic information">
+
+            <!-- Contact Card -->
+            <div class="info-panel-card">
+              <h2 class="info-panel-card__title">Prefer to Call?</h2>
+              <a href="tel:+15551234567" class="info-panel__phone">
+                <svg width="20" height="20" aria-hidden="true"><use href="assets/icons/sprite.svg#phone"/></svg>
+                (555) 123-4567
+              </a>
+              <p class="info-panel__note">Our friendly team is available Monday–Saturday to help you schedule.</p>
+              <a href="tel:+15551234567" class="btn btn--outline btn--sm" style="width:100%;text-align:center;margin-top:var(--space-3)">Call Now</a>
+            </div>
+
+            <!-- Locations -->
+            <div class="info-panel-card">
+              <h2 class="info-panel-card__title">Our Locations</h2>
+              <div class="info-panel__location">
+                <p class="info-panel__location-name">
+                  <svg width="16" height="16" aria-hidden="true"><use href="assets/icons/sprite.svg#location"/></svg>
+                  Downtown Clinic
+                </p>
+                <address class="info-panel__address">
+                  123 Smile Avenue, Suite 200<br />
+                  New York, NY 10001
+                </address>
+                <div class="info-panel__hours">
+                  <table class="hours-table hours-table--sm" aria-label="Downtown clinic hours">
+                    <tbody>
+                      <tr><th scope="row">Mon – Fri</th><td>8:00 AM – 6:00 PM</td></tr>
+                      <tr><th scope="row">Saturday</th><td>9:00 AM – 3:00 PM</td></tr>
+                      <tr><th scope="row">Sunday</th><td>Closed</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="info-panel__location info-panel__location--border">
+                <p class="info-panel__location-name">
+                  <svg width="16" height="16" aria-hidden="true"><use href="assets/icons/sprite.svg#location"/></svg>
+                  Westside Clinic
+                </p>
+                <address class="info-panel__address">
+                  456 Bright Street, Unit B<br />
+                  New York, NY 10023
+                </address>
+                <div class="info-panel__hours">
+                  <table class="hours-table hours-table--sm" aria-label="Westside clinic hours">
+                    <tbody>
+                      <tr><th scope="row">Mon – Thu</th><td>9:00 AM – 7:00 PM</td></tr>
+                      <tr><th scope="row">Friday</th><td>8:00 AM – 5:00 PM</td></tr>
+                      <tr><th scope="row">Sat – Sun</th><td>Closed</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <!-- What to Bring -->
+            <div class="info-panel-card">
+              <h2 class="info-panel-card__title">What to Bring</h2>
+              <ul class="check-list check-list--sm">
+                <li>Valid photo ID (driver's license, passport)</li>
+                <li>Insurance card &amp; member ID</li>
+                <li>List of current medications</li>
+                <li>Completed new patient forms <span class="badge badge--muted">new patients</span></li>
+                <li>X-rays from previous dentist <span class="badge badge--muted">if available</span></li>
+                <li>Payment method (we accept all major cards)</li>
+              </ul>
+            </div>
+
+            <!-- Cancellation Policy -->
+            <div class="info-panel-card info-panel-card--bordered">
+              <h2 class="info-panel-card__title">Cancellation Policy</h2>
+              <p class="info-panel__note">We ask for <strong>24 hours notice</strong> for cancellations or rescheduling. Late cancellations may be subject to a $35 fee.</p>
+              <p class="info-panel__note" style="margin-top:var(--space-2)">To reschedule, call us at <a href="tel:+15551234567" class="link">(555) 123-4567</a> or email <a href="mailto:hello@brightsmile.com" class="link">hello@brightsmile.com</a>.</p>
+            </div>
+
+            <!-- Emergency Note -->
+            <div class="info-panel-card info-panel-card--emergency">
+              <p class="info-panel__emergency-label">Dental Emergency?</p>
+              <p class="info-panel__note">Don't wait. Call us now — we reserve same-day emergency slots every day.</p>
+              <a href="tel:+15559119111" class="info-panel__emergency-phone">(555) 911-9111</a>
+            </div>
+
+          </aside>
+
+        </div><!-- /booking-layout -->
+      </div>
+    </section>
+
+    <!-- ── Trust Strip ── -->
+    <section class="section section--alt trust-strip-sm">
+      <div class="container">
+        <div class="trust-strip-sm__grid">
+          <div class="trust-strip-sm__item reveal">
+            <svg width="32" height="32" aria-hidden="true"><use href="assets/icons/sprite.svg#shield"/></svg>
+            <div>
+              <p class="trust-strip-sm__label">HIPAA Compliant</p>
+              <p class="trust-strip-sm__sub">Your data is secure and private</p>
+            </div>
+          </div>
+          <div class="trust-strip-sm__item reveal" style="--reveal-delay: 100ms">
+            <svg width="32" height="32" aria-hidden="true"><use href="assets/icons/sprite.svg#credit-card"/></svg>
+            <div>
+              <p class="trust-strip-sm__label">All Insurance Accepted</p>
+              <p class="trust-strip-sm__sub">PPO, HMO, and self-pay welcome</p>
+            </div>
+          </div>
+          <div class="trust-strip-sm__item reveal" style="--reveal-delay: 200ms">
+            <svg width="32" height="32" aria-hidden="true"><use href="assets/icons/sprite.svg#clock"/></svg>
+            <div>
+              <p class="trust-strip-sm__label">Same-Day Emergency</p>
+              <p class="trust-strip-sm__sub">Urgent care slots held daily</p>
+            </div>
+          </div>
+          <div class="trust-strip-sm__item reveal" style="--reveal-delay: 300ms">
+            <svg width="32" height="32" aria-hidden="true"><use href="assets/icons/sprite.svg#star"/></svg>
+            <div>
+              <p class="trust-strip-sm__label">4.9★ Patient Rating</p>
+              <p class="trust-strip-sm__sub">1,400+ verified Google reviews</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <div id="footer-container"></div>
+
+  <!-- Floating Book Button -->
+  <a href="booking.html" class="floating-book-btn" aria-label="Book appointment">
+    <svg width="20" height="20" aria-hidden="true"><use href="assets/icons/sprite.svg#calendar"/></svg>
+    Book Now
+  </a>
+
+  <!-- JS -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

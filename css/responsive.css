@@ -1,0 +1,724 @@
+/* =========================================
+   BRIGHTSMILE DENTAL — RESPONSIVE OVERRIDES
+   Mobile-first cascade: lg → md → sm → xs
+   Breakpoints:
+     lg:  1024px
+     md:   768px
+     sm:   640px
+     xs:   480px
+   ========================================= */
+
+/* ─────────────────────────────────────────
+   GLOBAL / LAYOUT
+───────────────────────────────────────── */
+
+/* Prevent any element from overflowing the viewport */
+html, body { overflow-x: hidden; }
+
+/* Section vertical rhythm */
+@media (max-width: 640px) {
+  .section {
+    padding-block: 48px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding-block: 40px;
+  }
+}
+
+/* Container horizontal padding */
+@media (max-width: 640px) {
+  .container,
+  .container--wide,
+  .container--narrow {
+    padding-inline: 20px;
+  }
+}
+
+/* Page hero */
+@media (max-width: 640px) {
+  .page-hero {
+    padding-block: 36px 32px;
+  }
+
+  .page-hero__title {
+    font-size: clamp(1.6rem, 7vw, 2.2rem);
+  }
+
+  .page-hero__sub {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+}
+
+/* Section headers */
+@media (max-width: 640px) {
+  .section-header__title {
+    font-size: clamp(1.45rem, 6vw, 2rem);
+  }
+
+  .section-header {
+    margin-bottom: var(--space-6);
+  }
+}
+
+/* ─────────────────────────────────────────
+   CTA STRIP
+───────────────────────────────────────── */
+
+@media (max-width: 768px) {
+  .cta-strip {
+    padding-block: 72px;
+  }
+
+  .cta-strip__inner {
+    padding: 48px 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-strip {
+    padding-block: 56px;
+  }
+
+  .cta-strip__inner {
+    padding: 36px 20px;
+    border-radius: 18px;
+  }
+
+  .cta-strip__title {
+    font-size: clamp(1.4rem, 6vw, 1.8rem);
+  }
+
+  .cta-strip__subtitle,
+  .cta-strip__sub {
+    font-size: 14.5px;
+    margin-bottom: var(--space-5);
+  }
+
+  .cta-strip__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cta-strip__actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ─────────────────────────────────────────
+   NAVIGATION
+───────────────────────────────────────── */
+
+@media (max-width: 640px) {
+  .emergency-banner__text {
+    font-size: 13px;
+  }
+}
+
+/* ─────────────────────────────────────────
+   HOMEPAGE
+───────────────────────────────────────── */
+
+@media (max-width: 640px) {
+  .hero {
+    padding-block: var(--space-8) var(--space-6);
+  }
+
+  .hero h1 {
+    font-size: clamp(1.8rem, 8vw, 2.6rem);
+    line-height: 1.15;
+  }
+
+  .hero__subtitle {
+    font-size: 15px;
+    max-width: 100%;
+  }
+
+  .hero__badge {
+    font-size: 11px;
+    padding: 6px 12px;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-2);
+  }
+
+  .hero__actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero__stat-card {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .trust-bar {
+    padding-block: var(--space-4);
+  }
+
+  .trust-bar__item {
+    font-size: var(--text-xs);
+    gap: 6px;
+  }
+}
+
+/* Stats section */
+@media (max-width: 640px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-3);
+  }
+
+  .stat-block__number {
+    font-size: clamp(2rem, 8vw, 2.8rem);
+  }
+
+  .stat-block__label {
+    font-size: var(--text-xs);
+  }
+}
+
+/* Testimonials */
+@media (max-width: 640px) {
+  .testimonial-card {
+    padding: var(--space-4) var(--space-3);
+  }
+
+  .testimonial-card__quote {
+    font-size: var(--text-base);
+    padding-left: var(--space-2);
+  }
+}
+
+/* ─────────────────────────────────────────
+   BOOKING FORM
+───────────────────────────────────────── */
+
+/* Stepper */
+@media (max-width: 640px) {
+  .form-progress {
+    padding: 16px 16px 14px;
+    margin-bottom: 24px;
+    border-radius: 12px;
+  }
+
+  .form-progress__num {
+    width: 36px;
+    height: 36px;
+    font-size: 12px;
+  }
+
+  .form-progress__step:not(:last-child)::after {
+    top: 18px;
+    left: calc(50% + 22px);
+    right: calc(-50% + 22px);
+  }
+}
+
+@media (max-width: 480px) {
+  .form-progress__label {
+    font-size: 10px;
+    letter-spacing: 0;
+  }
+
+  .form-progress__num {
+    width: 32px;
+    height: 32px;
+    font-size: 11px;
+  }
+
+  .form-progress__step:not(:last-child)::after {
+    top: 16px;
+    left: calc(50% + 20px);
+    right: calc(-50% + 20px);
+  }
+}
+
+/* Service tiles — 2-col on small mobile */
+@media (max-width: 480px) {
+  .service-tiles {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+}
+
+/* Booking info panel moves below form on mobile */
+@media (max-width: 640px) {
+  .booking-info-panel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-3);
+  }
+
+  .info-panel-card--emergency {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 480px) {
+  .booking-info-panel {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Time slots */
+@media (max-width: 480px) {
+  .time-slots {
+    grid-template-columns: repeat(auto-fill, minmax(72px, 1fr));
+    gap: 6px;
+  }
+
+  .time-slot-label {
+    font-size: 12px;
+    padding: 8px 4px;
+  }
+}
+
+/* Form inputs — 16px prevents iOS zoom-on-focus */
+@media (max-width: 640px) {
+  .form-input,
+  .form-select,
+  .form-textarea {
+    font-size: 16px;
+  }
+
+  .form-step {
+    padding: var(--space-4) var(--space-3);
+    border-radius: 12px;
+  }
+
+  .form-step__title {
+    font-size: 18px;
+  }
+
+  .form-step__actions {
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .form-step__actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Summary rows narrower label */
+  .booking-summary__row {
+    grid-template-columns: 90px 1fr;
+    gap: var(--space-1);
+  }
+}
+
+/* ─────────────────────────────────────────
+   GALLERY
+   (All gallery mobile styles now live in
+   css/pages/gallery.css for maintainability)
+───────────────────────────────────────── */
+
+/* ─────────────────────────────────────────
+   PRICING
+───────────────────────────────────────── */
+
+@media (max-width: 640px) {
+  /* Pricing tabs scroll horizontally */
+  .pricing-tabs {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: 4px;
+    margin-inline: -20px;
+    padding-inline: 20px;
+  }
+
+  .pricing-tabs::-webkit-scrollbar { display: none; }
+
+  .pricing-tab-btn {
+    padding: 8px 14px;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  /* Pricing table horizontal scroll */
+  .pricing-table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-inline: -20px;
+    padding-inline: 20px;
+  }
+
+  .pricing-table {
+    min-width: 500px;
+  }
+
+  /* Plan cards */
+  .plan-cards {
+    gap: var(--space-4);
+  }
+
+  .plan-card {
+    padding: var(--space-5) var(--space-4);
+  }
+
+  .plan-card__amount {
+    font-size: clamp(2rem, 8vw, 2.8rem);
+  }
+}
+
+/* insurance-logos-grid mobile handled in @media (max-width: 640px) above */
+
+/* ─────────────────────────────────────────
+   PATIENT RESOURCES
+───────────────────────────────────────── */
+
+/* Resource tabs */
+@media (max-width: 640px) {
+  .resources-tabs {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: 2px;
+    gap: 4px;
+    margin-inline: -20px;
+    padding-inline: 20px;
+  }
+
+  .resources-tabs::-webkit-scrollbar { display: none; }
+
+  .resources-tab-btn {
+    padding: 8px 14px;
+    font-size: 13px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  /* Aftercare grid — single column */
+  .aftercare-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  .aftercare-card__steps {
+    padding: 16px 20px 4px;
+    padding-left: 36px;
+  }
+
+  .aftercare-card__steps li {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  /* FAQ categories */
+  .faq-category {
+    padding: var(--space-4);
+  }
+
+  /* Education grid — already auto-fit but tighten */
+  .education-grid {
+    gap: var(--space-3);
+  }
+}
+
+@media (max-width: 480px) {
+  .form-download-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2);
+    padding: var(--space-3);
+  }
+
+  .form-download-card__actions {
+    width: 100%;
+  }
+}
+
+/* ─────────────────────────────────────────
+   CONTACT
+───────────────────────────────────────── */
+
+@media (max-width: 640px) {
+  .contact-location-card {
+    padding: var(--space-4);
+  }
+
+  .contact-phone {
+    font-size: var(--text-xl);
+  }
+
+  .contact-side-card {
+    padding: var(--space-4);
+  }
+
+  .social-strip {
+    gap: var(--space-2);
+    flex-wrap: wrap;
+  }
+
+  .social-card {
+    min-width: auto;
+    flex: 1 1 calc(50% - var(--space-2));
+  }
+}
+
+@media (max-width: 480px) {
+  .social-card {
+    flex: 1 1 100%;
+  }
+
+  .response-time-item {
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+  }
+}
+
+/* ─────────────────────────────────────────
+   SERVICES
+───────────────────────────────────────── */
+
+@media (max-width: 640px) {
+  /* Services tabs — horizontal scroll */
+  .services-tabs {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: 4px;
+    margin-inline: -20px;
+    padding-inline: 20px;
+  }
+
+  .services-tabs::-webkit-scrollbar { display: none; }
+
+  .services-tabs__btn {
+    white-space: nowrap;
+    flex-shrink: 0;
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+
+  .service-panel__header {
+    padding: var(--space-5) var(--space-4);
+  }
+
+  .service-panel__header h2 {
+    font-size: clamp(1.4rem, 6vw, 1.8rem);
+  }
+
+  .service-detail__body {
+    padding: var(--space-4) var(--space-3);
+  }
+}
+
+/* ─────────────────────────────────────────
+   ABOUT
+───────────────────────────────────────── */
+
+@media (max-width: 640px) {
+  /* Timeline scrolls horizontally */
+  .timeline--horizontal {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    margin-inline: -20px;
+    padding-inline: 20px;
+    padding-bottom: 8px;
+  }
+
+  .timeline--horizontal::-webkit-scrollbar { display: none; }
+
+  .timeline--horizontal .timeline__item {
+    min-width: 130px;
+    font-size: var(--text-xs);
+  }
+
+  .doctor-profile-card {
+    gap: var(--space-3);
+    padding: var(--space-4);
+  }
+}
+
+/* ─────────────────────────────────────────
+   ACCORDION (global)
+───────────────────────────────────────── */
+
+@media (max-width: 640px) {
+  .accordion {
+    gap: 6px;
+  }
+
+  .accordion-trigger {
+    padding: 16px 16px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .accordion-icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+  }
+
+  .accordion-panel__inner {
+    padding: 4px 16px 18px;
+    font-size: 13.5px;
+  }
+}
+
+/* ─────────────────────────────────────────
+   BUTTONS (global)
+───────────────────────────────────────── */
+
+@media (max-width: 480px) {
+  .btn--lg {
+    padding: 14px 24px;
+    font-size: 15px;
+  }
+}
+
+/* ─────────────────────────────────────────
+   FLOATING BOOK BUTTON
+───────────────────────────────────────── */
+
+@media (max-width: 640px) {
+  /* Convert to full-width sticky bottom bar — no content overlap */
+  .floating-book-btn {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 0;
+    justify-content: center;
+    padding: 14px 20px;
+    padding-bottom: max(14px, env(safe-area-inset-bottom));
+    font-size: 15px;
+    font-weight: 600;
+    gap: 8px;
+    box-shadow: 0 -2px 16px rgba(27, 58, 107, 0.18);
+  }
+
+  .floating-book-btn svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  /* Push all page content above the sticky bar */
+  body {
+    padding-bottom: calc(56px + env(safe-area-inset-bottom));
+  }
+}
+
+/* ─────────────────────────────────────────
+   CARDS & GRIDS (global)
+───────────────────────────────────────── */
+
+@media (max-width: 640px) {
+  /* Insurance logos — compact 2-col grid */
+  .insurance-logos-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .insurance-logo-card {
+    padding: 16px 12px 14px;
+    gap: 10px;
+    border-radius: 14px;
+  }
+
+  .insurance-logo-card__visual {
+    height: 48px;
+    border-radius: 10px;
+    font-size: 12.5px;
+    letter-spacing: -0.02em;
+  }
+
+  .insurance-logo-card__name {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  .insurance-logo-card .badge--teal {
+    font-size: 9px;
+    padding: 3px 9px;
+    letter-spacing: 0.06em;
+  }
+
+  /* Plan cards */
+  .financing-options {
+    gap: var(--space-3);
+  }
+
+  .financing-card {
+    padding: var(--space-4);
+  }
+}
+
+/* ─────────────────────────────────────────
+   MODAL
+───────────────────────────────────────── */
+
+@media (max-width: 640px) {
+  /* Overlay: align top so tall modals aren't clipped above the fold */
+  .modal-overlay {
+    align-items: flex-start;
+    padding: 16px;
+    padding-top: max(16px, env(safe-area-inset-top));
+  }
+
+  /* Modal: flex column so header is always pinned, body scrolls */
+  .modal {
+    margin: 0 auto;
+    width: 100%;
+    max-height: calc(100dvh - 32px);
+    border-radius: 16px;
+    /* Flex column: header shrinks to its own height, body fills rest */
+    display: flex;
+    flex-direction: column;
+    /* Don't let the modal itself scroll — body will scroll instead */
+    overflow: hidden;
+  }
+
+  /* Header: always visible, never scrolls away */
+  .modal__header {
+    flex-shrink: 0;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    padding: 16px 20px 14px;
+    background: var(--color-white);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  /* Body: takes remaining height, scrolls independently */
+  .modal__body {
+    flex: 1;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch; /* smooth momentum scroll on iOS */
+    overscroll-behavior: contain;      /* prevent background scroll bleed */
+    padding: 20px 20px 40px;           /* extra bottom pad so CTA isn't hidden */
+    padding-bottom: max(40px, env(safe-area-inset-bottom));
+  }
+
+  /* Footer: pinned at bottom if present */
+  .modal__footer {
+    flex-shrink: 0;
+    padding: 12px 20px max(16px, env(safe-area-inset-bottom));
+    border-top: 1px solid var(--color-border);
+    background: var(--color-white);
+  }
+}
+
+/* ─────────────────────────────────────────
+   FOOTER
+───────────────────────────────────────── */
+
+@media (max-width: 640px) {
+  .footer__grid {
+    gap: var(--space-6);
+  }
+}

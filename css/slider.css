@@ -1,0 +1,71 @@
+/* =========================================
+   BRIGHTSMILE DENTAL — SLIDER STYLES
+   Testimonial slider component
+   ========================================= */
+
+.slider {
+  position: relative;
+}
+
+.slider__track {
+  position: relative;
+  min-height: 260px;
+}
+
+.slider__slide {
+  display: none;
+  animation: fadeIn 0.4s var(--ease-out) both;
+}
+
+.slider__slide.is-active {
+  display: block;
+}
+
+.slider__controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+}
+
+.slider__dots {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.slider__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: var(--radius-circle);
+  background-color: rgba(27, 58, 107, 0.25);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: background-color var(--transition-base), transform var(--transition-base);
+}
+
+.slider__dot.is-active {
+  background-color: var(--color-teal);
+  transform: scale(1.4);
+}
+
+.slider__dot:focus-visible {
+  outline: 2px solid var(--color-teal);
+  outline-offset: 3px;
+}
+
+.slider__prev,
+.slider__next {
+  color: var(--color-navy);
+  border-color: var(--color-border);
+  background: var(--color-white);
+}
+
+.slider__prev:hover,
+.slider__next:hover {
+  background: var(--color-navy);
+  border-color: var(--color-navy);
+  color: var(--color-white);
+}

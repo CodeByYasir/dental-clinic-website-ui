@@ -1,0 +1,316 @@
+/* =========================================
+   BRIGHTSMILE DENTAL — SERVICES PAGE
+   ========================================= */
+
+/* ── Services Tabs Bar ── */
+.services-tabs {
+  background: var(--color-white);
+  border-bottom: 2px solid var(--color-border);
+  position: sticky;
+  top: var(--nav-height);
+  z-index: var(--z-raised);
+  box-shadow: var(--shadow-xs);
+}
+
+.services-tabs__list {
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--space-3);
+}
+
+.services-tabs__list::-webkit-scrollbar {
+  display: none;
+}
+
+.services-tabs__btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -2px;
+  transition:
+    color var(--transition-fast),
+    border-color var(--transition-fast);
+  border: none;
+  background: none;
+  cursor: pointer;
+  min-height: 56px;
+}
+
+.services-tabs__btn:hover {
+  color: var(--color-teal);
+}
+
+.services-tabs__btn[aria-selected="true"] {
+  color: var(--color-teal);
+  font-weight: var(--weight-semibold);
+  border-bottom-color: var(--color-teal);
+  border-bottom-width: 3px;
+}
+
+.services-tabs__btn:focus-visible {
+  outline: 2px solid var(--color-teal);
+  outline-offset: -2px;
+}
+
+.services-tabs__icon {
+  font-size: 1.1rem;
+}
+
+/* ── Service Panel Layout ── */
+.service-panel {
+  display: none;
+  padding-block: var(--space-8);
+}
+
+.service-panel.is-active {
+  display: block;
+}
+
+.service-panel__layout {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: var(--space-6);
+  align-items: start;
+}
+
+/* ── Service Detail Card ── */
+.service-detail {
+  background: var(--color-white);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--color-border);
+  overflow: hidden;
+}
+
+.service-detail__header {
+  background: linear-gradient(135deg, var(--color-navy), var(--color-navy-light));
+  padding: var(--space-4);
+  color: var(--color-white);
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+}
+
+.service-detail__icon {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-lg);
+  background: rgba(255,255,255,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  flex-shrink: 0;
+}
+
+.service-detail__title {
+  font-family: var(--font-heading);
+  font-size: var(--h3-size);
+  color: var(--color-white);
+  margin-bottom: 6px;
+}
+
+.service-detail__tagline {
+  font-size: var(--text-sm);
+  color: rgba(255,255,255,0.75);
+}
+
+.service-detail__body {
+  padding: var(--space-4);
+}
+
+.service-detail__body p {
+  margin-bottom: var(--space-3);
+}
+
+.service-detail__section-title {
+  font-family: var(--font-heading);
+  font-size: var(--text-xl);
+  color: var(--color-navy);
+  margin-bottom: var(--space-2);
+  margin-top: var(--space-3);
+}
+
+.service-detail__benefits {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-1);
+}
+
+.service-detail__benefit {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
+
+.service-detail__benefit::before {
+  content: '';
+  width: 18px;
+  height: 18px;
+  border-radius: var(--radius-circle);
+  background: var(--color-teal);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+  background-size: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-shrink: 0;
+}
+
+/* Sub-service cards grid */
+.sub-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-3);
+  margin-top: var(--space-5);
+}
+
+.sub-service-card {
+  padding: var(--space-3);
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  transition: border-color var(--transition-base), box-shadow var(--transition-base);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.sub-service-card:hover {
+  border-color: var(--color-teal);
+  box-shadow: var(--shadow-sm);
+}
+
+.sub-service-card__emoji {
+  font-size: 1.5rem;
+}
+
+.sub-service-card__title {
+  font-weight: var(--weight-semibold);
+  color: var(--color-navy);
+  font-size: var(--text-base);
+}
+
+.sub-service-card__desc {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+/* ── Service Sidebar ── */
+.service-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  position: sticky;
+  top: calc(var(--nav-height) + 56px + var(--space-3));
+}
+
+.service-sidebar__card {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-3);
+}
+
+.service-sidebar__title {
+  font-family: var(--font-heading);
+  font-size: var(--text-lg);
+  color: var(--color-navy);
+  margin-bottom: var(--space-2);
+}
+
+.service-sidebar__cta {
+  background: linear-gradient(135deg, var(--color-teal), var(--color-teal-dark));
+  border-radius: var(--radius-xl);
+  padding: var(--space-4);
+  text-align: center;
+  color: white;
+}
+
+.service-sidebar__cta h4 {
+  color: white;
+  margin-bottom: var(--space-1);
+}
+
+.service-sidebar__cta p {
+  color: rgba(255,255,255,0.80);
+  font-size: var(--text-sm);
+  margin-bottom: var(--space-3);
+}
+
+/* ── Technology Grid ── */
+.technology-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-3);
+}
+
+.tech-item {
+  text-align: center;
+  padding: var(--space-4) var(--space-3);
+  background: var(--color-white);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--color-border);
+  transition: box-shadow var(--transition-base), transform var(--transition-base);
+}
+
+@media (hover: hover) {
+  .tech-item:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+  }
+}
+
+.tech-item__icon {
+  font-size: 2.5rem;
+  margin-bottom: var(--space-2);
+}
+
+.tech-item__title {
+  font-weight: var(--weight-semibold);
+  color: var(--color-navy);
+  font-size: var(--text-base);
+  margin-bottom: 6px;
+}
+
+.tech-item__desc {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  line-height: var(--leading-relaxed);
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .service-panel__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .service-sidebar {
+    position: static;
+  }
+
+  .technology-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .service-detail__benefits {
+    grid-template-columns: 1fr;
+  }
+
+  .technology-grid {
+    grid-template-columns: 1fr;
+  }
+}

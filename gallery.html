@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Smile Gallery — BrightSmile Dental</title>
+  <meta name="description" content="See real patient smile transformations at BrightSmile Dental. Browse before &amp; after photos for teeth whitening, veneers, Invisalign, implants, and more." />
+  <meta property="og:title" content="Smile Gallery — BrightSmile Dental" />
+  <meta property="og:description" content="Real patients, real results. Browse our smile transformation gallery." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/modal.css" />
+  <link rel="stylesheet" href="css/pages/gallery.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body data-page="gallery">
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <div id="emergency-banner-container"></div>
+  <div id="nav-container"></div>
+
+  <main id="main-content">
+
+    <!-- ── Page Hero ── -->
+    <section class="page-hero page-hero--compact">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li aria-current="page">Smile Gallery</li>
+          </ol>
+        </nav>
+        <h1 class="page-hero__title reveal">Smile Transformations</h1>
+        <p class="page-hero__subtitle reveal">Real patients. Real results. See the difference expert dental care makes.</p>
+      </div>
+    </section>
+
+    <!-- ── Results Strip ── -->
+    <section class="section section--sm gallery-results-strip">
+      <div class="container">
+        <div class="gallery-stats">
+          <div class="gallery-stat reveal">
+            <span class="gallery-stat__num">500+</span>
+            <span class="gallery-stat__label">Smile Transformations</span>
+          </div>
+          <div class="gallery-stat reveal" style="--reveal-delay:100ms">
+            <span class="gallery-stat__num">15</span>
+            <span class="gallery-stat__label">Treatment Types</span>
+          </div>
+          <div class="gallery-stat reveal" style="--reveal-delay:200ms">
+            <span class="gallery-stat__num">4.9★</span>
+            <span class="gallery-stat__label">Average Patient Rating</span>
+          </div>
+          <div class="gallery-stat reveal" style="--reveal-delay:300ms">
+            <span class="gallery-stat__num">25+</span>
+            <span class="gallery-stat__label">Years of Excellence</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Gallery Section ── -->
+    <section class="section gallery-main">
+      <div class="container container--wide">
+
+        <!-- Filter Bar -->
+        <div class="gallery-filters" role="group" aria-label="Filter gallery by treatment type">
+          <button class="chip chip--filter is-active" data-filter="all" aria-pressed="true">
+            All Cases
+          </button>
+          <button class="chip chip--filter" data-filter="whitening" aria-pressed="false">
+            Whitening
+          </button>
+          <button class="chip chip--filter" data-filter="veneers" aria-pressed="false">
+            Veneers
+          </button>
+          <button class="chip chip--filter" data-filter="implants" aria-pressed="false">
+            Implants
+          </button>
+          <button class="chip chip--filter" data-filter="invisalign" aria-pressed="false">
+            Invisalign
+          </button>
+          <button class="chip chip--filter" data-filter="restoration" aria-pressed="false">
+            Restoration
+          </button>
+          <button class="chip chip--filter" data-filter="bonding" aria-pressed="false">
+            Bonding
+          </button>
+        </div>
+
+        <p class="gallery-count" aria-live="polite" id="gallery-count">Showing <strong>12</strong> cases</p>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid" id="gallery-grid">
+
+          <!-- Case 1 -->
+          <article class="gallery-item reveal" data-category="whitening">
+            <div class="gallery-item__ba" aria-label="Before and after comparison for teeth whitening. Drag the handle to compare." role="img">
+              <div class="gallery-item__before">
+                <div class="gallery-item__photo gallery-item__photo--before" aria-hidden="true">
+                  <div class="gallery-item__mock gallery-item__mock--before">
+                    <div class="gallery-mock-teeth gallery-mock-teeth--before">
+                      <span></span><span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                  </div>
+                  <span class="gallery-item__label">Before</span>
+                </div>
+              </div>
+              <div class="gallery-item__after" style="clip-path: inset(0 0 0 50%)">
+                <div class="gallery-item__photo gallery-item__photo--after" aria-hidden="true">
+                  <div class="gallery-item__mock gallery-item__mock--after">
+                    <div class="gallery-mock-teeth gallery-mock-teeth--after">
+                      <span></span><span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                  </div>
+                  <span class="gallery-item__label">After</span>
+                </div>
+              </div>
+              <div class="gallery-item__divider" aria-hidden="true">
+                <div class="gallery-item__handle">
+                  <svg width="18" height="18"><use href="assets/icons/sprite.svg#chevron-left"/></svg>
+                  <svg width="18" height="18"><use href="assets/icons/sprite.svg#chevron-right"/></svg>
+                </div>
+              </div>
+              <p class="gallery-item__drag-hint" aria-hidden="true">Drag to compare</p>
+            </div>
+            <div class="gallery-item__info">
+              <span class="badge badge--teal">Whitening</span>
+              <h3 class="gallery-item__title">Zoom Whitening — 8 Shades Brighter</h3>
+              <p class="gallery-item__desc">Professional in-office whitening treatment achieved stunning results in a single 90-minute session.</p>
+              <div class="gallery-item__meta">
+                <span>
+                  <svg width="14" height="14" aria-hidden="true"><use href="assets/icons/sprite.svg#users"/></svg>
+                  Sarah M., 34
+                </span>
+                <span>
+                  <svg width="14" height="14" aria-hidden="true"><use href="assets/icons/sprite.svg#clock"/></svg>
+                  1 session
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case 2 -->
+          <article class="gallery-item reveal" data-category="veneers" style="--reveal-delay:80ms">
+            <div class="gallery-item__ba" aria-label="Before and after comparison for porcelain veneers." role="img">
+              <div class="gallery-item__before">
+                <div class="gallery-item__photo gallery-item__photo--before" aria-hidden="true">
+                  <div class="gallery-item__mock gallery-item__mock--before gallery-item__mock--gapped">
+                    <div class="gallery-mock-teeth gallery-mock-teeth--gapped">
+                      <span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                  </div>
+                  <span class="gallery-item__label">Before</span>
+                </div>
+              </div>
+              <div class="gallery-item__after" style="clip-path: inset(0 0 0 50%)">
+                <div class="gallery-item__photo gallery-item__photo--after" aria-hidden="true">
+                  <div class="gallery-item__mock gallery-item__mock--after">
+                    <div class="gallery-mock-teeth gallery-mock-teeth--after gallery-mock-teeth--uniform">
+                      <span></span><span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                  </div>
+                  <span class="gallery-item__label">After</span>
+                </div>
+              </div>
+              <div class="gallery-item__divider" aria-hidden="true">
+                <div class="gallery-item__handle">
+                  <svg width="18" height="18"><use href="assets/icons/sprite.svg#chevron-left"/></svg>
+                  <svg width="18" height="18"><use href="assets/icons/sprite.svg#chevron-right"/></svg>
+                </div>
+              </div>
+              <p class="gallery-item__drag-hint" aria-hidden="true">Drag to compare</p>
+            </div>
+            <div class="gallery-item__info">
+              <span class="badge badge--gold">Veneers</span>
+              <h3 class="gallery-item__title">Porcelain Veneers — Complete Smile Redesign</h3>
+              <p class="gallery-item__desc">8 porcelain veneers corrected gaps, discolouration, and uneven sizing for a Hollywood smile.</p>
+              <div class="gallery-item__meta">
+                <span><svg width="14" height="14" aria-hidden="true"><use href="assets/icons/sprite.svg#users"/></svg> Michael T., 41</span>
+                <span><svg width="14" height="14" aria-hidden="true"><use href="assets/icons/sprite.svg#clock"/></svg> 2 visits</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case 3 -->
+          <article class="gallery-item reveal" data-category="implants" style="--reveal-delay:160ms">
+            <div class="gallery-item__ba" aria-label="Before and after comparison for dental implant." role="img">
+              <div class="gallery-item__before">
+                <div class="gallery-item__photo gallery-item__photo--before" aria-hidden="true">
+                  <div class="gallery-item__mock gallery-item__mock--before gallery-item__mock--missing">
+                    <div class="gallery-mock-teeth gallery-mock-teeth--missing">
+                      <span></span><span class="gap"></span><span></span><span></span><span></span>
+                    </div>
+                  </div>
+                  <span class="gallery-item__label">Before</span>
+                </div>
+              </div>
+              <div class="gallery-item__after" style="clip-path: inset(0 0 0 50%)">
+                <div class="gallery-item__photo gallery-item__photo--after" aria-hidden="true">
+                  <div class="gallery-item__mock gallery-item__mock--after">
+                    <div class="gallery-mock-teeth gallery-mock-teeth--after">
+                      <span></span><span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                  </div>
+                  <span class="gallery-item__label">After</span>
+                </div>
+              </div>
+              <div class="gallery-item__divider" aria-hidden="true">
+                <div class="gallery-item__handle">
+                  <svg width="18" height="18"><use href="assets/icons/sprite.svg#chevron-left"/></svg>
+                  <svg width="18" height="18"><use href="assets/icons/sprite.svg#chevron-right"/></svg>
+                </div>
+              </div>
+              <p class="gallery-item__drag-hint" aria-hidden="true">Drag to compare</p>
+            </div>
+            <div class="gallery-item__info">
+              <span class="badge badge--navy">Implants</span>
+              <h3 class="gallery-item__title">Single Titanium Implant — Missing Tooth Replaced</h3>
+              <p class="gallery-item__desc">Titanium implant with custom ceramic crown restores function and natural aesthetics permanently.</p>
+              <div class="gallery-item__meta">
+                <span><svg width="14" height="14" aria-hidden="true"><use href="assets/icons/sprite.svg#users"/></svg> Jennifer L., 52</span>
+                <span><svg width="14" height="14" aria-hidden="true"><use href="assets/icons/sprite.svg#clock"/></svg> 3 months</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case 4 -->
+          <article class="gallery-item reveal" data-category="invisalign">
+            <div class="gallery-item__ba" aria-label="Before and after comparison for Invisalign treatment." role="img">
+              <div class="gallery-item__before">
+                <div class="gallery-item__photo gallery-item__photo--before" aria-hidden="true">
+                  <div class="gallery-item__mock gallery-item__mock--before gallery-item__mock--crowded">
+                    <div class="gallery-mock-teeth gallery-mock-teeth--crowded">
+                      <span></span><span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                  </div>
+                  <span class="gallery-item__label">Before</span>
+                </div>
+              </div>
+              <div class="gallery-item__after" style="clip-path: inset(0 0 0 50%)">
+                <div class="gallery-item__photo gallery-item__photo--after" aria-hidden="true">
+                  <div class="gallery-item__mock gallery-item__mock--after">
+                    <div class="gallery-mock-teeth gallery-mock-teeth--after">
+                      <span></span><span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                  </div>
+                  <span class="gallery-item__label">After</span>
+                </div>
+              </div>
+              <div class="gallery-item__divider" aria-hidden="true">
+                <div class="gallery-item__handle">
+                  <svg width="18" height="18"><use href="assets/icons/sprite.svg#chevron-left"/></svg>
+                  <svg width="18" height="18"><use href="assets/icons/sprite.svg#chevron-right"/></svg>
+                </div>
+              </div>
+              <p class="gallery-item__drag-hint" aria-hidden="true">Drag to compare</p>
+            </div>
+            <div class="gallery-item__info">
+              <span class="badge badge--teal">Invisalign</span>
+              <h3 class="gallery-item__title">Invisalign — Crowded Teeth Corrected</h3>
+              <p class="gallery-item__desc">18 months of Invisalign aligners straightened severe crowding without a single metal bracket.</p>
+              <div class="gallery-item__meta">
+                <span><svg width="14" height="14" aria-hidden="true"><use href="assets/icons/sprite.svg#users"/></svg> Daniel R., 28</span>
+                <span><svg width="14" height="14" aria-hidden="true"><use href="assets/icons/sprite.svg#clock"/></svg> 18 months</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case 5 -->
+          <article class="gallery-item reveal" data-category="restoration" style="--reveal-delay:80ms">
+            <div class="gallery-item__ba" aria-label="Before and after comparison for full mouth restoration." role="img">
+              <div class="gallery-item__before">
+                <div class="gallery-item__photo gallery-item__photo--before" aria-hidden="true">
+                  <div class="gallery-item__mock gallery-item__mock--before gallery-item__mock--worn">
+                    <div class="gallery-mock-teeth gallery-mock-teeth--worn">
+                      <span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                  </div>
+                  <span class="gallery-item__label">Before</span>
+                </div>
+              </div>
+              <div class="gallery-item__after" style="clip-path: inset(0 0 0 50%)">
+                <div class="gallery-item__photo gallery-item__photo--after" aria-hidden="true">
+                  <div class="gallery-item__mock gallery-item__mock--after">
+                    <div class="gallery-mock-teeth gallery-mock-teeth--after">
+                      <span></span><span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                  </div>
+                  <span class="gallery-item__label">After</span>
+                </div>
+              </div>
+              <div class="gallery-item__divider" aria-hidden="true">
+                <div class="gallery-item__handle">
+                  <svg width="18" height="18"><use href="assets/icons/sprite.svg#chevron-left"/></svg>
+                  <svg width="18" height="18"><use href="assets/icons/sprite.svg#chevron-right"/></svg>
+                </div>
+              </div>
+              <p class="gallery-item__drag-hint" aria-hidden="true">Drag to compare</p>
+            </div>
+            <div class="gallery-item__info">
+              <span class="badge badge--muted">Restoration</span>
+              <h3 class="gallery-item__title">Full Mouth Restoration — Crowns &amp; Bridges</h3>
+              <p class="gallery-item__desc">Comprehensive restoration with 6 crowns and 2 bridges rebuilt a severely worn dentition.</p>
+              <div class="gallery-item__meta">
+                <span><svg width="14" height="14" aria-hidden="true"><use href="assets/icons/sprite.svg#users"/></svg> Patricia W., 61</span>
+                <span><svg width="14" height="14" aria-hidden="true"><use href="assets/icons/sprite.svg#clock"/></svg> 3 visits</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case 6 -->
+          <article class="gallery-item reveal" data-category="bonding" style="--reveal-delay:160ms">
+            <div class="gallery-item__ba" aria-label="Before and after comparison for dental bonding." role="img">
+              <div class="gallery-item__before">
+                <div class="gallery-item__photo gallery-item__photo--before" aria-hidden="true">
+                  <div class="gallery-item__mock gallery-item__mock--before gallery-item__mock--chipped">
+                    <div class="gallery-mock-teeth gallery-mock-teeth--chipped">
+                      <span></span><span class="chipped"></span><span></span><span></span><span></span>
+                    </div>
+                  </div>
+                  <span class="gallery-item__label">Before</span>
+                </div>
+              </div>
+              <div class="gallery-item__after" style="clip-path: inset(0 0 0 50%)">
+                <div class="gallery-item__photo gallery-item__photo--after" aria-hidden="true">
+                  <div class="gallery-item__mock gallery-item__mock--after">
+                    <div class="gallery-mock-teeth gallery-mock-teeth--after">
+                      <span></span><span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                  </div>
+                  <span class="gallery-item__label">After</span>
+                </div>
+              </div>
+              <div class="gallery-item__divider" aria-hidden="true">
+                <div class="gallery-item__handle">
+                  <svg width="18" height="18"><use href="assets/icons/sprite.svg#chevron-left"/></svg>
+                  <svg width="18" height="18"><use href="assets/icons/sprite.svg#chevron-right"/></svg>
+                </div>
+              </div>
+              <p class="gallery-item__drag-hint" aria-hidden="true">Drag to compare</p>
+            </div>
+            <div class="gallery-item__info">
+              <span class="badge badge--gold">Bonding</span>
+              <h3 class="gallery-item__title">Composite Bonding — Chipped Tooth Repaired</h3>
+              <p class="gallery-item__desc">Single-visit bonding perfectly restored a chipped central incisor — indistinguishable from natural.</p>
+              <div class="gallery-item__meta">
+                <span><svg width="14" height="14" aria-hidden="true"><use href="assets/icons/sprite.svg#users"/></svg> Alex K., 23</span>
+                <span><svg width="14" height="14" aria-hidden="true"><use href="assets/icons/sprite.svg#clock"/></svg> 1 visit</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case 7 -->
+          <article class="gallery-item reveal" data-category="whitening">
+            <div class="gallery-item__ba" aria-label="Before and after comparison for take-home whitening." role="img">
+              <div class="gallery-item__before">
+                <div class="gallery-item__photo gallery-item__photo--before" aria-hidden="true">
+                  <div class="gallery-item__mock gallery-item__mock--before">
+                    <div class="gallery-mock-teeth gallery-mock-teeth--before gallery-mock-teeth--stained">
+                      <span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                  </div>
+                  <span class="gallery-item__label">Before</span>
+                </div>
+              </div>
+              <div class="gallery-item__after" style="clip-path: inset(0 0 0 50%)">
+                <div class="gallery-item__photo gallery-item__photo--after" aria-hidden="true">
+                  <div class="gallery-item__mock gallery-item__mock--after">
+                    <div class="gallery-mock-teeth gallery-mock-teeth--after">
+                      <span></span><span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                  </div>
+                  <span class="gallery-item__label">After</span>
+                </div>
+              </div>
+              <div class="gallery-item__divider" aria-hidden="true">
+                <div class="gallery-item__handle">
+                  <svg width="18" height="18"><use href="assets/icons/sprite.svg#chevron-left"/></svg>
+                  <svg width="18" height="18"><use href="assets/icons/sprite.svg#chevron-right"/></svg>
+                </div>
+              </div>
+              <p class="gallery-item__drag-hint" aria-hidden="true">Drag to compare</p>
+            </div>
+            <div class="gallery-item__info">
+              <span class="badge badge--teal">Whitening</span>
+              <h3 class="gallery-item__title">Take-Home Whitening — 6 Shades in 2 Weeks</h3>
+              <p class="gallery-item__desc">Custom-fit trays with professional-grade gel achieved dramatic results comfortably at home.</p>
+              <div class="gallery-item__meta">
+                <span><svg width="14" height="14" aria-hidden="true"><use href="assets/icons/sprite.svg#users"/></svg> Maria G., 38</span>
+                <span><svg width="14" height="14" aria-hidden="true"><use href="assets/icons/sprite.svg#clock"/></svg> 2 weeks</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case 8 -->
+          <article class="gallery-item reveal" data-category="veneers" style="--reveal-delay:80ms">
+            <div class="gallery-item__ba" aria-label="Before and after comparison for 6 porcelain veneers." role="img">
+              <div class="gallery-item__before">
+                <div class="gallery-item__photo gallery-item__photo--before" aria-hidden="true">
+                  <div class="gallery-item__mock gallery-item__mock--before">
+                    <div class="gallery-mock-teeth gallery-mock-teeth--before">
+                      <span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                  </div>
+                  <span class="gallery-item__label">Before</span>
+                </div>
+              </div>
+              <div class="gallery-item__after" style="clip-path: inset(0 0 0 50%)">
+                <div class="gallery-item__photo gallery-item__photo--after" aria-hidden="true">
+                  <div class="gallery-item__mock gallery-item__mock--after gallery-item__mock--bright">
+                    <div class="gallery-mock-teeth gallery-mock-teeth--after">
+                      <span></span><span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                  </div>
+                  <span class="gallery-item__label">After</span>
+                </div>
+              </div>
+              <div class="gallery-item__divider" aria-hidden="true">
+                <div class="gallery-item__handle">
+                  <svg width="18" height="18"><use href="assets/icons/sprite.svg#chevron-left"/></svg>
+                  <svg width="18" height="18"><use href="assets/icons/sprite.svg#chevron-right"/></svg>
+                </div>
+              </div>
+              <p class="gallery-item__drag-hint" aria-hidden="true">Drag to compare</p>
+            </div>
+            <div class="gallery-item__info">
+              <span class="badge badge--gold">Veneers</span>
+              <h3 class="gallery-item__title">6 Veneers — Smile Symmetry Restored</h3>
+              <p class="gallery-item__desc">Ultra-thin porcelain veneers corrected asymmetry and deep staining with minimal tooth reduction.</p>
+              <div class="gallery-item__meta">
+                <span><svg width="14" height="14" aria-hidden="true"><use href="assets/icons/sprite.svg#users"/></svg> Christine B., 45</span>
+                <span><svg width="14" height="14" aria-hidden="true"><use href="assets/icons/sprite.svg#clock"/></svg> 3 visits</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case 9 -->
+          <article class="gallery-item reveal" data-category="implants" style="--reveal-delay:160ms">
+            <div class="gallery-item__ba" aria-label="Before and after comparison for All-on-4 implants." role="img">
+              <div class="gallery-item__before">
+                <div class="gallery-item__photo gallery-item__photo--before" aria-hidden="true">
+                  <div class="gallery-item__mock gallery-item__mock--before gallery-item__mock--missing">
+                    <div class="gallery-mock-teeth gallery-mock-teeth--severe">
+                      <span></span><span class="gap"></span><span></span><span class="gap"></span><span></span>
+                    </div>
+                  </div>
+                  <span class="gallery-item__label">Before</span>
+                </div>
+              </div>
+              <div class="gallery-item__after" style="clip-path: inset(0 0 0 50%)">
+                <div class="gallery-item__photo gallery-item__photo--after" aria-hidden="true">
+                  <div class="gallery-item__mock gallery-item__mock--after">
+                    <div class="gallery-mock-teeth gallery-mock-teeth--after">
+                      <span></span><span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                  </div>
+                  <span class="gallery-item__label">After</span>
+                </div>
+              </div>
+              <div class="gallery-item__divider" aria-hidden="true">
+                <div class="gallery-item__handle">
+                  <svg width="18" height="18"><use href="assets/icons/sprite.svg#chevron-left"/></svg>
+                  <svg width="18" height="18"><use href="assets/icons/sprite.svg#chevron-right"/></svg>
+                </div>
+              </div>
+              <p class="gallery-item__drag-hint" aria-hidden="true">Drag to compare</p>
+            </div>
+            <div class="gallery-item__info">
+              <span class="badge badge--navy">Implants</span>
+              <h3 class="gallery-item__title">All-on-4 — Full Arch Replacement</h3>
+              <p class="gallery-item__desc">Full arch of permanent teeth supported by just 4 implants. Life-changing results in a single day.</p>
+              <div class="gallery-item__meta">
+                <span><svg width="14" height="14" aria-hidden="true"><use href="assets/icons/sprite.svg#users"/></svg> Robert M., 64</span>
+                <span><svg width="14" height="14" aria-hidden="true"><use href="assets/icons/sprite.svg#clock"/></svg> 1 day + healing</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case 10 -->
+          <article class="gallery-item reveal" data-category="invisalign">
+            <div class="gallery-item__ba" aria-label="Before and after comparison for adult Invisalign." role="img">
+              <div class="gallery-item__before">
+                <div class="gallery-item__photo gallery-item__photo--before" aria-hidden="true">
+                  <div class="gallery-item__mock gallery-item__mock--before gallery-item__mock--gapped">
+                    <div class="gallery-mock-teeth gallery-mock-teeth--spaced">
+                      <span></span><span class="sm-gap"></span><span></span><span class="sm-gap"></span><span></span>
+                    </div>
+                  </div>
+                  <span class="gallery-item__label">Before</span>
+                </div>
+              </div>
+              <div class="gallery-item__after" style="clip-path: inset(0 0 0 50%)">
+                <div class="gallery-item__photo gallery-item__photo--after" aria-hidden="true">
+                  <div class="gallery-item__mock gallery-item__mock--after">
+                    <div class="gallery-mock-teeth gallery-mock-teeth--after">
+                      <span></span><span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                  </div>
+                  <span class="gallery-item__label">After</span>
+                </div>
+              </div>
+              <div class="gallery-item__divider" aria-hidden="true">
+                <div class="gallery-item__handle">
+                  <svg width="18" height="18"><use href="assets/icons/sprite.svg#chevron-left"/></svg>
+                  <svg width="18" height="18"><use href="assets/icons/sprite.svg#chevron-right"/></svg>
+                </div>
+              </div>
+              <p class="gallery-item__drag-hint" aria-hidden="true">Drag to compare</p>
+            </div>
+            <div class="gallery-item__info">
+              <span class="badge badge--teal">Invisalign</span>
+              <h3 class="gallery-item__title">Invisalign — Gapped Smile Closed</h3>
+              <p class="gallery-item__desc">12 months of clear aligners gently closed a prominent gap between front teeth with no extractions.</p>
+              <div class="gallery-item__meta">
+                <span><svg width="14" height="14" aria-hidden="true"><use href="assets/icons/sprite.svg#users"/></svg> Olivia P., 31</span>
+                <span><svg width="14" height="14" aria-hidden="true"><use href="assets/icons/sprite.svg#clock"/></svg> 12 months</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case 11 -->
+          <article class="gallery-item reveal" data-category="restoration" style="--reveal-delay:80ms">
+            <div class="gallery-item__ba" aria-label="Before and after comparison for CEREC same-day crown." role="img">
+              <div class="gallery-item__before">
+                <div class="gallery-item__photo gallery-item__photo--before" aria-hidden="true">
+                  <div class="gallery-item__mock gallery-item__mock--before gallery-item__mock--worn">
+                    <div class="gallery-mock-teeth gallery-mock-teeth--worn">
+                      <span></span><span class="cracked"></span><span></span><span></span><span></span>
+                    </div>
+                  </div>
+                  <span class="gallery-item__label">Before</span>
+                </div>
+              </div>
+              <div class="gallery-item__after" style="clip-path: inset(0 0 0 50%)">
+                <div class="gallery-item__photo gallery-item__photo--after" aria-hidden="true">
+                  <div class="gallery-item__mock gallery-item__mock--after">
+                    <div class="gallery-mock-teeth gallery-mock-teeth--after">
+                      <span></span><span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                  </div>
+                  <span class="gallery-item__label">After</span>
+                </div>
+              </div>
+              <div class="gallery-item__divider" aria-hidden="true">
+                <div class="gallery-item__handle">
+                  <svg width="18" height="18"><use href="assets/icons/sprite.svg#chevron-left"/></svg>
+                  <svg width="18" height="18"><use href="assets/icons/sprite.svg#chevron-right"/></svg>
+                </div>
+              </div>
+              <p class="gallery-item__drag-hint" aria-hidden="true">Drag to compare</p>
+            </div>
+            <div class="gallery-item__info">
+              <span class="badge badge--muted">Restoration</span>
+              <h3 class="gallery-item__title">CEREC Same-Day Crown — In Just One Visit</h3>
+              <p class="gallery-item__desc">Digital impressions and in-office milling produced a perfect ceramic crown — no temporaries, no return visits.</p>
+              <div class="gallery-item__meta">
+                <span><svg width="14" height="14" aria-hidden="true"><use href="assets/icons/sprite.svg#users"/></svg> Thomas H., 49</span>
+                <span><svg width="14" height="14" aria-hidden="true"><use href="assets/icons/sprite.svg#clock"/></svg> 1 visit</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case 12 -->
+          <article class="gallery-item reveal" data-category="bonding" style="--reveal-delay:160ms">
+            <div class="gallery-item__ba" aria-label="Before and after comparison for smile makeover with bonding." role="img">
+              <div class="gallery-item__before">
+                <div class="gallery-item__photo gallery-item__photo--before" aria-hidden="true">
+                  <div class="gallery-item__mock gallery-item__mock--before gallery-item__mock--gapped">
+                    <div class="gallery-mock-teeth gallery-mock-teeth--before">
+                      <span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                  </div>
+                  <span class="gallery-item__label">Before</span>
+                </div>
+              </div>
+              <div class="gallery-item__after" style="clip-path: inset(0 0 0 50%)">
+                <div class="gallery-item__photo gallery-item__photo--after" aria-hidden="true">
+                  <div class="gallery-item__mock gallery-item__mock--after">
+                    <div class="gallery-mock-teeth gallery-mock-teeth--after">
+                      <span></span><span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                  </div>
+                  <span class="gallery-item__label">After</span>
+                </div>
+              </div>
+              <div class="gallery-item__divider" aria-hidden="true">
+                <div class="gallery-item__handle">
+                  <svg width="18" height="18"><use href="assets/icons/sprite.svg#chevron-left"/></svg>
+                  <svg width="18" height="18"><use href="assets/icons/sprite.svg#chevron-right"/></svg>
+                </div>
+              </div>
+              <p class="gallery-item__drag-hint" aria-hidden="true">Drag to compare</p>
+            </div>
+            <div class="gallery-item__info">
+              <span class="badge badge--gold">Bonding</span>
+              <h3 class="gallery-item__title">Multi-Tooth Bonding — Budget-Friendly Makeover</h3>
+              <p class="gallery-item__desc">5 teeth bonded in a single afternoon transformed a self-conscious smile — fraction of the cost of veneers.</p>
+              <div class="gallery-item__meta">
+                <span><svg width="14" height="14" aria-hidden="true"><use href="assets/icons/sprite.svg#users"/></svg> Kevin J., 26</span>
+                <span><svg width="14" height="14" aria-hidden="true"><use href="assets/icons/sprite.svg#clock"/></svg> 1 visit</span>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- /gallery-grid -->
+      </div>
+    </section>
+
+    <!-- ── Patient Spotlight ── -->
+    <section class="section section--alt patient-spotlight">
+      <div class="container">
+        <div class="section-header section-header--center reveal">
+          <span class="section-header__eyebrow">Patient Story</span>
+          <h2 class="section-header__title">A Transformation 10 Years in the Making</h2>
+        </div>
+        <div class="spotlight-grid reveal">
+          <div class="spotlight-grid__visual">
+            <div class="spotlight-ba-large">
+              <div class="spotlight-ba-large__card spotlight-ba-large__card--before">
+                <div class="spotlight-ba-large__img" aria-hidden="true">
+                  <div class="spotlight-mock spotlight-mock--before">
+                    <div class="gallery-mock-teeth gallery-mock-teeth--before gallery-mock-teeth--large">
+                      <span></span><span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                  </div>
+                </div>
+                <span class="spotlight-ba-large__tag">Before</span>
+              </div>
+              <div class="spotlight-ba-large__arrow" aria-hidden="true">→</div>
+              <div class="spotlight-ba-large__card spotlight-ba-large__card--after">
+                <div class="spotlight-ba-large__img" aria-hidden="true">
+                  <div class="spotlight-mock spotlight-mock--after">
+                    <div class="gallery-mock-teeth gallery-mock-teeth--after gallery-mock-teeth--large">
+                      <span></span><span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                  </div>
+                </div>
+                <span class="spotlight-ba-large__tag spotlight-ba-large__tag--after">After</span>
+              </div>
+            </div>
+          </div>
+          <div class="spotlight-grid__content">
+            <blockquote class="spotlight-quote">
+              <p>"I avoided smiling in photos for 10 years because I was so embarrassed. After my smile makeover at BrightSmile, I can't stop smiling. Dr. Chen was so patient and explained every step. I genuinely wish I'd done this sooner."</p>
+              <footer>
+                <strong>Amanda S., 44</strong>
+                <span>Full Smile Makeover — Veneers + Whitening + Contouring</span>
+                <div class="spotlight-rating" aria-label="5 stars">
+                  <svg width="16" height="16" aria-hidden="true"><use href="assets/icons/sprite.svg#star"/></svg>
+                  <svg width="16" height="16" aria-hidden="true"><use href="assets/icons/sprite.svg#star"/></svg>
+                  <svg width="16" height="16" aria-hidden="true"><use href="assets/icons/sprite.svg#star"/></svg>
+                  <svg width="16" height="16" aria-hidden="true"><use href="assets/icons/sprite.svg#star"/></svg>
+                  <svg width="16" height="16" aria-hidden="true"><use href="assets/icons/sprite.svg#star"/></svg>
+                </div>
+              </footer>
+            </blockquote>
+            <div class="spotlight-treatments">
+              <p class="spotlight-treatments__label">Treatments performed:</p>
+              <ul class="check-list">
+                <li>8 porcelain veneers (upper arch)</li>
+                <li>Zoom in-office whitening (lower arch)</li>
+                <li>Gum contouring for even gumline</li>
+                <li>Dental bonding on 2 lower teeth</li>
+              </ul>
+            </div>
+            <a href="booking.html" class="btn btn--primary btn--lg">Start Your Transformation</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Disclaimer + CTA ── -->
+    <section class="section gallery-disclaimer-section">
+      <div class="container">
+        <p class="gallery-disclaimer reveal">
+          <strong>Disclaimer:</strong> Results shown are actual patient outcomes from BrightSmile Dental. Individual results may vary based on the patient's dental condition, treatment plan, and oral hygiene habits. All patients have provided consent for photos to be used for educational and marketing purposes. Before and after comparisons are representative of typical outcomes.
+        </p>
+      </div>
+    </section>
+
+    <!-- ── CTA Strip ── -->
+    <section class="cta-strip cta-strip--teal">
+      <div class="container">
+        <div class="cta-strip__content reveal">
+          <h2 class="cta-strip__title">Ready to Transform Your Smile?</h2>
+          <p class="cta-strip__sub">Schedule a free smile consultation and let us show you what's possible.</p>
+        </div>
+        <div class="cta-strip__actions reveal">
+          <a href="booking.html" class="btn btn--white btn--lg">Book a Free Consultation</a>
+          <a href="services.html" class="btn btn--outline-white btn--lg">Explore Treatments</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="footer-container"></div>
+
+  <a href="booking.html" class="floating-book-btn" aria-label="Book appointment">
+    <svg width="20" height="20" aria-hidden="true"><use href="assets/icons/sprite.svg#calendar"/></svg>
+    Book Now
+  </a>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

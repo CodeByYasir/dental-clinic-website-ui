@@ -1,0 +1,242 @@
+/* =========================================
+   BRIGHTSMILE DENTAL — MODAL
+   Overlay + modal dialog
+   ========================================= */
+
+/* ── Emergency Banner ── */
+.emergency-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--banner-height);
+  background-color: #DC2626;
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: var(--z-banner);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  gap: var(--space-2);
+  padding-inline: var(--space-3);
+}
+
+.emergency-banner.is-hidden {
+  display: none;
+}
+
+.emergency-banner__text {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  flex-wrap: wrap;
+}
+
+.emergency-banner__phone {
+  font-weight: var(--weight-bold);
+  color: var(--color-white);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.emergency-banner__phone:hover {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.emergency-banner__close {
+  position: absolute;
+  right: var(--space-3);
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-circle);
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  color: var(--color-white);
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+}
+
+.emergency-banner__close:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.emergency-banner__close:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.80);
+  outline-offset: 2px;
+}
+
+/* ── Modal Overlay ── */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(10, 18, 36, 0.60);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: var(--z-modal);
+  padding: var(--space-3);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--duration-base) var(--ease-default);
+}
+
+.modal-overlay.is-open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* ── Modal Dialog ── */
+.modal {
+  background-color: var(--color-white);
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-2xl);
+  width: 100%;
+  max-width: 560px;
+  max-height: 90vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transform: scale(0.94) translateY(8px);
+  transition:
+    transform var(--duration-base) var(--ease-spring),
+    opacity var(--duration-base) var(--ease-default);
+  opacity: 0;
+}
+
+.modal-overlay.is-open .modal {
+  transform: scale(1) translateY(0);
+  opacity: 1;
+}
+
+.modal--sm { max-width: 420px; }
+.modal--lg { max-width: 720px; }
+
+.modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-4) var(--space-4) var(--space-3);
+  border-bottom: 1px solid var(--color-border);
+  position: sticky;
+  top: 0;
+  background: var(--color-white);
+  z-index: 1;
+}
+
+.modal__title {
+  font-family: var(--font-heading);
+  font-size: var(--h4-size);
+  color: var(--color-navy);
+}
+
+.modal__close {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-circle);
+  border: none;
+  background-color: var(--color-light-gray);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    background-color var(--transition-fast),
+    color var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.modal__close:hover {
+  background-color: var(--color-soft-blue);
+  color: var(--color-navy);
+}
+
+.modal__close:focus-visible {
+  outline: 2px solid var(--color-teal);
+  outline-offset: 2px;
+}
+
+.modal__body {
+  padding: var(--space-4);
+  overflow-y: auto;
+  flex: 1;
+}
+
+.modal__footer {
+  padding: var(--space-3) var(--space-4) var(--space-4);
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  gap: var(--space-2);
+  justify-content: flex-end;
+}
+
+/* ── Lightbox variant ── */
+.modal--lightbox {
+  max-width: 900px;
+  background-color: var(--color-navy-dark);
+  border-radius: var(--radius-xl);
+}
+
+.modal--lightbox .modal__header {
+  background-color: var(--color-navy-dark);
+  border-bottom-color: rgba(255, 255, 255, 0.10);
+}
+
+.modal--lightbox .modal__title {
+  color: var(--color-white);
+}
+
+.modal--lightbox .modal__close {
+  background-color: rgba(255, 255, 255, 0.10);
+  color: var(--color-white);
+}
+
+.modal--lightbox .modal__close:hover {
+  background-color: rgba(255, 255, 255, 0.20);
+}
+
+.modal--lightbox .modal__body {
+  padding: 0;
+}
+
+/* ── Toast Notification ── */
+.toast {
+  position: fixed;
+  bottom: var(--space-4);
+  left: 50%;
+  transform: translateX(-50%) translateY(100px);
+  background-color: var(--color-navy);
+  color: var(--color-white);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-xl);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  z-index: var(--z-toast);
+  opacity: 0;
+  transition:
+    transform var(--duration-base) var(--ease-spring),
+    opacity var(--duration-base) var(--ease-default);
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.toast.is-visible {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
+
+.toast--success {
+  background-color: var(--color-success);
+}
+
+.toast--error {
+  background-color: var(--color-error);
+}

@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Patient Resources — BrightSmile Dental</title>
+  <meta name="description" content="Access patient forms, FAQs, aftercare instructions, and dental education resources at BrightSmile Dental." />
+  <meta property="og:title" content="Patient Resources — BrightSmile Dental" />
+  <meta property="og:description" content="Forms, FAQs, aftercare guides, and dental education — everything you need as a BrightSmile patient." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/modal.css" />
+  <link rel="stylesheet" href="css/pages/resources.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body data-page="resources">
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <div id="emergency-banner-container"></div>
+  <div id="nav-container"></div>
+
+  <main id="main-content">
+
+    <!-- ── Page Hero ── -->
+    <section class="page-hero page-hero--compact">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li aria-current="page">Patient Resources</li>
+          </ol>
+        </nav>
+        <h1 class="page-hero__title reveal">Patient Resources</h1>
+        <p class="page-hero__subtitle reveal">Everything you need before, during, and after your visit — all in one place.</p>
+      </div>
+    </section>
+
+    <!-- ── Resources Tabs ── -->
+    <section class="section resources-section">
+      <div class="container container--wide">
+
+        <!-- Tab Nav -->
+        <div class="resources-tabs-nav" role="tablist" aria-label="Patient resource categories">
+          <button class="resources-tab-btn is-active" role="tab" aria-selected="true" aria-controls="tab-faqs" id="rtab-faqs" data-tab="tab-faqs">
+            <svg width="18" height="18" aria-hidden="true"><use href="assets/icons/sprite.svg#help-circle"/></svg>
+            FAQs
+          </button>
+          <button class="resources-tab-btn" role="tab" aria-selected="false" aria-controls="tab-forms" id="rtab-forms" data-tab="tab-forms" tabindex="-1">
+            <svg width="18" height="18" aria-hidden="true"><use href="assets/icons/sprite.svg#download"/></svg>
+            Patient Forms
+          </button>
+          <button class="resources-tab-btn" role="tab" aria-selected="false" aria-controls="tab-aftercare" id="rtab-aftercare" data-tab="tab-aftercare" tabindex="-1">
+            <svg width="18" height="18" aria-hidden="true"><use href="assets/icons/sprite.svg#heart"/></svg>
+            Aftercare
+          </button>
+          <button class="resources-tab-btn" role="tab" aria-selected="false" aria-controls="tab-education" id="rtab-education" data-tab="tab-education" tabindex="-1">
+            <svg width="18" height="18" aria-hidden="true"><use href="assets/icons/sprite.svg#activity"/></svg>
+            Dental Education
+          </button>
+        </div>
+
+        <!-- ────── FAQs Tab ────── -->
+        <div class="resources-panel is-active" id="tab-faqs" role="tabpanel" aria-labelledby="rtab-faqs">
+          <div class="resources-panel__intro">
+            <h2>Frequently Asked Questions</h2>
+            <p>Can't find your answer? Call us at <a href="tel:+15551234567" class="link">(555) 123-4567</a> or <a href="contact.html" class="link">send us a message</a>.</p>
+          </div>
+
+          <div class="accordion" id="faq-accordion">
+
+            <!-- General -->
+            <div class="faq-category">
+              <h3 class="faq-category__title">
+                <svg width="18" height="18" aria-hidden="true"><use href="assets/icons/sprite.svg#tooth"/></svg>
+                General Dentistry
+              </h3>
+              <div class="accordion-item">
+                <h4>
+                  <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-g1" id="faq-g1-btn">
+                    How often should I visit the dentist?
+                    <svg class="accordion-icon" width="18" height="18" aria-hidden="true"><use href="assets/icons/sprite.svg#chevron-down"/></svg>
+                  </button>
+                </h4>
+                <div id="faq-g1" class="accordion-panel" role="region" aria-labelledby="faq-g1-btn" style="max-height:0;overflow:hidden">
+                  <div class="accordion-panel__body">
+                    <p>Most adults benefit from dental exams and cleanings every 6 months. Patients with a history of gum disease, cavities, or other risk factors may need more frequent visits — typically every 3–4 months. Dr. Chen or your treating dentist will recommend the right schedule for your specific needs.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h4>
+                  <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-g2" id="faq-g2-btn">
+                    What happens at a routine exam?
+                    <svg class="accordion-icon" width="18" height="18" aria-hidden="true"><use href="assets/icons/sprite.svg#chevron-down"/></svg>
+                  </button>
+                </h4>
+                <div id="faq-g2" class="accordion-panel" role="region" aria-labelledby="faq-g2-btn" style="max-height:0;overflow:hidden">
+                  <div class="accordion-panel__body">
+                    <p>A routine exam includes a thorough visual inspection of your teeth, gums, and oral tissues, X-rays (typically every 12–24 months), an oral cancer screening, gum health assessment (pocket depth measurements), and a professional cleaning. You'll receive a personalised report and recommendations at the end of your visit.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h4>
+                  <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-g3" id="faq-g3-btn">
+                    Are dental X-rays safe?
+                    <svg class="accordion-icon" width="18" height="18" aria-hidden="true"><use href="assets/icons/sprite.svg#chevron-down"/></svg>
+                  </button>
+                </h4>
+                <div id="faq-g3" class="accordion-panel" role="region" aria-labelledby="faq-g3-btn" style="max-height:0;overflow:hidden">
+                  <div class="accordion-panel__body">
+                    <p>Yes. Modern digital X-rays use up to 80% less radiation than traditional film X-rays. The amount of radiation from a full set of dental X-rays is less than you'd receive on a short flight. We use lead aprons and thyroid collars as standard practice, and we take X-rays only when clinically necessary.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h4>
+                  <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-g4" id="faq-g4-btn">
+                    What if I haven't been to the dentist in years?
+                    <svg class="accordion-icon" width="18" height="18" aria-hidden="true"><use href="assets/icons/sprite.svg#chevron-down"/></svg>
+                  </button>
+                </h4>
+                <div id="faq-g4" class="accordion-panel" role="region" aria-labelledby="faq-g4-btn" style="max-height:0;overflow:hidden">
+                  <div class="accordion-panel__body">
+                    <p>We see this often and we never judge. Our team will conduct a thorough assessment, catch up on any needed care, and create a manageable treatment plan at your pace. We prioritise what's most urgent first and will explain everything clearly before proceeding with any treatment.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Insurance -->
+            <div class="faq-category">
+              <h3 class="faq-category__title">
+                <svg width="18" height="18" aria-hidden="true"><use href="assets/icons/sprite.svg#shield"/></svg>
+                Insurance &amp; Billing
+              </h3>
+              <div class="accordion-item">
+                <h4>
+                  <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-i1" id="faq-i1-btn">
+                    Do you accept my insurance?
+                    <svg class="accordion-icon" width="18" height="18" aria-hidden="true"><use href="assets/icons/sprite.svg#chevron-down"/></svg>
+                  </button>
+                </h4>
+                <div id="faq-i1" class="accordion-panel" role="region" aria-labelledby="faq-i1-btn" style="max-height:0;overflow:hidden">
+                  <div class="accordion-panel__body">
+                    <p>We are in-network with Aetna, Cigna, Delta Dental, MetLife, United Healthcare, Guardian, Humana, and Blue Cross Blue Shield. We also work with hundreds of other plans as an out-of-network provider. Call us to verify your specific plan.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h4>
+                  <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-i2" id="faq-i2-btn">
+                    How do I find out what my insurance covers?
+                    <svg class="accordion-icon" width="18" height="18" aria-hidden="true"><use href="assets/icons/sprite.svg#chevron-down"/></svg>
+                  </button>
+                </h4>
+                <div id="faq-i2" class="accordion-panel" role="region" aria-labelledby="faq-i2-btn" style="max-height:0;overflow:hidden">
+                  <div class="accordion-panel__body">
+                    <p>You can call the member services number on the back of your insurance card, or let us do it for you. Our billing team contacts your insurer before your first visit and provides you with a pre-treatment estimate outlining your expected costs. Use our <a href="pricing.html#insurance" class="link">insurance verification form</a> to get started.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h4>
+                  <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-i3" id="faq-i3-btn">
+                    What if I have no insurance?
+                    <svg class="accordion-icon" width="18" height="18" aria-hidden="true"><use href="assets/icons/sprite.svg#chevron-down"/></svg>
+                  </button>
+                </h4>
+                <div id="faq-i3" class="accordion-panel" role="region" aria-labelledby="faq-i3-btn" style="max-height:0;overflow:hidden">
+                  <div class="accordion-panel__body">
+                    <p>No insurance? No problem. Our <a href="pricing.html#membership" class="link">BrightSmile Membership Plans</a> start at just $29/month and cover your annual exams, cleanings, and X-rays. We also offer CareCredit financing and in-house payment plans. Everyone deserves a healthy smile.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Treatments -->
+            <div class="faq-category">
+              <h3 class="faq-category__title">
+                <svg width="18" height="18" aria-hidden="true"><use href="assets/icons/sprite.svg#sparkle"/></svg>
+                Treatments &amp; Procedures
+              </h3>
+              <div class="accordion-item">
+                <h4>
+                  <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-t1" id="faq-t1-btn">
+                    Does getting a filling hurt?
+                    <svg class="accordion-icon" width="18" height="18" aria-hidden="true"><use href="assets/icons/sprite.svg#chevron-down"/></svg>
+                  </button>
+                </h4>
+                <div id="faq-t1" class="accordion-panel" role="region" aria-labelledby="faq-t1-btn" style="max-height:0;overflow:hidden">
+                  <div class="accordion-panel__body">
+                    <p>Modern fillings are performed under local anaesthetic so you won't feel pain during the procedure. You may feel mild pressure. Afterward, some sensitivity is normal for 1–2 days. We also offer nitrous oxide (laughing gas) for patients with dental anxiety.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h4>
+                  <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-t2" id="faq-t2-btn">
+                    How long does teeth whitening last?
+                    <svg class="accordion-icon" width="18" height="18" aria-hidden="true"><use href="assets/icons/sprite.svg#chevron-down"/></svg>
+                  </button>
+                </h4>
+                <div id="faq-t2" class="accordion-panel" role="region" aria-labelledby="faq-t2-btn" style="max-height:0;overflow:hidden">
+                  <div class="accordion-panel__body">
+                    <p>Professional whitening results typically last 1–3 years depending on your diet and lifestyle. Coffee, tea, red wine, and tobacco speed up re-staining. Touch-up treatments every 6–12 months can maintain your results. Take-home whitening trays make touch-ups easy and affordable.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h4>
+                  <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-t3" id="faq-t3-btn">
+                    Is Invisalign as effective as braces?
+                    <svg class="accordion-icon" width="18" height="18" aria-hidden="true"><use href="assets/icons/sprite.svg#chevron-down"/></svg>
+                  </button>
+                </h4>
+                <div id="faq-t3" class="accordion-panel" role="region" aria-labelledby="faq-t3-btn" style="max-height:0;overflow:hidden">
+                  <div class="accordion-panel__body">
+                    <p>For mild to moderate cases, Invisalign is equally effective as traditional braces and often faster. Complex bite corrections, severe rotations, or vertical tooth movement may still require traditional braces. Dr. Patel will evaluate your case and recommend the best option at your complimentary orthodontic consultation.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pediatric -->
+            <div class="faq-category">
+              <h3 class="faq-category__title">
+                <svg width="18" height="18" aria-hidden="true"><use href="assets/icons/sprite.svg#child"/></svg>
+                Children's Dentistry
+              </h3>
+              <div class="accordion-item">
+                <h4>
+                  <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-p1" id="faq-p1-btn">
+                    When should my child first see a dentist?
+                    <svg class="accordion-icon" width="18" height="18" aria-hidden="true"><use href="assets/icons/sprite.svg#chevron-down"/></svg>
+                  </button>
+                </h4>
+                <div id="faq-p1" class="accordion-panel" role="region" aria-labelledby="faq-p1-btn" style="max-height:0;overflow:hidden">
+                  <div class="accordion-panel__body">
+                    <p>The American Dental Association recommends a first dental visit by age 1, or within 6 months of the first tooth appearing. Early visits help identify development issues, establish good oral hygiene habits, and get children comfortable with the dental setting. First visits at BrightSmile are always complimentary.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h4>
+                  <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-p2" id="faq-p2-btn">
+                    How do I prepare my anxious child for a dental visit?
+                    <svg class="accordion-icon" width="18" height="18" aria-hidden="true"><use href="assets/icons/sprite.svg#chevron-down"/></svg>
+                  </button>
+                </h4>
+                <div id="faq-p2" class="accordion-panel" role="region" aria-labelledby="faq-p2-btn" style="max-height:0;overflow:hidden">
+                  <div class="accordion-panel__body">
+                    <p>Talk about the visit positively and avoid using words like "hurt," "shot," or "drill." Read books about dental visits, play pretend dentist at home, and let them bring a favourite toy. Dr. Okonkwo is specially trained in paediatric behaviour guidance and will go at your child's pace — tours of the equipment, tell-show-do, and lots of encouragement are part of every visit.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Emergency -->
+            <div class="faq-category">
+              <h3 class="faq-category__title">
+                <svg width="18" height="18" aria-hidden="true"><use href="assets/icons/sprite.svg#alert"/></svg>
+                Dental Emergencies
+              </h3>
+              <div class="accordion-item">
+                <h4>
+                  <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-e1" id="faq-e1-btn">
+                    What counts as a dental emergency?
+                    <svg class="accordion-icon" width="18" height="18" aria-hidden="true"><use href="assets/icons/sprite.svg#chevron-down"/></svg>
+                  </button>
+                </h4>
+                <div id="faq-e1" class="accordion-panel" role="region" aria-labelledby="faq-e1-btn" style="max-height:0;overflow:hidden">
+                  <div class="accordion-panel__body">
+                    <p>Dental emergencies include: severe toothache, knocked-out tooth, cracked or broken tooth, lost crown or filling, dental abscess (swelling with fever or pus), soft tissue injuries, and jaw injuries. If in doubt, call us — we'd rather hear from you and determine it's not urgent than have you suffer needlessly.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h4>
+                  <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-e2" id="faq-e2-btn">
+                    What should I do if a tooth gets knocked out?
+                    <svg class="accordion-icon" width="18" height="18" aria-hidden="true"><use href="assets/icons/sprite.svg#chevron-down"/></svg>
+                  </button>
+                </h4>
+                <div id="faq-e2" class="accordion-panel" role="region" aria-labelledby="faq-e2-btn" style="max-height:0;overflow:hidden">
+                  <div class="accordion-panel__body">
+                    <ol style="padding-left:var(--space-4);margin:0">
+                      <li style="margin-bottom:var(--space-2)">Pick up the tooth by the crown (white part), never the root</li>
+                      <li style="margin-bottom:var(--space-2)">Rinse gently with water — do not scrub</li>
+                      <li style="margin-bottom:var(--space-2)">Try to re-insert into the socket if possible, or store in milk or between cheek and gum</li>
+                      <li style="margin-bottom:var(--space-2)">Call us immediately at <a href="tel:+15559119111" class="link">(555) 911-9111</a></li>
+                      <li>Time is critical — best results within 30 minutes of injury</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h4>
+                  <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-e3" id="faq-e3-btn">
+                    How quickly can I get a same-day emergency appointment?
+                    <svg class="accordion-icon" width="18" height="18" aria-hidden="true"><use href="assets/icons/sprite.svg#chevron-down"/></svg>
+                  </button>
+                </h4>
+                <div id="faq-e3" class="accordion-panel" role="region" aria-labelledby="faq-e3-btn" style="max-height:0;overflow:hidden">
+                  <div class="accordion-panel__body">
+                    <p>We reserve emergency slots every day for urgent care. Call our emergency line at <a href="tel:+15559119111" class="link">(555) 911-9111</a> and we aim to see you within hours, not days. If you call before 9 AM, we can often accommodate you the same morning.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- /accordion -->
+        </div>
+
+        <!-- ────── Forms Tab ────── -->
+        <div class="resources-panel" id="tab-forms" role="tabpanel" aria-labelledby="rtab-forms" hidden>
+          <div class="resources-panel__intro">
+            <h2>Patient Forms</h2>
+            <p>Download and complete your forms before your visit to save time. Bring printed copies or email them to <a href="mailto:forms@brightsmile.com" class="link">forms@brightsmile.com</a>.</p>
+          </div>
+
+          <div class="forms-grid">
+            <div class="form-download-card">
+              <div class="form-download-card__icon" aria-hidden="true">
+                <svg width="28" height="28"><use href="assets/icons/sprite.svg#download"/></svg>
+              </div>
+              <div class="form-download-card__content">
+                <h3 class="form-download-card__title">New Patient Registration</h3>
+                <p class="form-download-card__desc">Complete prior to your first visit. Includes personal information, medical history summary, and insurance details.</p>
+                <p class="form-download-card__meta">PDF · 2 pages · Required for new patients</p>
+              </div>
+              <a href="#" class="btn btn--outline btn--sm" aria-label="Download New Patient Registration form">
+                <svg width="14" height="14" aria-hidden="true"><use href="assets/icons/sprite.svg#download"/></svg>
+                Download
+              </a>
+            </div>
+
+            <div class="form-download-card">
+              <div class="form-download-card__icon form-download-card__icon--teal" aria-hidden="true">
+                <svg width="28" height="28"><use href="assets/icons/sprite.svg#heart"/></svg>
+              </div>
+              <div class="form-download-card__content">
+                <h3 class="form-download-card__title">Medical History Form</h3>
+                <p class="form-download-card__desc">Comprehensive medical history including current medications, allergies, and systemic conditions that may affect dental treatment.</p>
+                <p class="form-download-card__meta">PDF · 3 pages · Required for new patients</p>
+              </div>
+              <a href="#" class="btn btn--outline btn--sm" aria-label="Download Medical History form">
+                <svg width="14" height="14" aria-hidden="true"><use href="assets/icons/sprite.svg#download"/></svg>
+                Download
+              </a>
+            </div>
+
+            <div class="form-download-card">
+              <div class="form-download-card__icon form-download-card__icon--gold" aria-hidden="true">
+                <svg width="28" height="28"><use href="assets/icons/sprite.svg#shield"/></svg>
+              </div>
+              <div class="form-download-card__content">
+                <h3 class="form-download-card__title">Insurance Authorization</h3>
+                <p class="form-download-card__desc">Authorises BrightSmile Dental to bill your insurance company directly on your behalf and receive payment.</p>
+                <p class="form-download-card__meta">PDF · 1 page · Required if using insurance</p>
+              </div>
+              <a href="#" class="btn btn--outline btn--sm" aria-label="Download Insurance Authorization form">
+                <svg width="14" height="14" aria-hidden="true"><use href="assets/icons/sprite.svg#download"/></svg>
+                Download
+              </a>
+            </div>
+
+            <div class="form-download-card">
+              <div class="form-download-card__icon form-download-card__icon--navy" aria-hidden="true">
+                <svg width="28" height="28"><use href="assets/icons/sprite.svg#users"/></svg>
+              </div>
+              <div class="form-download-card__content">
+                <h3 class="form-download-card__title">HIPAA Consent Form</h3>
+                <p class="form-download-card__desc">Acknowledges receipt of our Notice of Privacy Practices and consents to the use of your health information for treatment and billing.</p>
+                <p class="form-download-card__meta">PDF · 1 page · Required for all patients</p>
+              </div>
+              <a href="#" class="btn btn--outline btn--sm" aria-label="Download HIPAA Consent form">
+                <svg width="14" height="14" aria-hidden="true"><use href="assets/icons/sprite.svg#download"/></svg>
+                Download
+              </a>
+            </div>
+
+            <div class="form-download-card">
+              <div class="form-download-card__icon" aria-hidden="true">
+                <svg width="28" height="28"><use href="assets/icons/sprite.svg#child"/></svg>
+              </div>
+              <div class="form-download-card__content">
+                <h3 class="form-download-card__title">Pediatric Patient Form</h3>
+                <p class="form-download-card__desc">For patients under 18. Includes parental/guardian consent, child medical history, and emergency contact information.</p>
+                <p class="form-download-card__meta">PDF · 2 pages · Required for patients under 18</p>
+              </div>
+              <a href="#" class="btn btn--outline btn--sm" aria-label="Download Pediatric Patient form">
+                <svg width="14" height="14" aria-hidden="true"><use href="assets/icons/sprite.svg#download"/></svg>
+                Download
+              </a>
+            </div>
+
+            <div class="form-download-card">
+              <div class="form-download-card__icon form-download-card__icon--teal" aria-hidden="true">
+                <svg width="28" height="28"><use href="assets/icons/sprite.svg#credit-card"/></svg>
+              </div>
+              <div class="form-download-card__content">
+                <h3 class="form-download-card__title">Financial Agreement</h3>
+                <p class="form-download-card__desc">Outlines your payment responsibilities, our payment plan options, and cancellation policy.</p>
+                <p class="form-download-card__meta">PDF · 1 page · Optional but recommended</p>
+              </div>
+              <a href="#" class="btn btn--outline btn--sm" aria-label="Download Financial Agreement form">
+                <svg width="14" height="14" aria-hidden="true"><use href="assets/icons/sprite.svg#download"/></svg>
+                Download
+              </a>
+            </div>
+          </div>
+
+          <div class="forms-note">
+            <svg width="18" height="18" aria-hidden="true"><use href="assets/icons/sprite.svg#alert"/></svg>
+            <p>All forms are in PDF format. You'll need <a href="#" class="link">Adobe Acrobat Reader</a> (free) to open them. Completed forms can be brought to your appointment or emailed to <a href="mailto:forms@brightsmile.com" class="link">forms@brightsmile.com</a>.</p>
+          </div>
+        </div>
+
+        <!-- ────── Aftercare Tab ────── -->
+        <div class="resources-panel" id="tab-aftercare" role="tabpanel" aria-labelledby="rtab-aftercare" hidden>
+          <div class="resources-panel__intro">
+            <h2>Aftercare Instructions</h2>
+            <p>Follow these guidelines after your procedure for the best recovery. Call us at <a href="tel:+15551234567" class="link">(555) 123-4567</a> if you have concerns.</p>
+          </div>
+
+          <div class="aftercare-grid">
+
+            <div class="aftercare-card">
+              <div class="aftercare-card__header">
+                <div class="aftercare-card__icon" aria-hidden="true">
+                  <svg width="24" height="24"><use href="assets/icons/sprite.svg#tooth"/></svg>
+                </div>
+                <h3 class="aftercare-card__title">After a Filling</h3>
+              </div>
+              <ol class="aftercare-card__steps">
+                <li>Avoid eating on the treated side for 2 hours</li>
+                <li>Numbness may last 2–4 hours — avoid hot foods and drinks until it subsides</li>
+                <li>Some sensitivity to cold, heat, or pressure is normal for 1–2 weeks</li>
+                <li>Take over-the-counter pain relief (ibuprofen/paracetamol) if needed</li>
+                <li>If your bite feels uneven, call us for a quick free adjustment</li>
+                <li>Brush and floss normally — the filling is hard immediately</li>
+              </ol>
+              <button class="aftercare-card__print btn btn--ghost btn--sm" onclick="window.print()">
+                <svg width="14" height="14" aria-hidden="true"><use href="assets/icons/sprite.svg#download"/></svg>
+                Print Instructions
+              </button>
+            </div>
+
+            <div class="aftercare-card">
+              <div class="aftercare-card__header">
+                <div class="aftercare-card__icon aftercare-card__icon--teal" aria-hidden="true">
+                  <svg width="24" height="24"><use href="assets/icons/sprite.svg#cross"/></svg>
+                </div>
+                <h3 class="aftercare-card__title">After a Tooth Extraction</h3>
+              </div>
+              <ol class="aftercare-card__steps">
+                <li>Bite firmly on the gauze for 30–60 minutes to form a clot</li>
+                <li>Do not rinse, spit, or use straws for 24 hours — this can dislodge the clot</li>
+                <li>Apply ice packs (20 min on, 20 min off) for the first 24 hours</li>
+                <li>Eat soft foods only — soup, yoghurt, mashed potatoes — for 2–3 days</li>
+                <li>Take prescribed or over-the-counter pain medication as directed</li>
+                <li>No smoking, alcohol, or vigorous exercise for 48 hours</li>
+                <li>Gently rinse with warm salt water (1/4 tsp salt per cup) starting 24 hours after</li>
+              </ol>
+              <button class="aftercare-card__print btn btn--ghost btn--sm" onclick="window.print()">
+                <svg width="14" height="14" aria-hidden="true"><use href="assets/icons/sprite.svg#download"/></svg>
+                Print Instructions
+              </button>
+            </div>
+
+            <div class="aftercare-card">
+              <div class="aftercare-card__header">
+                <div class="aftercare-card__icon aftercare-card__icon--gold" aria-hidden="true">
+                  <svg width="24" height="24"><use href="assets/icons/sprite.svg#sparkle"/></svg>
+                </div>
+                <h3 class="aftercare-card__title">After Teeth Whitening</h3>
+              </div>
+              <ol class="aftercare-card__steps">
+                <li>Avoid staining foods and drinks for 48 hours: coffee, tea, red wine, berries, soy sauce</li>
+                <li>No smoking for at least 48 hours</li>
+                <li>Tooth sensitivity is normal for 24–48 hours — use sensitive toothpaste</li>
+                <li>You may use a straw for cold drinks to minimise contact with teeth</li>
+                <li>Stick to "white foods": chicken, fish, pasta, bananas, yoghurt for 2 days</li>
+                <li>Maintain results with whitening toothpaste and your take-home trays</li>
+              </ol>
+              <button class="aftercare-card__print btn btn--ghost btn--sm" onclick="window.print()">
+                <svg width="14" height="14" aria-hidden="true"><use href="assets/icons/sprite.svg#download"/></svg>
+                Print Instructions
+              </button>
+            </div>
+
+            <div class="aftercare-card">
+              <div class="aftercare-card__header">
+                <div class="aftercare-card__icon aftercare-card__icon--navy" aria-hidden="true">
+                  <svg width="24" height="24"><use href="assets/icons/sprite.svg#activity"/></svg>
+                </div>
+                <h3 class="aftercare-card__title">After a Root Canal</h3>
+              </div>
+              <ol class="aftercare-card__steps">
+                <li>Avoid chewing on the treated tooth until the permanent crown is placed</li>
+                <li>Take antibiotics if prescribed — complete the full course</li>
+                <li>Pain and swelling typically subside within 2–3 days</li>
+                <li>Take ibuprofen with food every 6–8 hours for the first 2 days</li>
+                <li>Mild tenderness when biting is normal for 1–2 weeks</li>
+                <li>Book your crown appointment within 2–4 weeks to protect the tooth</li>
+              </ol>
+              <button class="aftercare-card__print btn btn--ghost btn--sm" onclick="window.print()">
+                <svg width="14" height="14" aria-hidden="true"><use href="assets/icons/sprite.svg#download"/></svg>
+                Print Instructions
+              </button>
+            </div>
+
+            <div class="aftercare-card">
+              <div class="aftercare-card__header">
+                <div class="aftercare-card__icon" aria-hidden="true">
+                  <svg width="24" height="24"><use href="assets/icons/sprite.svg#align"/></svg>
+                </div>
+                <h3 class="aftercare-card__title">New Invisalign Aligners</h3>
+              </div>
+              <ol class="aftercare-card__steps">
+                <li>Wear aligners 20–22 hours per day — remove only to eat and brush</li>
+                <li>Some pressure and discomfort is normal for the first 2–3 days of each new tray</li>
+                <li>Rinse aligners with cold water and clean with a soft toothbrush — no hot water</li>
+                <li>Brush and floss before reinserting aligners to prevent staining and decay</li>
+                <li>Store aligners in their case when not wearing — never in a napkin</li>
+                <li>Carry your previous set as a backup — contact us immediately if aligners are lost</li>
+              </ol>
+              <button class="aftercare-card__print btn btn--ghost btn--sm" onclick="window.print()">
+                <svg width="14" height="14" aria-hidden="true"><use href="assets/icons/sprite.svg#download"/></svg>
+                Print Instructions
+              </button>
+            </div>
+
+            <div class="aftercare-card">
+              <div class="aftercare-card__header">
+                <div class="aftercare-card__icon aftercare-card__icon--teal" aria-hidden="true">
+                  <svg width="24" height="24"><use href="assets/icons/sprite.svg#implant"/></svg>
+                </div>
+                <h3 class="aftercare-card__title">After Implant Surgery</h3>
+              </div>
+              <ol class="aftercare-card__steps">
+                <li>Bite on gauze for 45 minutes; change if still bleeding after 1 hour</li>
+                <li>Apply ice packs for first 24 hours; swelling may peak at 48–72 hours</li>
+                <li>Take all prescribed medications on schedule</li>
+                <li>Eat very soft foods (yoghurt, smoothies, soup) for the first week</li>
+                <li>Do not brush the implant site for 24 hours — gently rinse with saltwater</li>
+                <li>No smoking for at least 2 weeks — smoking significantly impairs healing</li>
+                <li>Attend all follow-up appointments for bone integration monitoring</li>
+              </ol>
+              <button class="aftercare-card__print btn btn--ghost btn--sm" onclick="window.print()">
+                <svg width="14" height="14" aria-hidden="true"><use href="assets/icons/sprite.svg#download"/></svg>
+                Print Instructions
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ────── Education Tab ────── -->
+        <div class="resources-panel" id="tab-education" role="tabpanel" aria-labelledby="rtab-education" hidden>
+          <div class="resources-panel__intro">
+            <h2>Dental Education</h2>
+            <p>Knowledge is your best defence against dental disease. Browse our patient education articles written by our clinical team.</p>
+          </div>
+
+          <div class="education-grid">
+
+            <article class="education-card">
+              <div class="education-card__icon" aria-hidden="true">
+                <svg width="28" height="28"><use href="assets/icons/sprite.svg#tooth"/></svg>
+              </div>
+              <div class="education-card__content">
+                <span class="badge badge--teal">Hygiene</span>
+                <h3 class="education-card__title">The Right Way to Brush Your Teeth</h3>
+                <p class="education-card__excerpt">Most people brush too hard or too fast. Learn the Modified Bass technique recommended by dental professionals — 2 minutes, 45° angle, gentle circular strokes.</p>
+                <div class="education-card__tips">
+                  <p class="education-card__tips-label">Key takeaways:</p>
+                  <ul>
+                    <li>Brush for a full 2 minutes, twice daily</li>
+                    <li>Use a soft-bristled brush — medium/hard brushes damage enamel</li>
+                    <li>Replace your brush every 3 months or after illness</li>
+                    <li>Electric toothbrushes remove up to 21% more plaque</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+            <article class="education-card">
+              <div class="education-card__icon education-card__icon--teal" aria-hidden="true">
+                <svg width="28" height="28"><use href="assets/icons/sprite.svg#activity"/></svg>
+              </div>
+              <div class="education-card__content">
+                <span class="badge badge--teal">Hygiene</span>
+                <h3 class="education-card__title">Why Flossing Matters More Than You Think</h3>
+                <p class="education-card__excerpt">40% of your tooth surface is between teeth — completely unreachable by a toothbrush. Discover why flossing is non-negotiable and how to do it properly.</p>
+                <div class="education-card__tips">
+                  <p class="education-card__tips-label">Key takeaways:</p>
+                  <ul>
+                    <li>Floss once daily, ideally before bed</li>
+                    <li>Curve floss into a C-shape around each tooth</li>
+                    <li>Water flossers are a great alternative for braces or implants</li>
+                    <li>Bleeding gums usually improve after 1–2 weeks of consistent flossing</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+            <article class="education-card">
+              <div class="education-card__icon education-card__icon--gold" aria-hidden="true">
+                <svg width="28" height="28"><use href="assets/icons/sprite.svg#heart"/></svg>
+              </div>
+              <div class="education-card__content">
+                <span class="badge badge--gold">Nutrition</span>
+                <h3 class="education-card__title">Foods That Harm — and Help — Your Teeth</h3>
+                <p class="education-card__excerpt">Your diet is one of the biggest factors in your dental health. Learn which foods to limit and which ones actually strengthen your teeth and gums.</p>
+                <div class="education-card__tips">
+                  <p class="education-card__tips-label">Key takeaways:</p>
+                  <ul>
+                    <li>Sugary and acidic foods fuel cavity-causing bacteria</li>
+                    <li>Cheese, nuts, and leafy greens actively protect teeth</li>
+                    <li>Wait 30 minutes after acidic foods before brushing</li>
+                    <li>Drink water after meals to neutralise acids</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+            <article class="education-card">
+              <div class="education-card__icon education-card__icon--navy" aria-hidden="true">
+                <svg width="28" height="28"><use href="assets/icons/sprite.svg#child"/></svg>
+              </div>
+              <div class="education-card__content">
+                <span class="badge badge--navy">Children</span>
+                <h3 class="education-card__title">Your Child's Dental Development: A Timeline</h3>
+                <p class="education-card__excerpt">From the first tooth at 6 months to the wisdom teeth in the late teens — understand what's normal at every stage and when to seek guidance.</p>
+                <div class="education-card__tips">
+                  <p class="education-card__tips-label">Key takeaways:</p>
+                  <ul>
+                    <li>Baby teeth matter — they hold space for permanent teeth</li>
+                    <li>First dental visit recommended by age 1</li>
+                    <li>All 20 baby teeth usually present by age 3</li>
+                    <li>Orthodontic evaluation recommended around age 7</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+            <article class="education-card">
+              <div class="education-card__icon" aria-hidden="true">
+                <svg width="28" height="28"><use href="assets/icons/sprite.svg#alert"/></svg>
+              </div>
+              <div class="education-card__content">
+                <span class="badge badge--muted">Gum Health</span>
+                <h3 class="education-card__title">Understanding Gum Disease: Signs, Stages &amp; Prevention</h3>
+                <p class="education-card__excerpt">Gum disease is the leading cause of adult tooth loss — and it's largely preventable. Recognise the warning signs before they become irreversible.</p>
+                <div class="education-card__tips">
+                  <p class="education-card__tips-label">Key takeaways:</p>
+                  <ul>
+                    <li>Bleeding gums are a warning, not normal</li>
+                    <li>Gingivitis is reversible; periodontitis is not</li>
+                    <li>Gum disease is linked to heart disease and diabetes</li>
+                    <li>Professional cleaning every 6 months prevents most gum disease</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+            <article class="education-card">
+              <div class="education-card__icon education-card__icon--teal" aria-hidden="true">
+                <svg width="28" height="28"><use href="assets/icons/sprite.svg#star"/></svg>
+              </div>
+              <div class="education-card__content">
+                <span class="badge badge--teal">First Visit</span>
+                <h3 class="education-card__title">What to Expect at Your First BrightSmile Visit</h3>
+                <p class="education-card__excerpt">Never been here before? Here's exactly what happens from the moment you walk in to when you leave — no surprises, no anxiety.</p>
+                <div class="education-card__tips">
+                  <p class="education-card__tips-label">Key takeaways:</p>
+                  <ul>
+                    <li>Arrive 15 minutes early for paperwork (or download forms in advance)</li>
+                    <li>Comprehensive exam takes about 60–90 minutes</li>
+                    <li>You'll receive a full written treatment plan before leaving</li>
+                    <li>You're always in control — no treatment without your consent</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── CTA Strip ── -->
+    <section class="cta-strip cta-strip--teal">
+      <div class="container">
+        <div class="cta-strip__content reveal">
+          <h2 class="cta-strip__title">Ready to Schedule Your Next Visit?</h2>
+          <p class="cta-strip__sub">Our team is ready to welcome you. Book online in minutes.</p>
+        </div>
+        <div class="cta-strip__actions reveal">
+          <a href="booking.html" class="btn btn--white btn--lg">Book Appointment</a>
+          <a href="contact.html" class="btn btn--outline-white btn--lg">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="footer-container"></div>
+
+  <a href="booking.html" class="floating-book-btn" aria-label="Book appointment">
+    <svg width="20" height="20" aria-hidden="true"><use href="assets/icons/sprite.svg#calendar"/></svg>
+    Book Now
+  </a>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

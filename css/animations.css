@@ -1,0 +1,208 @@
+/* =========================================
+   BRIGHTSMILE DENTAL — ANIMATIONS
+   Scroll reveal, keyframes, stagger delays
+   ========================================= */
+
+/* ── Scroll Reveal Base ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 0.4s var(--ease-out-expo),
+    transform 0.4s var(--ease-out-expo);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal--left {
+  opacity: 0;
+  transform: translateX(-22px);
+}
+
+.reveal--left.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal--right {
+  opacity: 0;
+  transform: translateX(22px);
+}
+
+.reveal--right.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal--scale {
+  opacity: 0;
+  transform: scale(0.96);
+}
+
+.reveal--scale.is-visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.reveal--fade {
+  opacity: 0;
+  transform: none;
+}
+
+.reveal--fade.is-visible {
+  opacity: 1;
+}
+
+/* ── Stagger Delays ── */
+.delay-1  { transition-delay: 0.10s; }
+.delay-2  { transition-delay: 0.20s; }
+.delay-3  { transition-delay: 0.30s; }
+.delay-4  { transition-delay: 0.40s; }
+.delay-5  { transition-delay: 0.50s; }
+.delay-6  { transition-delay: 0.60s; }
+
+/* Auto-stagger for direct children — 55ms interval feels cohesive, not laggy */
+.stagger-group > *:nth-child(1)  { transition-delay: 0.05s; }
+.stagger-group > *:nth-child(2)  { transition-delay: 0.11s; }
+.stagger-group > *:nth-child(3)  { transition-delay: 0.17s; }
+.stagger-group > *:nth-child(4)  { transition-delay: 0.23s; }
+.stagger-group > *:nth-child(5)  { transition-delay: 0.29s; }
+.stagger-group > *:nth-child(6)  { transition-delay: 0.35s; }
+.stagger-group > *:nth-child(7)  { transition-delay: 0.41s; }
+.stagger-group > *:nth-child(8)  { transition-delay: 0.47s; }
+
+/* ── Keyframes ── */
+
+/* Fade in */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Slide up */
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Slide down */
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Scale in */
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.92); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+/* Spin (loading) */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* Shake — for form validation errors */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  18%      { transform: translateX(-5px); }
+  36%      { transform: translateX(5px); }
+  54%      { transform: translateX(-3px); }
+  72%      { transform: translateX(3px); }
+  90%      { transform: translateX(-1px); }
+}
+
+/* Pop — for selection confirmations */
+@keyframes pop {
+  0%   { transform: scale(1); }
+  40%  { transform: scale(0.94); }
+  70%  { transform: scale(1.04); }
+  100% { transform: scale(1); }
+}
+
+/* Glow pulse — for active state emphasis */
+@keyframes glow-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(13, 148, 136, 0); }
+  50%       { box-shadow: 0 0 0 6px rgba(13, 148, 136, 0.12); }
+}
+
+/* Pulse (attention ring) */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.5; }
+}
+
+/* Shimmer (skeleton loading) */
+@keyframes shimmer {
+  0%   { background-position: -400px 0; }
+  100% { background-position: 400px 0; }
+}
+
+/* Float (subtle hero element) */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-8px); }
+}
+
+/* Bounce in */
+@keyframes bounceIn {
+  0%   { opacity: 0; transform: scale(0.6); }
+  60%  { opacity: 1; transform: scale(1.05); }
+  80%  { transform: scale(0.97); }
+  100% { transform: scale(1); }
+}
+
+/* ── Utility Animation Classes ── */
+.animate-fade-in    { animation: fadeIn 0.4s var(--ease-out) both; }
+.animate-slide-up   { animation: slideUp 0.5s var(--ease-out) both; }
+.animate-scale-in   { animation: scaleIn 0.35s var(--ease-spring) both; }
+.animate-float      { animation: float 3s ease-in-out infinite; }
+.animate-pulse      { animation: pulse 2s ease-in-out infinite; }
+.animate-spin       { animation: spin 0.7s linear infinite; }
+
+/* ── Hero Entrance ── */
+.hero-animate {
+  animation: slideUp 0.6s var(--ease-out) 0.15s both;
+}
+
+.hero-animate-delay {
+  animation: slideUp 0.6s var(--ease-out) 0.35s both;
+}
+
+.hero-animate-trust {
+  animation: slideUp 0.6s var(--ease-out) 0.50s both;
+}
+
+/* ── Emergency Banner entrance ── */
+.emergency-banner-enter {
+  animation: slideDown 0.4s var(--ease-out) both;
+}
+
+/* ── Skeleton loading ── */
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--color-soft-blue) 25%,
+    #e8f2ff 50%,
+    var(--color-soft-blue) 75%
+  );
+  background-size: 800px 100%;
+  animation: shimmer 1.5s infinite linear;
+  border-radius: var(--radius-md);
+}
+
+/* ── Transition: form step slide ── */
+.form-step-exit {
+  animation: slideUp 0.3s var(--ease-in) forwards;
+}
+
+.form-step-enter {
+  animation: slideUp 0.3s var(--ease-out) both;
+}
+
+/* ── Prefers reduced motion ── */
+/* (already handled in reset.css globally) */

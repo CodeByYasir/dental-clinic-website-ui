@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BrightSmile Dental — Premium family and cosmetic dentistry in San Francisco. Accepting new patients. Emergency appointments available. Call (555) 123-4567.">
+  <meta property="og:title" content="BrightSmile Dental — Family & Cosmetic Dentistry">
+  <meta property="og:description" content="Premium dental care for your whole family. 25+ years of excellence, 2,400+ happy patients. Book your appointment today.">
+  <meta property="og:type" content="website">
+  <title>BrightSmile Dental — Family &amp; Cosmetic Dentistry</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/forms.css">
+  <link rel="stylesheet" href="css/modal.css">
+  <link rel="stylesheet" href="css/slider.css">
+  <link rel="stylesheet" href="css/pages/home.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body data-page="home">
+
+  <!-- SVG Icons Sprite -->
+  <div style="display:none;" aria-hidden="true">
+    <svg><use href="assets/icons/sprite.svg"></use></svg>
+  </div>
+
+  <!-- Nav + Emergency Banner injected here -->
+  <div id="nav-container"></div>
+
+  <main id="main-content">
+
+    <!-- ═══════════════════════════════════
+         HERO SECTION
+    ═══════════════════════════════════ -->
+    <section class="hero" aria-label="Welcome to BrightSmile Dental">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__inner">
+        <div class="hero__content">
+          <div class="hero__badge hero-animate" aria-label="Accepting new patients">
+            <span class="hero__badge-dot" aria-hidden="true"></span>
+            Accepting New Patients
+          </div>
+          <h1 class="hero-animate">
+            Your Healthiest<br><span>Smile</span> Starts Here
+          </h1>
+          <p class="hero__subtitle hero-animate-delay">
+            Premium family and cosmetic dentistry in San Francisco. Expert care for every age, every smile — with warmth and transparency you can trust.
+          </p>
+          <div class="hero__actions hero-animate-delay">
+            <a href="booking.html" class="btn btn--secondary btn--lg">
+              <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              Book Appointment
+            </a>
+            <a href="services.html" class="btn btn--outline-white btn--lg">Explore Services</a>
+          </div>
+          <div class="hero__social-proof hero-animate-trust">
+            <div class="hero__social-proof-avatars" aria-hidden="true">
+              <div class="hero__social-proof-avatar">SM</div>
+              <div class="hero__social-proof-avatar">JT</div>
+              <div class="hero__social-proof-avatar">RK</div>
+              <div class="hero__social-proof-avatar">+</div>
+            </div>
+            <div class="hero__social-proof-text">
+              <div class="stars" aria-label="4.9 out of 5 stars rating">★★★★★</div>
+              <strong>2,400+ Happy Patients</strong>
+              <span>4.9 stars on Google Reviews</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__image-wrap">
+            <div class="hero__image-placeholder">
+              <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2C9 2 6 4 6 7c0 1.5.5 3 1 4.5C8 14 8 17 9 20c.5 1.5 1 2 2 2 .8 0 1.3-.7 1.7-2l.3-1.5.3 1.5c.4 1.3.9 2 1.7 2 1 0 1.5-.5 2-2 1-3 1-6 2-8.5.5-1.5 1-3 1-4.5 0-3-3-5-6-5z"/></svg>
+              <span>Clinic photo here</span>
+            </div>
+          </div>
+          <div class="hero__float-card hero__float-card--1 animate-float">
+            <div class="hero__float-card-label">Next Available</div>
+            <div class="hero__float-card-value"><span>Today</span> 2:30 PM</div>
+          </div>
+          <div class="hero__float-card hero__float-card--2 animate-float" style="animation-delay:1.5s;">
+            <div class="hero__float-card-label">Patient Satisfaction</div>
+            <div class="hero__float-card-value"><span>98%</span> Rating</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════
+         TRUST BAR
+    ═══════════════════════════════════ -->
+    <div class="trust-bar" role="region" aria-label="Trust highlights">
+      <div class="container">
+        <div class="trust-bar__grid">
+          <div class="trust-bar__item reveal">
+            <div class="trust-bar__item-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+            </div>
+            <div class="trust-bar__item-text">
+              <strong>25+ Years of Excellence</strong>
+              <span>Serving families since 1998</span>
+            </div>
+          </div>
+          <div class="trust-bar__item reveal delay-1">
+            <div class="trust-bar__item-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            </div>
+            <div class="trust-bar__item-text">
+              <strong>Same-Day Emergency Care</strong>
+              <span>24/7 emergency line available</span>
+            </div>
+          </div>
+          <div class="trust-bar__item reveal delay-2">
+            <div class="trust-bar__item-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+            </div>
+            <div class="trust-bar__item-text">
+              <strong>All Major Insurance Welcome</strong>
+              <span>Delta, Aetna, Cigna, MetLife &amp; more</span>
+            </div>
+          </div>
+          <div class="trust-bar__item reveal delay-3">
+            <div class="trust-bar__item-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+            </div>
+            <div class="trust-bar__item-text">
+              <strong>Flexible Payment Plans</strong>
+              <span>0% financing options available</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════
+         SERVICES PREVIEW
+    ═══════════════════════════════════ -->
+    <section class="section section--alt" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="section-header--center reveal">
+          <span class="section-label">What We Offer</span>
+          <h2 class="section-title" id="services-heading">Comprehensive Dental Care</h2>
+          <p class="section-subtitle">From routine cleanings to full smile transformations — we provide expert, compassionate care for every stage of life.</p>
+        </div>
+        <div class="grid-3 stagger-group" style="margin-top: 2.5rem;" role="list">
+          <div class="card reveal" role="listitem">
+            <div class="service-card">
+              <div class="service-card__icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C9 2 6 4 6 7c0 1.5.5 3 1 4.5C8 14 8 17 9 20c.5 1.5 1 2 2 2 .8 0 1.3-.7 1.7-2l.3-1.5.3 1.5c.4 1.3.9 2 1.7 2 1 0 1.5-.5 2-2 1-3 1-6 2-8.5.5-1.5 1-3 1-4.5 0-3-3-5-6-5z"/></svg>
+              </div>
+              <h3 class="service-card__title">General Dentistry</h3>
+              <p class="service-card__desc">Routine cleanings, fillings, crowns, and comprehensive exams. Your oral health foundation, done right.</p>
+              <a href="services.html#general" class="service-card__link">
+                Learn more
+                <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="card reveal" role="listitem">
+            <div class="service-card">
+              <div class="service-card__icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.5 4.5L18 9l-4.5 1.5L12 15l-1.5-4.5L6 9l4.5-1.5L12 3z"/><path d="M5 5l.75 2.25L8 8l-2.25.75L5 11l-.75-2.25L2 8l2.25-.75L5 5z"/></svg>
+              </div>
+              <h3 class="service-card__title">Cosmetic Dentistry</h3>
+              <p class="service-card__desc">Veneers, whitening, bonding, and smile makeovers. Artistry meets science for results you'll love.</p>
+              <a href="services.html#cosmetic" class="service-card__link">
+                Learn more
+                <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="card reveal" role="listitem">
+            <div class="service-card">
+              <div class="service-card__icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 13s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+              </div>
+              <h3 class="service-card__title">Pediatric Dentistry</h3>
+              <p class="service-card__desc">Gentle, fun care for children of all ages. Building positive dental habits from the very first visit.</p>
+              <a href="services.html#pediatric" class="service-card__link">
+                Learn more
+                <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="card reveal" role="listitem">
+            <div class="service-card">
+              <div class="service-card__icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <h3 class="service-card__title">Dental Implants</h3>
+              <p class="service-card__desc">Permanent, natural-looking tooth replacement. From single implants to full-arch All-on-4 solutions.</p>
+              <a href="services.html#implants" class="service-card__link">
+                Learn more
+                <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="card reveal" role="listitem">
+            <div class="service-card">
+              <div class="service-card__icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+              </div>
+              <h3 class="service-card__title">Invisalign</h3>
+              <p class="service-card__desc">Clear, comfortable aligners for teens and adults. Straighten your teeth discreetly — no metal required.</p>
+              <a href="services.html#orthodontics" class="service-card__link">
+                Learn more
+                <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="card reveal" role="listitem">
+            <div class="service-card">
+              <div class="service-card__icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              </div>
+              <h3 class="service-card__title">Emergency Care</h3>
+              <p class="service-card__desc">Same-day appointments for dental emergencies. Tooth pain? Broken crown? We're here when you need us.</p>
+              <a href="services.html#emergency" class="service-card__link">
+                Learn more
+                <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div style="text-align: center; margin-top: var(--space-5);" class="reveal">
+          <a href="services.html" class="btn btn--outline">
+            View All Services
+            <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════
+         STATS STRIP
+    ═══════════════════════════════════ -->
+    <section class="section section--navy" aria-labelledby="stats-heading">
+      <div class="container">
+        <h2 class="sr-only" id="stats-heading">By the numbers</h2>
+        <div class="grid-4">
+          <div class="stat-block reveal">
+            <div class="stat-block__number" data-count-to="2400" data-count-suffix="+" aria-label="2,400 plus patients served">0</div>
+            <div class="stat-block__label">Patients Served</div>
+          </div>
+          <div class="stat-block reveal delay-1">
+            <div class="stat-block__number" data-count-to="25" data-count-suffix="+" aria-label="25 plus years in practice">0</div>
+            <div class="stat-block__label">Years in Practice</div>
+          </div>
+          <div class="stat-block reveal delay-2">
+            <div class="stat-block__number" data-count-to="98" data-count-suffix="%" aria-label="98 percent patient satisfaction">0</div>
+            <div class="stat-block__label">Patient Satisfaction</div>
+          </div>
+          <div class="stat-block reveal delay-3">
+            <div class="stat-block__number" data-count-to="4" data-count-prefix="" data-count-suffix=".9 ★" aria-label="4.9 star Google rating">4</div>
+            <div class="stat-block__label">Google Rating</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════
+         MEET OUR DOCTORS
+    ═══════════════════════════════════ -->
+    <section class="section section--warm" aria-labelledby="doctors-heading">
+      <div class="container">
+        <div class="section-header--center reveal">
+          <span class="section-label">Our Expert Team</span>
+          <h2 class="section-title" id="doctors-heading">Meet Our Dentists</h2>
+          <p class="section-subtitle">Board-certified specialists with a shared commitment to your health, comfort, and confidence.</p>
+        </div>
+        <div class="grid-3 stagger-group" style="margin-top: 2.5rem;">
+          <div class="card doctor-card reveal">
+            <div class="doctor-card__photo" aria-label="Photo of Dr. Eleanor Chen">👩‍⚕️</div>
+            <h3 class="doctor-card__name">Dr. Eleanor Chen</h3>
+            <div class="doctor-card__credentials">DDS, FAGD</div>
+            <div class="doctor-card__specialty">General &amp; Cosmetic Dentistry</div>
+            <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-2);">Founder of BrightSmile with 25+ years of experience. Known for her gentle approach and transformative smile makeovers.</p>
+            <a href="about.html" class="btn btn--outline btn--sm">View Profile</a>
+          </div>
+          <div class="card doctor-card reveal">
+            <div class="doctor-card__photo" aria-label="Photo of Dr. Marcus Okafor">👨‍⚕️</div>
+            <h3 class="doctor-card__name">Dr. Marcus Okafor</h3>
+            <div class="doctor-card__credentials">DDS, AACD Member</div>
+            <div class="doctor-card__specialty">Cosmetic &amp; Restorative</div>
+            <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-2);">Award-winning cosmetic specialist. Consistently named Top Dentist in the region. Renowned for flawless veneers.</p>
+            <a href="about.html" class="btn btn--outline btn--sm">View Profile</a>
+          </div>
+          <div class="card doctor-card reveal">
+            <div class="doctor-card__photo" aria-label="Photo of Dr. Anika Patel">👩‍⚕️</div>
+            <h3 class="doctor-card__name">Dr. Anika Patel</h3>
+            <div class="doctor-card__credentials">DMD, Pediatric Specialist</div>
+            <div class="doctor-card__specialty">Pediatric &amp; Invisalign</div>
+            <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-2);">Board-certified pediatric dentist and Invisalign provider. Beloved by children and parents alike for her warmth.</p>
+            <a href="about.html" class="btn btn--outline btn--sm">View Profile</a>
+          </div>
+        </div>
+        <div style="text-align:center;margin-top:var(--space-5);" class="reveal">
+          <a href="about.html" class="btn btn--primary">Meet the Full Team</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════
+         TESTIMONIALS
+    ═══════════════════════════════════ -->
+    <section class="section section--alt" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <div class="section-header--center reveal">
+          <span class="section-label">Patient Stories</span>
+          <h2 class="section-title" id="testimonials-heading">What Our Patients Say</h2>
+          <p class="section-subtitle">Real stories from real patients. See why San Francisco families trust BrightSmile Dental.</p>
+        </div>
+        <div style="max-width: 720px; margin: 2.5rem auto 0;" class="reveal">
+          <div id="testimonials-slider" aria-label="Patient testimonials carousel"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════
+         BEFORE & AFTER PREVIEW
+    ═══════════════════════════════════ -->
+    <section class="section" aria-labelledby="ba-heading">
+      <div class="container">
+        <div class="section-header reveal" style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:var(--space-2);">
+          <div>
+            <span class="section-label">Real Results</span>
+            <h2 class="section-title" id="ba-heading">See the Difference</h2>
+          </div>
+          <a href="gallery.html" class="btn btn--outline">View Full Gallery</a>
+        </div>
+        <div class="ba-preview stagger-group" style="margin-top:2rem;">
+          <div class="ba-card reveal">
+            <div class="ba-card__images">
+              <div class="ba-card__before"><div class="ba-placeholder">Before</div></div>
+              <div class="ba-card__after"><div class="ba-placeholder" style="background:linear-gradient(135deg,#D0ECEC,#B8E0D8)">After</div></div>
+            </div>
+            <div class="ba-card__label">Porcelain Veneers</div>
+          </div>
+          <div class="ba-card reveal">
+            <div class="ba-card__images">
+              <div class="ba-card__before"><div class="ba-placeholder">Before</div></div>
+              <div class="ba-card__after"><div class="ba-placeholder" style="background:linear-gradient(135deg,#D0ECEC,#B8E0D8)">After</div></div>
+            </div>
+            <div class="ba-card__label">Teeth Whitening</div>
+          </div>
+          <div class="ba-card reveal">
+            <div class="ba-card__images">
+              <div class="ba-card__before"><div class="ba-placeholder">Before</div></div>
+              <div class="ba-card__after"><div class="ba-placeholder" style="background:linear-gradient(135deg,#D0ECEC,#B8E0D8)">After</div></div>
+            </div>
+            <div class="ba-card__label">Dental Implant</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════
+         INSURANCE STRIP
+    ═══════════════════════════════════ -->
+    <section class="insurance-strip section--sm" aria-labelledby="insurance-heading">
+      <div class="container">
+        <div class="section-header--center reveal">
+          <span class="section-label">Insurance</span>
+          <h2 class="section-title" id="insurance-heading">We Accept Your Insurance</h2>
+        </div>
+        <div class="insurance-strip__logos reveal">
+          <div class="insurance-logo"><span class="insurance-logo__name">Aetna</span><span class="insurance-logo__badge">In Network</span></div>
+          <div class="insurance-logo"><span class="insurance-logo__name">Cigna</span><span class="insurance-logo__badge">In Network</span></div>
+          <div class="insurance-logo"><span class="insurance-logo__name">Delta Dental</span><span class="insurance-logo__badge">In Network</span></div>
+          <div class="insurance-logo"><span class="insurance-logo__name">MetLife</span><span class="insurance-logo__badge">In Network</span></div>
+          <div class="insurance-logo"><span class="insurance-logo__name">United Health</span><span class="insurance-logo__badge">In Network</span></div>
+          <div class="insurance-logo"><span class="insurance-logo__name">Guardian</span><span class="insurance-logo__badge">In Network</span></div>
+          <div class="insurance-logo"><span class="insurance-logo__name">Humana</span><span class="insurance-logo__badge">In Network</span></div>
+          <div class="insurance-logo"><span class="insurance-logo__name">Blue Cross</span><span class="insurance-logo__badge">In Network</span></div>
+        </div>
+        <p class="insurance-strip__note reveal">
+          Don't see your provider? <a href="contact.html">Call us</a> — we work with most major insurers and will verify your benefits for free.
+        </p>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════
+         EMERGENCY CTA
+    ═══════════════════════════════════ -->
+    <section class="emergency-section section section--teal" aria-labelledby="emergency-heading">
+      <div class="container">
+        <div class="emergency-section__inner">
+          <div class="reveal--left reveal">
+            <div class="emergency-section__badge" aria-label="Available 24/7">
+              <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Available 24/7
+            </div>
+            <h2 id="emergency-heading">Dental Emergency?<br>We're Here for You.</h2>
+            <p>Don't suffer through pain. Same-day emergency appointments are available — call us first thing in the morning and we'll see you today.</p>
+            <a href="tel:+15551234567" class="emergency-section__phone" aria-label="Call for emergency dental care: (555) 123-4567">
+              <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              (555) 123-4567
+            </a>
+          </div>
+          <div class="reveal--right reveal">
+            <ul class="emergency-section__list" aria-label="Emergency services we treat">
+              <li>Severe Toothache</li>
+              <li>Broken or Chipped Tooth</li>
+              <li>Lost Crown or Filling</li>
+              <li>Dental Abscess</li>
+              <li>Sports Injury</li>
+              <li>Knocked-Out Tooth</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════
+         FINAL CTA
+    ═══════════════════════════════════ -->
+    <section class="section section--warm" aria-labelledby="cta-heading">
+      <div class="container">
+        <div class="cta-strip" style="background:transparent;padding-block:0;">
+          <div class="reveal">
+            <span class="section-label" style="display:block;text-align:center;margin-bottom:var(--space-1);">Get Started Today</span>
+            <h2 id="cta-heading" style="color:var(--color-navy);text-align:center;margin-bottom:var(--space-2);">Ready for Your Best Smile?</h2>
+            <p style="color:var(--color-text-secondary);text-align:center;max-width:480px;margin:0 auto var(--space-4);">Book your appointment online in under 2 minutes, or call us to speak with a friendly team member. New patients welcome.</p>
+            <div style="display:flex;gap:var(--space-2);justify-content:center;flex-wrap:wrap;">
+              <a href="booking.html" class="btn btn--primary btn--lg">Book Appointment Online</a>
+              <a href="tel:+15551234567" class="btn btn--outline btn--lg">
+                <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                Call (555) 123-4567
+              </a>
+            </div>
+            <p style="text-align:center;font-size:var(--text-sm);color:var(--color-text-muted);margin-top:var(--space-3);">No insurance? No problem. We have flexible payment plans and a membership program.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer injected here -->
+  <div id="footer-container"></div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

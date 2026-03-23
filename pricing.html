@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pricing &amp; Insurance — BrightSmile Dental</title>
+  <meta name="description" content="Transparent dental pricing with no surprise bills. We accept all major insurance plans and offer flexible financing options at BrightSmile Dental." />
+  <meta property="og:title" content="Pricing &amp; Insurance — BrightSmile Dental" />
+  <meta property="og:description" content="Transparent pricing, all major insurance accepted, and flexible financing options." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/forms.css" />
+  <link rel="stylesheet" href="css/modal.css" />
+  <link rel="stylesheet" href="css/pages/pricing.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body data-page="pricing">
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <div id="emergency-banner-container"></div>
+  <div id="nav-container"></div>
+
+  <main id="main-content">
+
+    <!-- ── Page Hero ── -->
+    <section class="page-hero page-hero--compact">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li aria-current="page">Pricing &amp; Insurance</li>
+          </ol>
+        </nav>
+        <h1 class="page-hero__title reveal">Transparent Pricing</h1>
+        <p class="page-hero__subtitle reveal">No surprise bills. No hidden fees. Just honest pricing and flexible options for every budget.</p>
+      </div>
+    </section>
+
+    <!-- ── Insurance Section ── -->
+    <section class="section insurance-section" id="insurance">
+      <div class="container">
+        <div class="section-header section-header--center reveal">
+          <span class="section-header__eyebrow">Insurance</span>
+          <h2 class="section-header__title">We Accept All Major Plans</h2>
+          <p class="section-header__sub">BrightSmile Dental is in-network with most major insurance providers. Our billing team handles the paperwork so you don't have to.</p>
+        </div>
+
+        <div class="insurance-logos-grid reveal">
+          <div class="insurance-logo-card">
+            <div class="insurance-logo-card__visual" aria-label="Aetna">
+              <span class="insurance-logo-card__name">Aetna</span>
+            </div>
+            <span class="badge badge--teal">In-Network</span>
+          </div>
+          <div class="insurance-logo-card">
+            <div class="insurance-logo-card__visual" aria-label="Cigna">
+              <span class="insurance-logo-card__name">Cigna</span>
+            </div>
+            <span class="badge badge--teal">In-Network</span>
+          </div>
+          <div class="insurance-logo-card">
+            <div class="insurance-logo-card__visual insurance-logo-card__visual--blue" aria-label="Delta Dental">
+              <span class="insurance-logo-card__name">Delta Dental</span>
+            </div>
+            <span class="badge badge--teal">In-Network</span>
+          </div>
+          <div class="insurance-logo-card">
+            <div class="insurance-logo-card__visual insurance-logo-card__visual--dark" aria-label="MetLife">
+              <span class="insurance-logo-card__name">MetLife</span>
+            </div>
+            <span class="badge badge--teal">In-Network</span>
+          </div>
+          <div class="insurance-logo-card">
+            <div class="insurance-logo-card__visual insurance-logo-card__visual--green" aria-label="United Healthcare">
+              <span class="insurance-logo-card__name">United Healthcare</span>
+            </div>
+            <span class="badge badge--teal">In-Network</span>
+          </div>
+          <div class="insurance-logo-card">
+            <div class="insurance-logo-card__visual insurance-logo-card__visual--purple" aria-label="Guardian">
+              <span class="insurance-logo-card__name">Guardian</span>
+            </div>
+            <span class="badge badge--teal">In-Network</span>
+          </div>
+          <div class="insurance-logo-card">
+            <div class="insurance-logo-card__visual insurance-logo-card__visual--orange" aria-label="Humana">
+              <span class="insurance-logo-card__name">Humana</span>
+            </div>
+            <span class="badge badge--teal">In-Network</span>
+          </div>
+          <div class="insurance-logo-card">
+            <div class="insurance-logo-card__visual insurance-logo-card__visual--teal" aria-label="Blue Cross Blue Shield">
+              <span class="insurance-logo-card__name">BCBS</span>
+            </div>
+            <span class="badge badge--teal">In-Network</span>
+          </div>
+        </div>
+
+        <div class="insurance-oon reveal">
+          <div class="insurance-oon__header">
+            <svg width="20" height="20" aria-hidden="true"><use href="assets/icons/sprite.svg#shield"/></svg>
+            <h3>Out-of-Network Coverage</h3>
+            <button class="insurance-oon__toggle" aria-expanded="false" aria-controls="oon-details" id="oon-btn">
+              <svg width="16" height="16" aria-hidden="true" class="accordion-icon"><use href="assets/icons/sprite.svg#chevron-down"/></svg>
+            </button>
+          </div>
+          <div id="oon-details" role="region" aria-labelledby="oon-btn" class="insurance-oon__body" style="max-height:0;overflow:hidden">
+            <p>We work with all dental insurance plans, even if we're not in-network. You can still use your out-of-network benefits at BrightSmile Dental — we'll file claims on your behalf and help you maximize your reimbursement.</p>
+            <ul class="check-list" style="margin-top:var(--space-3)">
+              <li>We handle all insurance paperwork and claim submissions</li>
+              <li>Upfront cost estimates before any treatment begins</li>
+              <li>Our billing team negotiates directly with your insurer when needed</li>
+              <li>Payment plans available for any remaining out-of-pocket balance</li>
+            </ul>
+            <p style="margin-top:var(--space-3)">Call us at <a href="tel:+15551234567" class="link">(555) 123-4567</a> to verify your coverage before your first visit.</p>
+          </div>
+        </div>
+
+        <div class="insurance-verify-cta reveal">
+          <p>Not sure if we're in-network? We'll check your benefits for free.</p>
+          <button class="btn btn--secondary btn--lg" data-modal="verify-insurance">
+            <svg width="18" height="18" aria-hidden="true"><use href="assets/icons/sprite.svg#shield"/></svg>
+            Verify My Insurance
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Pricing Tables ── -->
+    <section class="section section--alt pricing-tables-section" id="pricing">
+      <div class="container">
+        <div class="section-header section-header--center reveal">
+          <span class="section-header__eyebrow">Service Pricing</span>
+          <h2 class="section-header__title">Starting Prices by Treatment</h2>
+          <p class="section-header__sub">All prices shown are starting rates. Your exact cost depends on your specific treatment plan. We provide a written estimate before every procedure.</p>
+        </div>
+
+        <!-- Tab Nav -->
+        <div class="pricing-tabs reveal" role="tablist" aria-label="Service pricing categories">
+          <button class="pricing-tab-btn is-active" role="tab" aria-selected="true" aria-controls="pt-general" id="tab-pt-general" data-tab="pt-general">General</button>
+          <button class="pricing-tab-btn" role="tab" aria-selected="false" aria-controls="pt-cosmetic" id="tab-pt-cosmetic" data-tab="pt-cosmetic" tabindex="-1">Cosmetic</button>
+          <button class="pricing-tab-btn" role="tab" aria-selected="false" aria-controls="pt-ortho" id="tab-pt-ortho" data-tab="pt-ortho" tabindex="-1">Orthodontics</button>
+          <button class="pricing-tab-btn" role="tab" aria-selected="false" aria-controls="pt-implants" id="tab-pt-implants" data-tab="pt-implants" tabindex="-1">Implants</button>
+          <button class="pricing-tab-btn" role="tab" aria-selected="false" aria-controls="pt-pediatric" id="tab-pt-pediatric" data-tab="pt-pediatric" tabindex="-1">Pediatric</button>
+          <button class="pricing-tab-btn" role="tab" aria-selected="false" aria-controls="pt-perio" id="tab-pt-perio" data-tab="pt-perio" tabindex="-1">Periodontal</button>
+          <button class="pricing-tab-btn" role="tab" aria-selected="false" aria-controls="pt-emergency" id="tab-pt-emergency" data-tab="pt-emergency" tabindex="-1">Emergency</button>
+        </div>
+
+        <!-- General -->
+        <div class="pricing-panel is-active" id="pt-general" role="tabpanel" aria-labelledby="tab-pt-general">
+          <table class="pricing-table">
+            <thead>
+              <tr>
+                <th scope="col">Service</th>
+                <th scope="col">Starting Price</th>
+                <th scope="col">Insurance Coverage</th>
+                <th scope="col">Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Comprehensive Exam (New Patient)</td><td class="price" data-label="Starting Price">$95</td><td data-label="Insurance Coverage"><span class="badge badge--teal">Often 100%</span></td><td data-label="Notes">Includes X-rays and oral cancer screening</td></tr>
+              <tr><td>Routine Exam (Existing Patient)</td><td class="price" data-label="Starting Price">$65</td><td data-label="Insurance Coverage"><span class="badge badge--teal">Often 100%</span></td><td data-label="Notes">Every 6 months recommended</td></tr>
+              <tr><td>Professional Cleaning (Prophylaxis)</td><td class="price" data-label="Starting Price">$110</td><td data-label="Insurance Coverage"><span class="badge badge--teal">Often 100%</span></td><td data-label="Notes">Includes polishing and fluoride</td></tr>
+              <tr><td>Bitewing X-Rays (4 films)</td><td class="price" data-label="Starting Price">$70</td><td data-label="Insurance Coverage"><span class="badge badge--teal">Often 100%</span></td><td data-label="Notes">Taken every 12–24 months</td></tr>
+              <tr><td>Composite (Tooth-Colored) Filling</td><td class="price" data-label="Starting Price">$175</td><td data-label="Insurance Coverage"><span class="badge badge--muted">50–80% covered</span></td><td data-label="Notes">Per surface; color-matched to your tooth</td></tr>
+              <tr><td>Root Canal Therapy (Anterior)</td><td class="price" data-label="Starting Price">$850</td><td data-label="Insurance Coverage"><span class="badge badge--muted">40–60% covered</span></td><td data-label="Notes">Molar root canals start at $1,200</td></tr>
+              <tr><td>Tooth Extraction (Simple)</td><td class="price" data-label="Starting Price">$200</td><td data-label="Insurance Coverage"><span class="badge badge--muted">50–70% covered</span></td><td data-label="Notes">Surgical extractions from $350</td></tr>
+              <tr><td>Porcelain Crown (CEREC Same-Day)</td><td class="price" data-label="Starting Price">$1,200</td><td data-label="Insurance Coverage"><span class="badge badge--muted">40–50% covered</span></td><td data-label="Notes">No temporary crown — done in 1 visit</td></tr>
+              <tr><td>Dental Bridge (3-unit)</td><td class="price" data-label="Starting Price">$3,200</td><td data-label="Insurance Coverage"><span class="badge badge--muted">40–50% covered</span></td><td data-label="Notes">Includes 2 abutment crowns + pontic</td></tr>
+              <tr><td>Night Guard (Bruxism)</td><td class="price" data-label="Starting Price">$450</td><td data-label="Insurance Coverage"><span class="badge badge--muted">Varies</span></td><td data-label="Notes">Custom-fitted hard acrylic guard</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Cosmetic -->
+        <div class="pricing-panel" id="pt-cosmetic" role="tabpanel" aria-labelledby="tab-pt-cosmetic">
+          <table class="pricing-table">
+            <thead>
+              <tr>
+                <th scope="col">Service</th>
+                <th scope="col">Starting Price</th>
+                <th scope="col">Insurance Coverage</th>
+                <th scope="col">Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Zoom In-Office Whitening</td><td class="price" data-label="Starting Price">$550</td><td data-label="Insurance Coverage"><span class="badge badge--neutral">Not covered</span></td><td data-label="Notes">8–10 shades brighter in 90 minutes</td></tr>
+              <tr><td>Custom Take-Home Whitening Kit</td><td class="price" data-label="Starting Price">$350</td><td data-label="Insurance Coverage"><span class="badge badge--neutral">Not covered</span></td><td data-label="Notes">Trays + 4-week supply of gel</td></tr>
+              <tr><td>Porcelain Veneers (per tooth)</td><td class="price" data-label="Starting Price">$1,400</td><td data-label="Insurance Coverage"><span class="badge badge--neutral">Not covered</span></td><td data-label="Notes">10-year warranty; 2-visit process</td></tr>
+              <tr><td>Composite Bonding (per tooth)</td><td class="price" data-label="Starting Price">$350</td><td data-label="Insurance Coverage"><span class="badge badge--neutral">Not covered</span></td><td data-label="Notes">Same-day; lasts 5–7 years</td></tr>
+              <tr><td>Smile Makeover Package (6 veneers)</td><td class="price" data-label="Starting Price">$7,500</td><td data-label="Insurance Coverage"><span class="badge badge--neutral">Not covered</span></td><td data-label="Notes">Includes consultation + mock-up</td></tr>
+              <tr><td>Gum Contouring (laser)</td><td class="price" data-label="Starting Price">$800</td><td data-label="Insurance Coverage"><span class="badge badge--neutral">Not covered</span></td><td data-label="Notes">Per arch; improves gumline symmetry</td></tr>
+              <tr><td>Tooth Recontouring / Reshaping</td><td class="price" data-label="Starting Price">$150</td><td data-label="Insurance Coverage"><span class="badge badge--neutral">Not covered</span></td><td data-label="Notes">Per tooth; no anaesthetic needed</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Orthodontics -->
+        <div class="pricing-panel" id="pt-ortho" role="tabpanel" aria-labelledby="tab-pt-ortho">
+          <table class="pricing-table">
+            <thead>
+              <tr>
+                <th scope="col">Service</th>
+                <th scope="col">Starting Price</th>
+                <th scope="col">Insurance Coverage</th>
+                <th scope="col">Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Invisalign (Full Treatment)</td><td class="price" data-label="Starting Price">$4,500</td><td data-label="Insurance Coverage"><span class="badge badge--muted">Up to $1,500</span></td><td data-label="Notes">Includes refinements; average 12–18 months</td></tr>
+              <tr><td>Invisalign Lite (Mild Cases)</td><td class="price" data-label="Starting Price">$3,000</td><td data-label="Insurance Coverage"><span class="badge badge--muted">Up to $1,000</span></td><td data-label="Notes">Up to 14 aligner sets</td></tr>
+              <tr><td>Traditional Metal Braces</td><td class="price" data-label="Starting Price">$3,800</td><td data-label="Insurance Coverage"><span class="badge badge--muted">Up to $1,500</span></td><td data-label="Notes">Most cost-effective for complex cases</td></tr>
+              <tr><td>Ceramic (Clear) Braces</td><td class="price" data-label="Starting Price">$4,200</td><td data-label="Insurance Coverage"><span class="badge badge--muted">Up to $1,500</span></td><td data-label="Notes">Less visible than metal</td></tr>
+              <tr><td>Orthodontic Retainer (set)</td><td class="price" data-label="Starting Price">$450</td><td data-label="Insurance Coverage"><span class="badge badge--muted">Sometimes covered</span></td><td data-label="Notes">Vivera or Hawley; replacement from $250</td></tr>
+              <tr><td>Orthodontic Consultation</td><td class="price" data-label="Starting Price">Free</td><td data-label="Insurance Coverage"><span class="badge badge--teal">Complimentary</span></td><td data-label="Notes">Includes digital photos and X-ray review</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Implants -->
+        <div class="pricing-panel" id="pt-implants" role="tabpanel" aria-labelledby="tab-pt-implants">
+          <table class="pricing-table">
+            <thead>
+              <tr>
+                <th scope="col">Service</th>
+                <th scope="col">Starting Price</th>
+                <th scope="col">Insurance Coverage</th>
+                <th scope="col">Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Single Tooth Implant (complete)</td><td class="price" data-label="Starting Price">$3,500</td><td data-label="Insurance Coverage"><span class="badge badge--muted">Varies by plan</span></td><td data-label="Notes">Includes implant, abutment, and crown</td></tr>
+              <tr><td>Implant Crown Only (on existing post)</td><td class="price" data-label="Starting Price">$1,500</td><td data-label="Insurance Coverage"><span class="badge badge--muted">40–50% covered</span></td><td data-label="Notes">When implant post is already placed</td></tr>
+              <tr><td>Implant-Supported Bridge (3-unit)</td><td class="price" data-label="Starting Price">$6,500</td><td data-label="Insurance Coverage"><span class="badge badge--muted">Partial coverage</span></td><td data-label="Notes">Replaces 1 tooth using 2 implants</td></tr>
+              <tr><td>All-on-4 (per arch)</td><td class="price" data-label="Starting Price">$24,000</td><td data-label="Insurance Coverage"><span class="badge badge--neutral">Typically not covered</span></td><td data-label="Notes">Full arch on 4 implants; immediate load</td></tr>
+              <tr><td>Bone Grafting (socket)</td><td class="price" data-label="Starting Price">$450</td><td data-label="Insurance Coverage"><span class="badge badge--muted">Sometimes covered</span></td><td data-label="Notes">Required when bone volume is insufficient</td></tr>
+              <tr><td>Sinus Lift</td><td class="price" data-label="Starting Price">$2,200</td><td data-label="Insurance Coverage"><span class="badge badge--muted">Sometimes covered</span></td><td data-label="Notes">For upper jaw implants</td></tr>
+              <tr><td>Implant Consultation + CT Scan</td><td class="price" data-label="Starting Price">$250</td><td data-label="Insurance Coverage"><span class="badge badge--muted">Sometimes covered</span></td><td data-label="Notes">Applied toward treatment if you proceed</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Pediatric -->
+        <div class="pricing-panel" id="pt-pediatric" role="tabpanel" aria-labelledby="tab-pt-pediatric">
+          <table class="pricing-table">
+            <thead>
+              <tr>
+                <th scope="col">Service</th>
+                <th scope="col">Starting Price</th>
+                <th scope="col">Insurance Coverage</th>
+                <th scope="col">Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Child's First Exam (age 1–3)</td><td class="price" data-label="Starting Price">Free</td><td data-label="Insurance Coverage"><span class="badge badge--teal">Complimentary</span></td><td data-label="Notes">ADA recommends first visit by age 1</td></tr>
+              <tr><td>Child Exam + Cleaning (age 3–12)</td><td class="price" data-label="Starting Price">$95</td><td data-label="Insurance Coverage"><span class="badge badge--teal">Often 100%</span></td><td data-label="Notes">Includes age-appropriate X-rays</td></tr>
+              <tr><td>Dental Sealants (per tooth)</td><td class="price" data-label="Starting Price">$50</td><td data-label="Insurance Coverage"><span class="badge badge--teal">Often 100%</span></td><td data-label="Notes">Molars only; prevents 80% of decay</td></tr>
+              <tr><td>Fluoride Treatment</td><td class="price" data-label="Starting Price">$35</td><td data-label="Insurance Coverage"><span class="badge badge--teal">Often 100%</span></td><td data-label="Notes">Every 6 months for children under 16</td></tr>
+              <tr><td>Space Maintainer</td><td class="price" data-label="Starting Price">$350</td><td data-label="Insurance Coverage"><span class="badge badge--muted">Often covered</span></td><td data-label="Notes">After premature loss of baby tooth</td></tr>
+              <tr><td>Pulpotomy (Baby Root Canal)</td><td class="price" data-label="Starting Price">$280</td><td data-label="Insurance Coverage"><span class="badge badge--muted">Often covered</span></td><td data-label="Notes">Saves baby teeth when possible</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Periodontal -->
+        <div class="pricing-panel" id="pt-perio" role="tabpanel" aria-labelledby="tab-pt-perio">
+          <table class="pricing-table">
+            <thead>
+              <tr>
+                <th scope="col">Service</th>
+                <th scope="col">Starting Price</th>
+                <th scope="col">Insurance Coverage</th>
+                <th scope="col">Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Periodontal Exam + Charting</td><td class="price" data-label="Starting Price">$65</td><td data-label="Insurance Coverage"><span class="badge badge--teal">Often covered</span></td><td data-label="Notes">Full-mouth pocket depth measurements</td></tr>
+              <tr><td>Scaling &amp; Root Planing (per quad)</td><td class="price" data-label="Starting Price">$295</td><td data-label="Insurance Coverage"><span class="badge badge--muted">50–80% covered</span></td><td data-label="Notes">Deep cleaning below the gumline</td></tr>
+              <tr><td>Periodontal Maintenance (perio cleaning)</td><td class="price" data-label="Starting Price">$195</td><td data-label="Insurance Coverage"><span class="badge badge--muted">Often covered</span></td><td data-label="Notes">Every 3–4 months after gum therapy</td></tr>
+              <tr><td>Arestin Antibiotic Treatment</td><td class="price" data-label="Starting Price">$75/site</td><td data-label="Insurance Coverage"><span class="badge badge--muted">Varies</span></td><td data-label="Notes">Placed directly in infected pockets</td></tr>
+              <tr><td>Osseous Surgery (per quad)</td><td class="price" data-label="Starting Price">$1,400</td><td data-label="Insurance Coverage"><span class="badge badge--muted">50–80% covered</span></td><td data-label="Notes">For advanced bone loss; specialist referral</td></tr>
+              <tr><td>Gum Grafting</td><td class="price" data-label="Starting Price">$950</td><td data-label="Insurance Coverage"><span class="badge badge--muted">Sometimes covered</span></td><td data-label="Notes">For recession exposing tooth roots</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Emergency -->
+        <div class="pricing-panel" id="pt-emergency" role="tabpanel" aria-labelledby="tab-pt-emergency">
+          <table class="pricing-table">
+            <thead>
+              <tr>
+                <th scope="col">Service</th>
+                <th scope="col">Starting Price</th>
+                <th scope="col">Insurance Coverage</th>
+                <th scope="col">Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Emergency Exam + X-Ray</td><td class="price" data-label="Starting Price">$85</td><td data-label="Insurance Coverage"><span class="badge badge--muted">Often covered</span></td><td data-label="Notes">Same-day; applied to treatment cost</td></tr>
+              <tr><td>Toothache Treatment (palliative)</td><td class="price" data-label="Starting Price">$150</td><td data-label="Insurance Coverage"><span class="badge badge--muted">Varies</span></td><td data-label="Notes">Immediate pain relief; further treatment may follow</td></tr>
+              <tr><td>Broken / Chipped Tooth Repair</td><td class="price" data-label="Starting Price">$175+</td><td data-label="Insurance Coverage"><span class="badge badge--muted">Varies</span></td><td data-label="Notes">Bonding or crown depending on extent</td></tr>
+              <tr><td>Lost Crown Re-cementation</td><td class="price" data-label="Starting Price">$95</td><td data-label="Insurance Coverage"><span class="badge badge--muted">Sometimes covered</span></td><td data-label="Notes">If crown is intact and salvageable</td></tr>
+              <tr><td>Dental Abscess Drainage + Antibiotics</td><td class="price" data-label="Starting Price">$250</td><td data-label="Insurance Coverage"><span class="badge badge--muted">Often covered</span></td><td data-label="Notes">Includes prescription if needed</td></tr>
+              <tr><td>Tooth Knocked Out (re-implantation)</td><td class="price" data-label="Starting Price">$500+</td><td data-label="Insurance Coverage"><span class="badge badge--muted">Varies</span></td><td data-label="Notes">Call immediately — time is critical</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="pricing-disclaimer reveal">All prices are in USD and represent starting rates. Actual fees may vary based on complexity, materials, and individual treatment needs. A detailed written estimate will be provided before treatment begins. Insurance coverage percentages are estimates — your actual benefits depend on your plan.</p>
+      </div>
+    </section>
+
+    <!-- ── Membership Plans ── -->
+    <section class="section membership-section" id="membership">
+      <div class="container">
+        <div class="section-header section-header--center reveal">
+          <span class="section-header__eyebrow">No Insurance? No Problem.</span>
+          <h2 class="section-header__title">BrightSmile Membership Plans</h2>
+          <p class="section-header__sub">Our in-house membership plan gives you access to essential dental care at a simple monthly fee — no deductibles, no waiting periods, no claim forms.</p>
+        </div>
+
+        <div class="plan-cards reveal">
+
+          <!-- Basic -->
+          <div class="plan-card">
+            <div class="plan-card__header">
+              <p class="plan-card__name">Basic</p>
+              <div class="plan-card__price">
+                <span class="plan-card__amount">$29</span>
+                <span class="plan-card__period">/ month</span>
+              </div>
+              <p class="plan-card__desc">Essential preventive care for one adult</p>
+            </div>
+            <ul class="plan-card__features">
+              <li>
+                <svg width="16" height="16" aria-hidden="true"><use href="assets/icons/sprite.svg#check"/></svg>
+                2 routine exams per year
+              </li>
+              <li>
+                <svg width="16" height="16" aria-hidden="true"><use href="assets/icons/sprite.svg#check"/></svg>
+                2 professional cleanings per year
+              </li>
+              <li>
+                <svg width="16" height="16" aria-hidden="true"><use href="assets/icons/sprite.svg#check"/></svg>
+                1 set of bitewing X-rays per year
+              </li>
+              <li>
+                <svg width="16" height="16" aria-hidden="true"><use href="assets/icons/sprite.svg#check"/></svg>
+                Oral cancer screening included
+              </li>
+              <li>
+                <svg width="16" height="16" aria-hidden="true"><use href="assets/icons/sprite.svg#check"/></svg>
+                10% off all additional treatments
+              </li>
+              <li>
+                <svg width="16" height="16" aria-hidden="true"><use href="assets/icons/sprite.svg#check"/></svg>
+                Emergency exam always free
+              </li>
+            </ul>
+            <div class="plan-card__footer">
+              <a href="booking.html" class="btn btn--outline btn--lg" style="width:100%;text-align:center">Get Started</a>
+              <p class="plan-card__billing">Billed monthly — cancel anytime</p>
+            </div>
+          </div>
+
+          <!-- Family (Featured) -->
+          <div class="plan-card plan-card--featured">
+            <div class="plan-card__badge">Most Popular</div>
+            <div class="plan-card__header">
+              <p class="plan-card__name">Family</p>
+              <div class="plan-card__price">
+                <span class="plan-card__amount">$79</span>
+                <span class="plan-card__period">/ month</span>
+              </div>
+              <p class="plan-card__desc">Complete care for up to 4 family members</p>
+            </div>
+            <ul class="plan-card__features">
+              <li>
+                <svg width="16" height="16" aria-hidden="true"><use href="assets/icons/sprite.svg#check"/></svg>
+                Everything in Basic (×4 members)
+              </li>
+              <li>
+                <svg width="16" height="16" aria-hidden="true"><use href="assets/icons/sprite.svg#check"/></svg>
+                Children's fluoride treatments included
+              </li>
+              <li>
+                <svg width="16" height="16" aria-hidden="true"><use href="assets/icons/sprite.svg#check"/></svg>
+                Dental sealants for children (up to age 16)
+              </li>
+              <li>
+                <svg width="16" height="16" aria-hidden="true"><use href="assets/icons/sprite.svg#check"/></svg>
+                15% off all additional treatments
+              </li>
+              <li>
+                <svg width="16" height="16" aria-hidden="true"><use href="assets/icons/sprite.svg#check"/></svg>
+                Priority same-day emergency scheduling
+              </li>
+              <li>
+                <svg width="16" height="16" aria-hidden="true"><use href="assets/icons/sprite.svg#check"/></svg>
+                Free whitening touch-up kit (1×/year)
+              </li>
+            </ul>
+            <div class="plan-card__footer">
+              <a href="booking.html" class="btn btn--primary btn--lg" style="width:100%;text-align:center">Get Started</a>
+              <p class="plan-card__billing">Billed monthly — cancel anytime</p>
+            </div>
+          </div>
+
+          <!-- Premium -->
+          <div class="plan-card">
+            <div class="plan-card__header">
+              <p class="plan-card__name">Premium</p>
+              <div class="plan-card__price">
+                <span class="plan-card__amount">$99</span>
+                <span class="plan-card__period">/ month</span>
+              </div>
+              <p class="plan-card__desc">All-inclusive care with cosmetic perks</p>
+            </div>
+            <ul class="plan-card__features">
+              <li>
+                <svg width="16" height="16" aria-hidden="true"><use href="assets/icons/sprite.svg#check"/></svg>
+                Everything in Family Plan
+              </li>
+              <li>
+                <svg width="16" height="16" aria-hidden="true"><use href="assets/icons/sprite.svg#check"/></svg>
+                3 professional cleanings per year
+              </li>
+              <li>
+                <svg width="16" height="16" aria-hidden="true"><use href="assets/icons/sprite.svg#check"/></svg>
+                Annual Zoom whitening treatment included
+              </li>
+              <li>
+                <svg width="16" height="16" aria-hidden="true"><use href="assets/icons/sprite.svg#check"/></svg>
+                20% off all cosmetic treatments
+              </li>
+              <li>
+                <svg width="16" height="16" aria-hidden="true"><use href="assets/icons/sprite.svg#check"/></svg>
+                Dedicated patient care coordinator
+              </li>
+              <li>
+                <svg width="16" height="16" aria-hidden="true"><use href="assets/icons/sprite.svg#check"/></svg>
+                Complimentary night guard fitting
+              </li>
+            </ul>
+            <div class="plan-card__footer">
+              <a href="booking.html" class="btn btn--outline btn--lg" style="width:100%;text-align:center">Get Started</a>
+              <p class="plan-card__billing">Billed monthly — cancel anytime</p>
+            </div>
+          </div>
+
+        </div><!-- /plan-cards -->
+      </div>
+    </section>
+
+    <!-- ── Financing ── -->
+    <section class="section section--alt financing-section" id="financing">
+      <div class="container">
+        <div class="section-header section-header--center reveal">
+          <span class="section-header__eyebrow">Financing</span>
+          <h2 class="section-header__title">Flexible Payment Options</h2>
+          <p class="section-header__sub">We believe cost should never stand between you and a healthy smile. We offer multiple ways to make your care affordable.</p>
+        </div>
+
+        <div class="financing-options reveal">
+          <div class="financing-card">
+            <div class="financing-card__logo" aria-label="CareCredit">
+              <span class="financing-card__logo-text">CareCredit</span>
+            </div>
+            <h3 class="financing-card__title">CareCredit Healthcare Financing</h3>
+            <p class="financing-card__desc">Apply for 0% interest financing for 6, 12, or 18 months for qualifying treatments. Quick online application — most decisions in minutes.</p>
+            <ul class="check-list check-list--sm">
+              <li>0% APR for 6–18 months on qualifying purchases</li>
+              <li>Minimum monthly payments as low as $25</li>
+              <li>No annual fee</li>
+              <li>Use for any dental treatment, any amount</li>
+            </ul>
+            <a href="#" class="btn btn--secondary" style="margin-top:var(--space-4)">Apply for CareCredit</a>
+          </div>
+
+          <div class="financing-card">
+            <div class="financing-card__logo financing-card__logo--navy" aria-label="BrightSmile In-House Plan">
+              <svg width="24" height="24" aria-hidden="true"><use href="assets/icons/sprite.svg#tooth"/></svg>
+              <span>In-House Plan</span>
+            </div>
+            <h3 class="financing-card__title">BrightSmile Payment Plans</h3>
+            <p class="financing-card__desc">No third-party lender needed. We offer our own interest-free payment plans for treatments over $500, arranged directly with our office.</p>
+            <ul class="check-list check-list--sm">
+              <li>0% interest — no financing charges</li>
+              <li>Split treatment cost into 3–12 monthly payments</li>
+              <li>Available for most treatments $500+</li>
+              <li>Simple agreement — no hard credit check</li>
+            </ul>
+            <a href="contact.html" class="btn btn--outline" style="margin-top:var(--space-4)">Ask Us About Payment Plans</a>
+          </div>
+        </div>
+
+        <!-- Financing FAQ -->
+        <div class="financing-faq reveal" style="margin-top:var(--space-10)">
+          <h3 class="financing-faq__title">Financing FAQ</h3>
+          <div class="accordion" id="financing-accordion">
+            <div class="accordion-item">
+              <h4>
+                <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-fin-1" id="faq-fin-1-btn">
+                  Does applying for CareCredit affect my credit score?
+                  <svg class="accordion-icon" width="18" height="18" aria-hidden="true"><use href="assets/icons/sprite.svg#chevron-down"/></svg>
+                </button>
+              </h4>
+              <div id="faq-fin-1" role="region" aria-labelledby="faq-fin-1-btn" class="accordion-panel" style="max-height:0;overflow:hidden">
+                <div class="accordion-panel__body">
+                  <p>Applying for CareCredit does involve a hard credit inquiry, which may temporarily affect your score by a few points. However, if you're approved and manage your account responsibly, your credit score may improve over time. Many patients are approved even with less-than-perfect credit.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h4>
+                <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-fin-2" id="faq-fin-2-btn">
+                  What happens if I miss a payment?
+                  <svg class="accordion-icon" width="18" height="18" aria-hidden="true"><use href="assets/icons/sprite.svg#chevron-down"/></svg>
+                </button>
+              </h4>
+              <div id="faq-fin-2" role="region" aria-labelledby="faq-fin-2-btn" class="accordion-panel" style="max-height:0;overflow:hidden">
+                <div class="accordion-panel__body">
+                  <p>For CareCredit accounts, a missed payment may result in interest charges and late fees per the cardholder agreement. For our in-house payment plans, please contact our billing team immediately if you anticipate difficulty — we will work with you to adjust your payment schedule.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h4>
+                <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-fin-3" id="faq-fin-3-btn">
+                  Can I use HSA or FSA funds for dental care?
+                  <svg class="accordion-icon" width="18" height="18" aria-hidden="true"><use href="assets/icons/sprite.svg#chevron-down"/></svg>
+                </button>
+              </h4>
+              <div id="faq-fin-3" role="region" aria-labelledby="faq-fin-3-btn" class="accordion-panel" style="max-height:0;overflow:hidden">
+                <div class="accordion-panel__body">
+                  <p>Yes! We accept HSA (Health Savings Account) and FSA (Flexible Spending Account) cards for most dental treatments, including preventive care, fillings, crowns, orthodontics, and medically necessary procedures. Note that purely cosmetic treatments like whitening are typically not FSA/HSA eligible.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h4>
+                <button class="accordion-trigger" aria-expanded="false" aria-controls="faq-fin-4" id="faq-fin-4-btn">
+                  Do you offer discounts for paying in full upfront?
+                  <svg class="accordion-icon" width="18" height="18" aria-hidden="true"><use href="assets/icons/sprite.svg#chevron-down"/></svg>
+                </button>
+              </h4>
+              <div id="faq-fin-4" role="region" aria-labelledby="faq-fin-4-btn" class="accordion-panel" style="max-height:0;overflow:hidden">
+                <div class="accordion-panel__body">
+                  <p>For large treatment plans (typically $2,000+), we may offer a courtesy discount for payment in full at time of service. Please speak with our financial coordinator to discuss your specific treatment plan and available courtesy adjustments.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── Billing FAQ ── -->
+    <section class="section billing-faq-section" id="billing-faq">
+      <div class="container">
+        <div class="section-header section-header--center reveal">
+          <span class="section-header__eyebrow">Got Questions?</span>
+          <h2 class="section-header__title">Billing &amp; Insurance FAQ</h2>
+        </div>
+        <div class="accordion billing-accordion reveal" id="billing-accordion">
+          <div class="accordion-item">
+            <h3>
+              <button class="accordion-trigger" aria-expanded="false" aria-controls="bfaq-1" id="bfaq-1-btn">
+                When will I receive my bill?
+                <svg class="accordion-icon" width="18" height="18" aria-hidden="true"><use href="assets/icons/sprite.svg#chevron-down"/></svg>
+              </button>
+            </h3>
+            <div id="bfaq-1" role="region" aria-labelledby="bfaq-1-btn" class="accordion-panel" style="max-height:0;overflow:hidden">
+              <div class="accordion-panel__body">
+                <p>If you have insurance, we submit your claim immediately after your visit. Once we receive the insurance payment (typically 2–4 weeks), we send you a statement for any remaining balance. Uninsured patients receive their statement at checkout or within 5 business days.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3>
+              <button class="accordion-trigger" aria-expanded="false" aria-controls="bfaq-2" id="bfaq-2-btn">
+                What payment methods do you accept?
+                <svg class="accordion-icon" width="18" height="18" aria-hidden="true"><use href="assets/icons/sprite.svg#chevron-down"/></svg>
+              </button>
+            </h3>
+            <div id="bfaq-2" role="region" aria-labelledby="bfaq-2-btn" class="accordion-panel" style="max-height:0;overflow:hidden">
+              <div class="accordion-panel__body">
+                <p>We accept Visa, Mastercard, American Express, Discover, cash, checks, HSA/FSA cards, CareCredit, and our in-house payment plan. We do not accept Apple Pay or Google Pay at this time.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3>
+              <button class="accordion-trigger" aria-expanded="false" aria-controls="bfaq-3" id="bfaq-3-btn">
+                Will I know the cost before my treatment?
+                <svg class="accordion-icon" width="18" height="18" aria-hidden="true"><use href="assets/icons/sprite.svg#chevron-down"/></svg>
+              </button>
+            </h3>
+            <div id="bfaq-3" role="region" aria-labelledby="bfaq-3-btn" class="accordion-panel" style="max-height:0;overflow:hidden">
+              <div class="accordion-panel__body">
+                <p>Absolutely. We provide a written treatment plan with estimated costs — including your estimated insurance coverage and your out-of-pocket portion — before any procedure begins. We never proceed with treatment without your informed consent.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3>
+              <button class="accordion-trigger" aria-expanded="false" aria-controls="bfaq-4" id="bfaq-4-btn">
+                Why did my insurance pay less than expected?
+                <svg class="accordion-icon" width="18" height="18" aria-hidden="true"><use href="assets/icons/sprite.svg#chevron-down"/></svg>
+              </button>
+            </h3>
+            <div id="bfaq-4" role="region" aria-labelledby="bfaq-4-btn" class="accordion-panel" style="max-height:0;overflow:hidden">
+              <div class="accordion-panel__body">
+                <p>Insurance companies sometimes pay less than expected due to annual maximums being reached, missing documentation, frequency limitations, or alternative benefit clauses. Our billing team will contact your insurer on your behalf to clarify and appeal if appropriate. Please contact us if you have questions about your Explanation of Benefits (EOB).</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3>
+              <button class="accordion-trigger" aria-expanded="false" aria-controls="bfaq-5" id="bfaq-5-btn">
+                Do you offer a senior discount?
+                <svg class="accordion-icon" width="18" height="18" aria-hidden="true"><use href="assets/icons/sprite.svg#chevron-down"/></svg>
+              </button>
+            </h3>
+            <div id="bfaq-5" role="region" aria-labelledby="bfaq-5-btn" class="accordion-panel" style="max-height:0;overflow:hidden">
+              <div class="accordion-panel__body">
+                <p>Yes — patients aged 65+ without dental insurance may qualify for a 10% senior discount on most treatments. Please mention this when booking and present a valid ID at your appointment. This discount cannot be combined with other offers.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3>
+              <button class="accordion-trigger" aria-expanded="false" aria-controls="bfaq-6" id="bfaq-6-btn">
+                What if I can't afford the recommended treatment?
+                <svg class="accordion-icon" width="18" height="18" aria-hidden="true"><use href="assets/icons/sprite.svg#chevron-down"/></svg>
+              </button>
+            </h3>
+            <div id="bfaq-6" role="region" aria-labelledby="bfaq-6-btn" class="accordion-panel" style="max-height:0;overflow:hidden">
+              <div class="accordion-panel__body">
+                <p>We believe everyone deserves access to dental care. If cost is a concern, please talk to us — we'll explore every available option including payment plans, phased treatment over time, CareCredit, and occasionally sliding-scale fees for hardship cases. We'll never pressure you into treatment and will always explain the consequences of delaying care.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3>
+              <button class="accordion-trigger" aria-expanded="false" aria-controls="bfaq-7" id="bfaq-7-btn">
+                Do you accept Medicaid or CHIP?
+                <svg class="accordion-icon" width="18" height="18" aria-hidden="true"><use href="assets/icons/sprite.svg#chevron-down"/></svg>
+              </button>
+            </h3>
+            <div id="bfaq-7" role="region" aria-labelledby="bfaq-7-btn" class="accordion-panel" style="max-height:0;overflow:hidden">
+              <div class="accordion-panel__body">
+                <p>We currently accept CHIP (Children's Health Insurance Program) for patients under 18. We do not accept adult Medicaid at this time. If you are uninsured, we encourage you to ask about our membership plan or payment plan options.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3>
+              <button class="accordion-trigger" aria-expanded="false" aria-controls="bfaq-8" id="bfaq-8-btn">
+                How do I dispute a charge on my bill?
+                <svg class="accordion-icon" width="18" height="18" aria-hidden="true"><use href="assets/icons/sprite.svg#chevron-down"/></svg>
+              </button>
+            </h3>
+            <div id="bfaq-8" role="region" aria-labelledby="bfaq-8-btn" class="accordion-panel" style="max-height:0;overflow:hidden">
+              <div class="accordion-panel__body">
+                <p>Contact our billing department at <a href="mailto:billing@brightsmile.com" class="link">billing@brightsmile.com</a> or call <a href="tel:+15551234568" class="link">(555) 123-4568</a> (billing line). Please have your account number and the date of service ready. We aim to resolve all billing disputes within 5 business days.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA Strip ── -->
+    <section class="cta-strip cta-strip--teal">
+      <div class="container">
+        <div class="cta-strip__inner reveal">
+          <h2 class="cta-strip__title">Questions About Your Coverage?</h2>
+          <p class="cta-strip__sub">Our billing team is here to help — call, email, or drop in and we'll sort it out together.</p>
+          <div class="cta-strip__actions">
+            <a href="booking.html" class="btn btn--white btn--lg">Book an Appointment</a>
+            <a href="contact.html" class="btn btn--outline-white btn--lg">Contact Billing Team</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Insurance Verify Modal -->
+  <div id="verify-insurance" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="verify-modal-title" hidden>
+    <div class="modal">
+      <div class="modal__header">
+        <h2 class="modal__title" id="verify-modal-title">Verify My Insurance</h2>
+        <button class="modal__close" aria-label="Close dialog" data-modal-close>
+          <svg width="20" height="20" aria-hidden="true"><use href="assets/icons/sprite.svg#x"/></svg>
+        </button>
+      </div>
+      <div class="modal__body">
+        <p>Enter your insurance details below and our team will verify your coverage within one business day.</p>
+        <form class="modal-form" novalidate>
+          <div class="form-group">
+            <label class="form-label" for="v-name">Full Name <abbr title="required">*</abbr></label>
+            <input type="text" id="v-name" class="form-input" placeholder="Jane Smith" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="v-dob">Date of Birth <abbr title="required">*</abbr></label>
+            <input type="date" id="v-dob" class="form-input" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="v-provider">Insurance Provider <abbr title="required">*</abbr></label>
+            <select id="v-provider" class="form-select" required>
+              <option value="">Select…</option>
+              <option>Aetna</option><option>Cigna</option><option>Delta Dental</option>
+              <option>Guardian</option><option>Humana</option><option>MetLife</option>
+              <option>United Healthcare</option><option>Blue Cross Blue Shield</option><option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="v-member">Member ID <abbr title="required">*</abbr></label>
+            <input type="text" id="v-member" class="form-input" placeholder="e.g. AET123456" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="v-phone">Phone Number <abbr title="required">*</abbr></label>
+            <input type="tel" id="v-phone" class="form-input" placeholder="(555) 000-0000" required />
+          </div>
+          <button type="submit" class="btn btn--primary btn--lg" style="width:100%">Submit Verification Request</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer-container"></div>
+
+  <a href="booking.html" class="floating-book-btn" aria-label="Book appointment">
+    <svg width="20" height="20" aria-hidden="true"><use href="assets/icons/sprite.svg#calendar"/></svg>
+    Book Now
+  </a>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

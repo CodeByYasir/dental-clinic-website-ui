@@ -1,0 +1,493 @@
+/* =========================================
+   BRIGHTSMILE DENTAL — RESOURCES PAGE
+   ========================================= */
+
+/* ── Resources Tab Nav ── */
+.resources-tabs-nav {
+  display: flex;
+  border-bottom: 2px solid var(--color-border);
+  margin-bottom: var(--space-6);
+  gap: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.resources-tabs-nav::-webkit-scrollbar { display: none; }
+
+.resources-tab-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+  border: none;
+  background: none;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -2px;
+  transition: color var(--transition-fast), border-color var(--transition-fast);
+  min-height: 52px;
+}
+
+.resources-tab-btn:hover { color: var(--color-teal); }
+
+.resources-tab-btn.is-active {
+  color: var(--color-teal);
+  font-weight: var(--weight-semibold);
+  border-bottom-color: var(--color-teal);
+}
+
+.resources-tab-btn:focus-visible {
+  outline: 2px solid var(--color-teal);
+  outline-offset: -2px;
+}
+
+.resources-panel {
+  display: none;
+}
+
+.resources-panel.is-active {
+  display: block;
+  animation: fadeIn 0.3s var(--ease-out) both;
+}
+
+/* ── FAQ Section ── */
+.faq-category {
+  margin-bottom: var(--space-5);
+}
+
+.faq-category__title {
+  font-family: var(--font-heading);
+  font-size: var(--h4-size);
+  color: var(--color-navy);
+  margin-bottom: var(--space-3);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.faq-category__title span {
+  font-size: 1.25rem;
+}
+
+/* Accordion styles are in components.css */
+
+/* ── Download Cards ── */
+.forms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-3);
+}
+
+.form-download-card {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  padding: var(--space-3);
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  transition: box-shadow var(--transition-base), border-color var(--transition-base);
+}
+
+.form-download-card:hover {
+  box-shadow: var(--shadow-sm);
+  border-color: var(--color-teal);
+}
+
+.form-download-card__icon {
+  width: 48px;
+  height: 56px;
+  background: var(--color-soft-blue);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-navy);
+  flex-shrink: 0;
+  font-size: 1.5rem;
+}
+
+.form-download-card__body {
+  flex: 1;
+}
+
+.form-download-card__title {
+  font-weight: var(--weight-semibold);
+  color: var(--color-navy);
+  font-size: var(--text-sm);
+  margin-bottom: 4px;
+}
+
+.form-download-card__desc {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  line-height: var(--leading-relaxed);
+  margin-bottom: var(--space-2);
+}
+
+/* ── Aftercare Cards ── */
+.aftercare-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-4);
+}
+
+/* old aftercare-card rules removed — see full block below */
+
+.aftercare-steps {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.aftercare-steps li {
+  display: flex;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
+
+.aftercare-step-num {
+  width: 22px;
+  height: 22px;
+  border-radius: var(--radius-circle);
+  background: var(--color-teal);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--text-xs);
+  font-weight: var(--weight-bold);
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* ── Education Cards ── */
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-4);
+}
+
+.education-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-4);
+  transition: box-shadow var(--transition-base);
+}
+
+.education-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.education-card__icon {
+  font-size: 2rem;
+  margin-bottom: var(--space-2);
+}
+
+.education-card__category {
+  display: inline-block;
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+  color: var(--color-teal);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wider);
+  margin-bottom: var(--space-1);
+}
+
+.education-card__title {
+  font-family: var(--font-heading);
+  font-size: var(--text-xl);
+  color: var(--color-navy);
+  margin-bottom: var(--space-1);
+}
+
+.education-card__excerpt {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--leading-relaxed);
+  margin-bottom: var(--space-3);
+}
+
+.education-card__icon {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-lg);
+  background: var(--color-soft-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-navy);
+  margin-bottom: var(--space-3);
+  flex-shrink: 0;
+}
+
+.education-card__icon--teal { background: var(--color-muted-mint); color: var(--color-teal); }
+.education-card__icon--gold { background: #FEF9EC; color: var(--color-accent-gold); }
+.education-card__icon--navy { background: var(--color-navy); color: white; }
+
+.education-card__tips {
+  background: var(--color-warm-neutral);
+  border-radius: var(--radius-md);
+  padding: var(--space-3);
+  font-size: var(--text-sm);
+}
+
+.education-card__tips-label {
+  font-weight: var(--weight-semibold);
+  color: var(--color-navy);
+  font-size: var(--text-xs);
+  margin-bottom: var(--space-2);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.education-card__tips ul {
+  padding-left: var(--space-3);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.education-card__tips li {
+  color: var(--color-text-secondary);
+  line-height: 1.4;
+}
+
+/* ── Resources panel intro ── */
+.resources-panel__intro {
+  margin-bottom: var(--space-6);
+}
+
+.resources-panel__intro h2 {
+  font-family: var(--font-heading);
+  font-size: var(--text-3xl);
+  color: var(--color-navy);
+  margin-bottom: var(--space-2);
+}
+
+.resources-panel__intro p {
+  color: var(--color-text-secondary);
+}
+
+/* ── FAQ category groups ── */
+.faq-category {
+  margin-bottom: var(--space-8);
+}
+
+.faq-category__title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-heading);
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--color-navy);
+  margin-bottom: var(--space-1);
+  letter-spacing: -0.01em;
+}
+
+.faq-category__title svg { color: var(--color-teal); flex-shrink: 0; }
+
+.faq-category__subtitle {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-3);
+}
+
+/* ── Form download card ── */
+.forms-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.form-download-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-4);
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  transition: box-shadow var(--transition-fast);
+}
+
+.form-download-card:hover { box-shadow: var(--shadow-sm); }
+
+.form-download-card__icon {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-lg);
+  background: var(--color-soft-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-navy);
+  flex-shrink: 0;
+}
+
+.form-download-card__icon--teal { background: var(--color-muted-mint); color: var(--color-teal); }
+.form-download-card__icon--gold { background: #FEF9EC; color: var(--color-accent-gold); }
+.form-download-card__icon--navy { background: var(--color-navy); color: white; }
+
+.form-download-card__content { flex: 1; }
+
+.form-download-card__title {
+  font-weight: var(--weight-semibold);
+  color: var(--color-navy);
+  margin-bottom: 4px;
+}
+
+.form-download-card__desc {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+  margin-bottom: 4px;
+}
+
+.form-download-card__meta {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+}
+
+.forms-note {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-warm-neutral);
+  border-radius: var(--radius-lg);
+  border-left: 3px solid var(--color-border);
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  margin-top: var(--space-5);
+}
+
+.forms-note svg { color: var(--color-text-muted); flex-shrink: 0; margin-top: 2px; }
+
+/* ── Aftercare grid ── */
+.aftercare-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-4);
+}
+
+.aftercare-card {
+  background: var(--color-white);
+  border: 1px solid #e4eaf3;
+  border-radius: 16px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 1px 6px rgba(27, 58, 107, 0.07);
+  overflow: hidden;
+  transition: box-shadow 220ms ease, border-color 220ms ease;
+}
+
+.aftercare-card:hover {
+  box-shadow: 0 6px 22px rgba(27, 58, 107, 0.11);
+  border-color: #bfcfe6;
+}
+
+/* Header strip — soft blue tint for visual hierarchy */
+.aftercare-card__header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 22px 24px 20px;
+  background: linear-gradient(135deg, #eef4fb 0%, #f2f7fd 100%);
+  border-bottom: 1px solid #dde8f5;
+}
+
+.aftercare-card__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 11px;
+  background: #dde8f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1e4a8a;
+  flex-shrink: 0;
+  box-shadow: 0 1px 4px rgba(27,58,107,0.12);
+}
+
+/* Icon colour variants */
+.aftercare-card__icon--teal {
+  background: #cceee9;
+  color: #086b64;
+}
+.aftercare-card__icon--gold {
+  background: #fef0c0;
+  color: #a16207;
+}
+.aftercare-card__icon--navy {
+  background: #d8e5f6;
+  color: #1B3A6B;
+}
+
+.aftercare-card__title {
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 600;
+  color: #162035;
+  line-height: 1.3;
+}
+
+/* Steps list */
+.aftercare-card__steps {
+  padding: 20px 24px 4px;
+  padding-left: 44px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 0;
+  flex: 1;
+}
+
+.aftercare-card__steps li {
+  font-size: 13.5px;
+  color: #2e3d4f;
+  line-height: 1.68;
+  padding-left: 4px;
+}
+
+/* Subtle counter styling */
+.aftercare-card__steps li::marker {
+  color: #0a8f88;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.aftercare-card__print {
+  margin: 16px 24px 20px;
+  align-self: flex-start;
+  color: #0a6e68;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.aftercare-card__print:hover {
+  color: #085e5a;
+}
+
+/* ── Resources panel hidden state ── */
+.resources-panel[hidden] { display: none; }
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .aftercare-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 640px) {
+  .form-download-card { flex-wrap: wrap; }
+  .form-download-card .btn { width: 100%; text-align: center; justify-content: center; }
+  .education-card { flex-direction: column; }
+}
